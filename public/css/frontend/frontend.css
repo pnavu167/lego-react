@@ -1,0 +1,317 @@
+body {
+  background-color: #fff;
+}
+
+.product-card {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.product-card .product-card-container {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card .product-card-container .product-card-top {
+  width: 100%;
+  padding: 16px;
+}
+
+.product-card .product-card-container .product-card-top img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.product-card .product-card-container .product-card-bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.product-card .product-card-container .product-card-bottom .product-name {
+  height: 38px;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.product-card .product-card-container .product-card-bottom .product-type {
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+.product-card .product-card-container .product-card-bottom .product-pride {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product-card .product-card-container .product-card-bottom .product-more-info {
+  opacity: 0.5;
+}
+
+.category-card {
+  width: 100%;
+  position: relative;
+  height: 200px;
+}
+
+.category-card .category-card-image {
+  position: absolute;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.category-card .category-card-brand {
+  width: 56px;
+  height: 56px;
+  z-index: 1;
+  position: absolute;
+  left: 75%;
+}
+
+.btn-see-all {
+  font-size: 14px;
+  font-weight: 500;
+  color: #509e2f !important;
+  text-decoration: none !important;
+}
+
+#top-bar .topbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  transition: all 500ms;
+  display: flex;
+  align-items: center;
+  min-height: 90px;
+  z-index: 100000000;
+}
+
+#top-bar .topbar .topbar-logo {
+  content: url("/storage/images/home/stockx-logo-dark.svg");
+}
+
+#top-bar .topbar .topbar-search {
+  width: 50%;
+}
+
+#top-bar .topbar .topbar-menu {
+  margin: 0;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  padding-right: 30px;
+}
+
+#top-bar .topbar .topbar-menu .topbar-item {
+  margin: 0 3px;
+  white-space: nowrap;
+}
+
+#top-bar .topbar .topbar-menu .topbar-item .topbar-link {
+  font-size: 16px !important;
+  font-weight: 500;
+  color: #000000;
+  text-decoration: none;
+  position: relative;
+  padding: 8px;
+}
+
+#top-bar .topbar .topbar-menu .topbar-item.topbar-item-sell .topbar-link {
+  border: 1px solid #ff5a5f !important;
+  border-radius: 20px !important;
+  color: #ff5a5f !important;
+  padding: 5px 15px;
+}
+
+#top-bar .topbar.on-top {
+  background-color: transparent;
+}
+
+#top-bar .topbar.on-top .topbar-logo {
+  content: url("/storage/images/home/stockx-logo.svg");
+}
+
+#top-bar .topbar.on-top .topbar-link {
+  color: #fff !important;
+}
+
+#home-banner {
+  width: 100%;
+  background-image: url("/storage/images/home/banner.jpg");
+  background-repeat: no-repeat;
+  padding-top: 91px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#home-banner .banner-container {
+  margin-top: 20px;
+  padding-top: 35px;
+  text-align: center;
+  color: #fff !important;
+}
+
+#home-banner .banner-container .litle {
+  font: 600 20px proxima-nova, sans-serif;
+}
+
+#home-banner .banner-container .big {
+  font: 700 85px BebasNeue;
+  letter-spacing: 2px;
+  white-space: nowrap;
+  margin: auto;
+  width: 98%;
+}
+
+#home-banner .banner-container .form-search {
+  margin: 10px auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#home-banner .banner-container .form-search .searchbox {
+  padding-left: 25px;
+  font-size: 16px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  width: 100%;
+  padding-right: 10%;
+  margin-right: 20px;
+  border: none;
+}
+
+#home-banner .banner-container .form-search .home-btn-search {
+  margin: 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  height: 50px;
+  background: #509e2f;
+  background-color: #509e2f;
+  padding: 10px 15px;
+  color: #fff !important;
+}
+
+#home-banner .banner-container .switcher {
+  display: flex;
+  justify-content: center;
+}
+
+#home-banner .banner-container .switcher .switcher-item {
+  font-family: BebasNeue;
+  font-size: 26px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  margin: 10px 25px 0px;
+}
+
+#home-banner .banner-container .switcher .switcher-item.active {
+  border-bottom: 4px solid #509e2f;
+}
+
+#home-banner .banner-container .switcher .switcher-item:hover {
+  border-bottom: 4px solid #509e2f;
+}
+
+#home-slider .home-slider {
+  overflow: hidden;
+  border-bottom: 1px solid #cecece;
+}
+
+#home-slider .home-slider .home-slider-item {
+  position: relative;
+  height: 190px;
+}
+
+#home-slider .home-slider .home-slider-item img {
+  position: absolute;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+#home-container .home-row {
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+#home-container .home-row .home-row-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home-container .home-row .home-row-header .home-row-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#home-news-release .home-news {
+  width: 100%;
+}
+
+#home-news-release .home-news .home-news-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home-news-release .home-news .home-news-header .home-news-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#home-news-release .home-news .home-news-header .home-news-title i {
+  color: #73C2FB;
+}
+
+#home-news-release .home-news .home-news-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#home-news-release .home-news .home-news-container .new-article {
+  margin-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #cccccc;
+}
+
+#home-news-release .home-news .home-news-container .new-article .new-article-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #000000;
+}
+
+#home-news-release .home-news .home-news-container .new-article .new-article-info {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.home-row-col {
+  width: 20%;
+  padding: 0 8px;
+}
+
+.browse-all-button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #509e2f;
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  padding: 25px 30px 22px;
+  margin: 45px auto;
+  border-radius: 4px;
+}
+

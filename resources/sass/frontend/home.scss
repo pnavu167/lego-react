@@ -1,0 +1,211 @@
+#top-bar {
+	.topbar {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		background-color: #fff;
+		transition: all 500ms	;
+		display: flex;
+		align-items: center;
+		min-height: 90px;
+		z-index: 100000000;
+		.topbar-logo {
+			content: $topBarLogo;
+		}
+		.topbar-search {
+			width: 50%;
+		}
+		.topbar-menu {
+			margin: 0;
+			display: flex;
+			list-style: none;
+			justify-content: space-around;
+			align-items: center;
+			padding-right: 30px;
+			.topbar-item {
+				margin: 0 3px;
+				white-space: nowrap;
+				.topbar-link {
+					font-size: $fontNormal !important;
+					font-weight: 500;
+					color: $black;
+					text-decoration: none;
+					position: relative;
+					padding: 8px;
+				}
+				&.topbar-item-sell {
+					.topbar-link {
+						border: 1px solid #ff5a5f!important;
+						border-radius: 20px !important;
+						color: #ff5a5f!important;
+						padding: 5px 15px;
+					}
+				}
+			}
+		}
+
+		&.on-top {
+			background-color: transparent;
+			.topbar-logo {
+				content: $topBarLogoOnTop;
+			}
+			.topbar-link {
+				color: #fff !important;
+			}
+		}
+	}
+}
+#home-banner {
+	width: 100%;
+	background-image: $homeBanner;
+	background-repeat: no-repeat;
+	padding-top: 91px;
+	padding-left: 15px;
+	padding-right: 15px;
+	.banner-container {
+		margin-top: 20px;
+		padding-top: 35px;
+		text-align: center;
+		color: #fff !important;
+		.litle {
+			font: 600 20px proxima-nova,sans-serif;
+		}
+		.big {
+			font: 700 85px BebasNeue;
+			letter-spacing: 2px;
+			white-space: nowrap;
+			margin: auto;
+    		width: 98%;
+		}
+		.form-search {
+			margin: 10px auto;
+			width: 60%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.searchbox {
+				padding-left: 25px;
+			    font-size: $fontNormal;
+			    height: 50px;
+			    font-size: $fontTitleSmall;
+			    font-weight: 400;
+			    width: 100%;
+			    padding-right: 10%;
+			    margin-right: 20px;
+			    border: none;
+			}
+			.home-btn-search {
+				margin: 0;
+			    border-radius: 5px;
+			    border: none;
+			    font-size: $fontTitleSmall;
+			    letter-spacing: 2px;
+			    height: 50px;
+			    background: #509e2f;
+			    background-color: #509e2f;
+			    padding: 10px 15px;
+			    color: #fff !important;
+			}
+		}
+		.switcher {
+			display: flex;
+			justify-content: center;
+			.switcher-item {
+				font-family: BebasNeue;
+			    font-size: 26px;
+			    letter-spacing: 2px;
+			    font-weight: 600;
+			    color: white;
+			    cursor: pointer;
+			    margin: 10px 25px 0px;
+			    &.active {
+			    	border-bottom: 4px solid rgb(80, 158, 47);
+			    }
+			    &:hover {
+			    	border-bottom: 4px solid rgb(80, 158, 47);
+			    }
+			}
+		}
+	}
+}
+#home-slider {
+	.home-slider {
+		
+	    overflow: hidden;
+	    border-bottom: 1px solid rgb(206, 206, 206);
+	    .home-slider-item {
+	    	position: relative;
+	    	height: 190px;
+	    	img {
+		    	position: absolute;
+		    	max-width: 100%;
+				min-height: 100%;
+	    	}
+	    }
+	}
+}
+#home-container {
+	.home-row {
+		margin-top: 24px;
+		margin-bottom: 16px;
+		.home-row-header {
+			display: flex;
+			justify-content: space-between;
+			.home-row-title {
+				font-size: $fontTitle;
+				font-weight: 600;
+			}
+		}
+	}
+}
+#home-news-release {
+	.home-news {
+		width: 100%;
+
+		.home-news-header {
+			display: flex;
+			justify-content: space-between;
+
+			.home-news-title {
+				font-weight: 600;
+				font-size: $fontTitleSmall;
+				i {
+					color: $maya;
+				}
+			}
+		}
+		.home-news-container {
+			display: flex;
+			flex-direction: column;
+			.new-article {
+				margin-top: 24px;
+				padding-bottom: 25px;
+				border-bottom: 1px solid $gray;
+				.new-article-title {
+					font-size: $fontTitleSmall;
+					font-weight: 600;
+					color: $black;
+				}
+				.new-article-info {
+					font-size: $fontNormal;
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+}
+.home-row-col {
+	width: 20%;
+	padding: 0 8px;
+}
+.browse-all-button {
+	width: fit-content;
+    background-color: rgb(80, 158, 47);
+    color: $white !important;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    padding: 25px 30px 22px;
+    margin: 45px auto;
+    border-radius: 4px;
+}

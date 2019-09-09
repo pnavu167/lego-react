@@ -1,0 +1,16 @@
+<?php
+namespace App\Models;
+
+use Illuminate\Support\Facades\DB;
+
+class CategoryProduct extends Model {
+
+	protected $table = 'categories_products';
+
+	protected $fillable = [
+        'category_id',
+        'product_id',
+        'status',
+        'deleted'
+    ];
+}
