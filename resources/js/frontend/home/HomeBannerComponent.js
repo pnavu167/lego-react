@@ -6,7 +6,7 @@ import axios from 'axios';
 // import LitleContent from './LitleContentComponent';
 // import BigContent from './BigContentComponent';
 // import ContainerSearch from './ContainerSearchComponent';
-// import Switcher from './SwitcherComponent';
+import Switcher from './SwitcherComponent';
 
 class HomeBanner extends Component {
 
@@ -28,12 +28,7 @@ class HomeBanner extends Component {
         				<input type="search" id="home-search" placeholder="Search for brand, color, etc." className="searchbox input-text form-control" aria-label="Search" />
         				<button className="home-btn-search">Search</button>
         			</form>
-            		<div className="switcher">
-            			<div className="switcher-item active">SNEAKERS</div>
-            			<div className="switcher-item">STREETWEAR</div>
-            			<div className="switcher-item">HANDBAGS</div>
-            			<div className="switcher-item">WATCHES</div>
-            		</div>
+            		<Switcher />
 	            </div>
             </section>
         );

@@ -3,17 +3,16 @@ import { render } from 'react-dom'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 //import component
-import Header from './HeaderComponent'
+// import Header from './HeaderComponent'
 import Home from '../Home/HomeComponent'
-import Category from '../Categories/CategoryComponent'
+import List from '../List/ListComponent'
 
 render (
 	<BrowserRouter>
 		<div className="wrapper">
-			<Header />
 			<Switch>
 				<Route exact path='/' component={Home} />
-				<Route exact path='/categories' component={Category} />
+				<Route exact path='/list' component={List} />
 			</Switch>
 		</div>
 	</BrowserRouter>, document.getElementById('root'))

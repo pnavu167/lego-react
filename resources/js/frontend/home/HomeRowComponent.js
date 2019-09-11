@@ -17,12 +17,11 @@ class HomeRow extends Component {
 	}
 
 	fetchRows () {
-		console.log(this.props.rowType)
 		var rows = []
         if (this.props.rowType == 'category') {
             for(var i=0;i<=3;i++) {
             	rows.push(
-	            	<div className="col-3" key={i}>
+	            	<div className="home-row-category-col" key={i}>
 	    				<CategoryCard />
 	    			</div>
     			)
@@ -42,15 +41,15 @@ class HomeRow extends Component {
   	render() {
         return(
             <div className="home-row">
-            	<div className="home-row-header">
-            		<div className="home-row-title">
+            	<div className="home-section-header">
+            		<div className="title">
             			{this.props.title}
             		</div>
-            		<a href="#" className="btn-see-all">
+            		<a href="#" className="link-see-all">
             			See All
             		</a>
             	</div>
-            	<div className="home-row-container row">
+            	<div className="home-row-container">
             		{this.fetchRows()}
             	</div>
             </div>

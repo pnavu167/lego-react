@@ -10,12 +10,12 @@ class HomeContainer extends Component {
 
   	render() {
         return(
-            <div className="container">
+            <div className="container home-container">
             	<HomeRow title="Category" rowType="category" />
             	<HomeRow title="Product" rowType="product" />
             	<HomeRow title="Product 2" rowType="product" />
             	<HomeRow title="Product 3" rowType="product" />
-            	<div className="browse-all-button align-center">
+            	<div className="browse-all-button align-center font-18">
             		Browse Thousands of Sneakers on our Live Marketplace
             	</div>
             	<HomeNewsRelease />

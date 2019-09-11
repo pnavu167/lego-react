@@ -10,7 +10,7 @@ window.addEventListener("scroll", function (event) {
 });
 
 function toggleClassOntop(onTop) {
-	var topBar = $('#top-bar').find('.topbar')
+	var topBar = $('#top-bar').find('.home-topbar')
 	if(onTop == true) {
 		if(!topBar.hasClass('on-top')) {
 			topBar.addClass('on-top')
