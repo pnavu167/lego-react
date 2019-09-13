@@ -210,10 +210,4 @@
 		background-color: $hoverGreen;
     }
 }
-.home-container {
-	
-	@include mobile-and-tablet {
-		margin: 0 !important;
-		max-width: 100% !important;
-	}
-}
+

@@ -10,7 +10,7 @@ class HomeContainer extends Component {
 
   	render() {
         return(
-            <div className="container home-container">
+            <div className="container mobile-container">
             	<HomeRow title="Category" rowType="category" />
             	<HomeRow title="Product" rowType="product" />
             	<HomeRow title="Product 2" rowType="product" />

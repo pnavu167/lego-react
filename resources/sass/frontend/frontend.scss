@@ -49,6 +49,13 @@ ul {
 	}
 }
 
+.mobile-container {
+	@include mobile-and-tablet {
+		margin: 0 !important;
+		max-width: 100% !important;
+	}
+}
+
 #top-bar {
 	.topbar {
 		position: fixed;
@@ -104,9 +111,9 @@ ul {
 				}
 				&.topbar-item-sell {
 					.topbar-link {
-						border: 1px solid #ff5a5f!important;
+						border: 1px solid $red;
 						border-radius: 20px !important;
-						color: #ff5a5f!important;
+						color: $red;
 						padding: 5px 15px;
 					}
 				}
@@ -249,23 +256,26 @@ ul {
 			padding: 16px;
 			color: $black;
 			font-weight: normal;
+			font-size: 16px !important;
 			.product-name {
 				height: 38px;
 				overflow: hidden;
 				line-height: 1.3;
-				@include mobile-and-tablet {
-					height: 30px;
-				}
+				// @include mobile-and-tablet {
+				// 	height: 30px;
+				// }
 			}
 			.product-type {
-				@include fontSmall;
+				// @include fontSmall;
+				font-size: 14px !important;
 				opacity: 0.5;
 			}
 			.product-pride {
 				font-weight: 700;
 			}
 			.product-more-info {
-				@include fontSmall;
+				// @include fontSmall;
+				font-size: 14px !important;
 				opacity: 0.5;
 			}
 		}
@@ -444,6 +454,69 @@ ul {
 	}
 }
 
+.paginator {
+	display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-family: proxima-nova;
+    font-weight: bold;
+    font-size: 14px;
+    height: 42px;
+    width: 294px;
+    margin: auto;
+    padding: 10px 0px 0px;
+    list-style-type: none;
+    .paginator-item {
+    	background-color: $cardColor;
+	    width: 32px;
+	    height: 32px;
+	    text-align: center;
+	    border-width: initial;
+	    border-style: none;
+	    border-color: initial;
+	    border-image: initial;
+	    border-radius: 3px;
+	    margin: 0px 5px;
+	    padding: 6px;
+	    &:hover {
+	    	background-color: $paginatorHover;
+	    	.paginator-link {
+	    		color: $white;
+	    	}
+	    }
+	    &.active {
+	    	background-color: $paginatorActive;
+	    	.paginator-link {
+	    		color: $white;
+	    	}
+	    }
+
+	    .paginator-link {
+			color: $paginatorLink;
+	    }
+	    &.paginator-arrow {
+		    .paginator-link {
+				color: $paginatorActive;
+			}
+			&:hover {
+				background-color: $cardColor;
+				.paginator-link {
+					color: $paginatorHover;
+				}
+			}
+		}
+    }
+}
+
+.col-xl-2-5 {
+	@include desktop {
+		flex: 0 0 20%;
+		width: 20%;
+	}
+}
 @import 'home';
 @import 'list';
 

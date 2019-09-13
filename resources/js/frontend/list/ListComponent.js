@@ -5,6 +5,7 @@ import axios from 'axios';
 //import component
 import Header from '../layouts/HeaderComponent'
 import ListBanner from './ListBannerComponent'
+import ListContainer from './ListContainerComponent'
 
 class List extends Component {
 
@@ -13,7 +14,7 @@ class List extends Component {
             <div id="list-container">
             	<Header />
             	<ListBanner />
-            	{/*<ListContaner />*/}
+            	<ListContainer />
             </div>
         );
     }
