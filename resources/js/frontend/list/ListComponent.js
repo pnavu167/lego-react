@@ -15,6 +15,7 @@ class List extends Component {
             	<Header />
             	<ListBanner />
             	<ListContainer />
+            	
             </div>
         );
     }

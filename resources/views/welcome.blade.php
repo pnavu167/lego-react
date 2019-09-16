@@ -23,6 +23,15 @@
     
     <!-- Custom -->
     <link href="{{ asset('css/frontend/frontend.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/frontend/news.css') }}" rel="stylesheet">
+
+    <!-- Boostrap -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+
+
+
 </head>
 <body>
     <div id="root">
@@ -37,6 +46,7 @@
 
     <!-- Custom -->
     <script src="{{asset('js/frontend/frontend.js/')}}"></script>
+
 </body>
 
 </html>

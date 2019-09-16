@@ -517,6 +517,232 @@ ul {
 		width: 20%;
 	}
 }
+
+//footer
+.footer{
+	padding-top: 34px;
+    background-color: rgb(61, 61, 61);
+
+    .brand{
+    	display: flex;
+    	padding: 0 20px 14px 20px;
+    	justify-content: space-between;
+    	max-width: 1200px;
+	    margin: auto;
+	    
+    	.col-brand{
+    		padding-right: 5px;
+    		@include tablet {
+				flex-flow: wrap;
+				width: 33%;
+			}
+
+			@include mobile {
+				width: 100%;
+			}
+    	}
+
+    	@include tablet {
+			flex-flow: wrap;
+		}
+
+		@include mobile {
+			display: block;
+			padding-left: 30px;
+		}
+    }
+
+   	.title-option{
+   		font-size: 13px;
+   		padding: 20px 0 10px;
+   		a {
+   			color: #fff;
+   		}
+
+		@include fontSmall;   		
+   		
+   	}
+
+   	.list-option{
+   		ul {
+   			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			li{
+				padding-top: 8px;
+				font-size: 13px;
+				a{
+					font-weight: bold;
+					color: #808080;
+				}
+			}
+   		}
+   	}
+	
+	.contract{
+		border-top: 1px solid #808080;
+	}
+
+   	.container-contract{
+   		padding: 14px 15px;
+   		max-width: 1200px;
+   		margin: auto;
+   		display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+   		.btn-change{
+   			display: flex;
+		    align-items: center;
+		    height: 40px;
+		    font-size: 12px;
+		    min-width: 140px;
+		    cursor: pointer;
+		    justify-content: space-around;
+		    border: 1px solid #808080;
+		    border-radius: 4px;
+		    padding: 0px 5px;
+		    color: #c3c3c3;
+		    width: 10%;
+   		}
+
+   		.btn-change span:nth-child(2) {
+		    color: #808080;
+		    height: 50%;
+		    border-left: 1px solid;
+		}
+
+		.social{
+			width: 50%;
+			.social-link {
+				padding: 8px;
+
+				.icon{
+					max-width: 17px;
+				}
+			}
+			
+		}
+
+		.app {
+			color: #c3c3c3;
+			.app-link {
+				padding: 8px;
+				.icon{
+					max-width: 17px;
+				}
+			}
+		}
+
+		.proudly{
+			color: #c3c3c3;
+			a {
+				color: #808080;
+				font-size: 14px;
+			}
+   		}
+
+   		@include mobile {
+			flex-direction: column;
+		}
+
+   	}
+	
+	.footerBottom{
+		background: #2d2d2d;
+
+		@include mobile {
+			display: flex;
+	    	justify-content: center;
+		}
+	}
+
+   	.site-footer{
+   		
+   		padding: 21px 15px;
+   		display: flex;
+	    justify-content: space-between;
+	    font-size: 12px;
+	    color: #808080;
+   		.information-link{
+   			display: flex;
+    		font-size: 12px;
+
+    		.link{
+    			padding: 0 8px;
+    			border-left: 1px solid #808080;
+
+    			a{
+    				text-transform: uppercase;
+    				color: #808080;
+    			}
+
+    			@include mobile {
+					padding: 10px 12px;
+					border: 0;
+				}
+
+				@include tablet {
+					padding: 0 5px;
+				}
+    		}
+
+    		.firt-link{
+    			border-left: 0;
+
+
+    		}
+
+    		@include mobile {
+			    flex-wrap: wrap;
+			    justify-content: space-around;
+			}
+
+			@include fontExtraSmall;
+   		}
+
+   		.copyright{
+   			p {
+   				margin: 0;
+   			}
+
+			@include mobile {
+			   margin: 20px;
+			}
+
+			@include fontExtraSmall;
+   		}
+
+   		@include mobile {
+		    flex-direction: column;
+		    width: 260px;
+		    justify-content: center;
+		    text-align: center;
+		    padding: 10px 0 0;
+		}
+   	}
+
+}
+
+.social-container{
+	width: 30%;
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+		width: 45%;
+	}
+
+	@include mobile {
+		margin: 15px 0;
+    	width: 85%;
+	}
+}
+
+.cover-size{
+	max-width: 1200px;
+	margin: auto;
+}
 @import 'home';
 @import 'list';
 
