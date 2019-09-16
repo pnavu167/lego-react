@@ -11,6 +11,10 @@ import News_List from '../News/ListsComponent'
 import PostOne from '../News/PostOneComponent'
 import PostTwo from '../News/PostTwoComponent'
 import PostThree from '../News/PostThreeComponent'
+import Home from '@/home/HomeComponent'
+import ProductList from '@/product/list/ListComponent'
+import ProductDetail from '@/product/detail/DetailComponent'
+
 
 render (
 	<BrowserRouter>
@@ -21,7 +25,10 @@ render (
 				<Route exact path='/news' component={News} />
 				<Route exact path='/news/post_one' component={PostOne} />
 				<Route exact path='/news/post_two' component={PostTwo} />
-				<Route exact path='/news/post_three' component={PostThree} />
+
+				<Route exact path='/products' component={ProductList} />
+				<Route exact path='/product-detail' component={ProductDetail} />
+
 			</Switch>
 		</div>
 	</BrowserRouter>, document.getElementById('root')

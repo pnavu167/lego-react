@@ -13,7 +13,7 @@ class HomeBanner extends Component {
   	render() {
         return(
             <section id="home-slider">
-            	<div className="home-slider">
+            	<div className="home-slider site-mobile-margin-top">
                     <div className="home-slider-item">
                         <img src="/storage/images/home/home-slider-1.jpg" />
                     </div>
