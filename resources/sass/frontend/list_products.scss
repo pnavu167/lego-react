@@ -1,16 +1,14 @@
 .list-banner {
-	margin-top: 90px;
 	@include desktop {
 		padding-left: calc((100vw - 1170px)/2 + 15px);
 	}
-	@include small-laptop {
+	@include small-desktop {
 		padding-left: calc((100vw - 970px)/2 + 15px);
 	}
 	@include tablet {
 		padding-left: 25px;
 	}
-	@include mobile-and-tablet {
-		margin-top: 45px;
+	@include smaller-than-tablet {
 		padding-left: 25px;
 	}
 	height: 170px;
@@ -24,7 +22,7 @@
     	.title {
 			font-size: 40px;
 			margin: auto;
-			@include small-laptop {
+			@include small-desktop {
 				font-size: 30px;
 			}
 			@include tablet {
@@ -64,7 +62,7 @@
 		@include tablet {
 			display: none;
 		}
-		@include mobile-and-tablet {
+		@include smaller-than-tablet {
 			display: none;
 		}
 	}
@@ -76,15 +74,15 @@
 			justify-content: space-between;
 			align-items: center;
 		}
-		.banner-sort {
+		.sort-dropdown-button {
 			display: flex;
 			justify-content: center;
 			width: 100%;
 			align-items: center;
+			.sort-dropdown-button-title {
+				
+			}
 		}
-	}
-	.banner-sort {
-
 	}
 }
 .list-content {
@@ -150,6 +148,7 @@
 		justify-content: space-between;
 		align-items: center;
 		.sort-dropdown {
+			width: 200px;
 			.sort-dropdown-button {
 				height: 48px;
 			    margin-right: 20px;
@@ -169,26 +168,13 @@
 					margin-right: 10px;
 			    }
 			}
-			.sort-dropdown-content {
-				list-style-type: none;
+			.sort-dropdown-container {
 				width: 250px;
-				height: 250px;
-				background-color: $white;
-				position: absolute;
-				overflow-y: auto;
-				border: 1px solid $borderColor;
-				z-index: 2;
-				.sort-dropdown-item {
-					padding: 16px 16px 6px;
-					border-bottom: 1px solid $borderColor;
-					.title {
-						font-weight: bold;
-						font-size: 14px;
-					}
-					.content {
-						font-size: 12px;
-					}
-				}
+			    height: 250px;
+			    position: absolute;
+			    z-index: 2;
+			    border: 1px solid $borderColor;
+			    overflow: auto;
 			}
 		}
 		.show-type {
@@ -203,13 +189,39 @@
 		}
 	}
 }
+.sort-dropdown-content {
+	list-style-type: none;
+	width: 100%;
+	height: auto;
+	background-color: $white;
+	position: static;
+	overflow-y: none;
+	border: none;
+	z-index: 0;
+	margin: 0;
+	.sort-dropdown-item {
+		padding: 16px 16px 6px;
+		border-bottom: 1px solid $borderColor;
+		.title {
+			font-weight: bold;
+			font-size: 14px;
+			margin: 0;
+		}
+		.content {
+			font-size: 12px;
+		}
+		&:nth-child(even) {
+			background-color: $cardColor;
+		}
+	}
+}
 .custom-breadcrumb {
 	display: flex;
 	align-items: center;
 	.breadcrumb-item {
 		.breadcrumb-link {
 			font-size: 14px;
-			@include mobile-and-tablet {
+			@include smaller-than-tablet {
 				font-size: 12px;
 			}
 			color: $breadcrumb;
@@ -232,9 +244,90 @@
 		}
 	}
 }
-
-
-
+.products-table {
+	thead {
+		th {
+			text-align: left;
+			white-space: nowrap;
+			text-transform: uppercase;
+			font-weight: bold;
+			&.active {
+				color: $linkColor;
+			}
+			&.sort-able {
+				cursor: pointer;
+				i {
+					display: inline-block;
+					float: right;
+					line-height: 20px;
+				}
+			}
+		}
+		@include smaller-than-desktop {
+			th:last-child {
+				display: none;
+			}
+		}
+		@include smaller-than-small-desktop {
+			th:nth-last-child(2) {
+				display: none;
+			}
+		}
+		@include smaller-than-tablet {
+			th:nth-last-child(3) {
+				display: none;
+			}
+		}
+	}
+	tbody {
+		tr {
+			@include smaller-than-desktop {
+				td:last-child {
+					display: none;
+				}
+			}
+			@include smaller-than-small-desktop {
+				td:nth-last-child(2) {
+					display: none;
+				}
+			}
+			@include smaller-than-tablet {
+				td:nth-last-child(3) {
+					display: none;
+				}
+			}
+		}
+		
+		font-size: 14px !important;
+		.product-pride {
+			width: 15%;
+		}
+		.product-title {
+			display: flex;
+			align-items: center;
+			.product-image {
+				width: 100px;
+				height: 75px;
+				margin-right: 12px;
+				img {
+					max-width: 100%;
+					max-height: 100%;
+				}
+			}
+			.product-name {
+				font-size: 14px;
+			    width: 50%;
+			}
+		}
+		.value-increase {
+			color: $green;
+		}
+		.value-decrease {
+			color: $red;
+		}
+	}
+	
+}
 
 
 

@@ -20,7 +20,7 @@ class List extends Component {
   	render() {
         return(
             <section id="list-banner">
-            	<div className="list-banner">
+            	<div className="list-banner site-margin-top">
         			<div className="banner-content">
         				<h1 className="title">SNEAKERS</h1>
         				<h2 className="one-liner">
@@ -31,8 +31,8 @@ class List extends Component {
                                 Filter&nbsp;
                                 <i className="fa fa-chevron-down pl-2"></i>
                             </button>
-                            <div className="banner-sort">
-                                <div className="sort-dropdown-content">
+                            <div className="sort-dropdown-button" data-target=".sort-dropdown-content-mobile" data-toggle="collapse">
+                                <div className="sort-dropdown-button-title">
                                     <span className="font-weight-bold">Sort By:</span>
                                     <span className="sort-dropdown-type">Feature</span>
                                 </div>

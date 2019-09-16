@@ -4,7 +4,7 @@ import axios from 'axios';
 
 //import component
 import SideBar from './SideBarComponent'
-import ProductCard from '../shared/ProductCardComponent'
+import ProductsContainer from '../shared/ProductsContainerComponent'
 import SortBar from './SortBarComponent'
 import Pagination from '../shared/PaginationComponent'
 
@@ -12,7 +12,14 @@ class ListContainer extends Component {
 
 	constructor(props) {
 		super(props)
+        this.state = {
+            'productsContainerType': 'grid'
+        }
 	}
+
+    changeProductsContainerType(type) {
+        this.setState({'productsContainerType': type})
+    }
 
   	render() {
         return(
@@ -23,57 +30,8 @@ class ListContainer extends Component {
                             <SideBar />
                         </div>
                         <div className="col-lg-10">
-                            <SortBar />
-                            <div className="row no-gutters">
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                                <div className="col-xl-2-5 col-lg-3 col-md-4 col-6 p-1">
-                                    <ProductCard />
-                                </div>
-                            </div>
+                            <SortBar productsContainerType={this.changeProductsContainerType.bind(this)} type={this.state.productsContainerType} />
+                            <ProductsContainer type={this.state.productsContainerType} />
                             <Pagination />
                         </div>
                     </div>

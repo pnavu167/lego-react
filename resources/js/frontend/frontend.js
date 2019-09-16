@@ -34,5 +34,5 @@ $('.home-slider').slick({
 });
 
 $(document).ready(function() {
-	
+	$('.popoverData').popover()
 })

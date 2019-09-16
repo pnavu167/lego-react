@@ -6,6 +6,7 @@ import axios from 'axios';
 import Header from '../layouts/HeaderComponent'
 import ListBanner from './ListBannerComponent'
 import ListContainer from './ListContainerComponent'
+import SortContent from './SortContentComponent'
 
 class List extends Component {
 
@@ -14,6 +15,7 @@ class List extends Component {
             <div id="list-container">
             	<Header />
             	<ListBanner />
+            	<SortContent type="mobile-tablet" />
             	<ListContainer />
             </div>
         );

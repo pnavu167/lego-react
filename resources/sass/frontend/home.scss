@@ -6,7 +6,7 @@
 	padding-top: 91px;
 	padding-left: 15px;
 	padding-right: 15px;
-	@include mobile-and-tablet {
+	@include smaller-than-tablet {
 		display: none;
 	}
 	.banner-container {
@@ -71,7 +71,7 @@
 	    cursor: pointer;
 	    margin: 10px 25px 0px;
 	    text-transform: uppercase;
-	    @include mobile-and-tablet {
+	    @include smaller-than-tablet {
 			color: $black;
 			margin: 10px 0px 0px;
 		}
@@ -95,16 +95,13 @@
 		
 	    overflow: hidden;
 	    border-bottom: 1px solid rgb(206, 206, 206);
-	    @include mobile-and-tablet {
-    		margin-top: 45px;
-    	}
 	    .home-slider-item {
 	    	position: relative;
 	    	height: 190px;
-	    	@include small-laptop {
+	    	@include small-desktop {
 	    		height: 150px !important;
 	    	}
-	    	@include mobile-and-tablet {
+	    	@include smaller-than-tablet {
 	    		height: 130px !important;
 	    	}
 	    	img {
@@ -128,7 +125,7 @@
 		    } 
 			margin-right: -15px;
     		margin-left: -15px;
-    		@include mobile-and-tablet {
+    		@include smaller-than-tablet {
 				margin-right: 0px;
     			margin-left: 0px;
 			}
@@ -136,14 +133,14 @@
 		.home-row-col {
 			width: 20%;
 			padding: 0 8px;
-			@include mobile-and-tablet {
+			@include smaller-than-tablet {
 				min-width: 200px;
 			}
 		}
 		.home-row-category-col {
 			width: 25%;
 			padding: 0 8px;
-			@include mobile-and-tablet {
+			@include smaller-than-tablet {
 				min-width: 180px;
 			}
 		}
@@ -162,7 +159,7 @@
 					margin-top: 15px;
 					padding-bottom: 15px;
 				}
-				@include mobile-and-tablet {
+				@include smaller-than-tablet {
 					margin-top: 15px;
 					padding-bottom: 15px;
 				}
@@ -201,7 +198,7 @@
     padding: 25px 30px 22px;
     margin: 45px auto;
     border-radius: 4px;
-    @include mobile-and-tablet {
+    @include smaller-than-tablet {
     	font-size: 14px !important;
     	padding: 10px;
     }

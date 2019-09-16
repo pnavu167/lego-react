@@ -35675,7 +35675,7 @@ function (_Component) {
         id: "home-news-release",
         className: "home-news-release row mb-5 mb-sm-3"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-lg-8 col-sm-12 order-lg-2 mb-sm-3 d-none d-sm-block"
+        className: "col-lg-8 col-sm-12 order-lg-2 mb-sm-3 mb-lg-0 d-none d-sm-block"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HomeReleaseComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "col-lg-4 col-sm-12 border-bottom order-lg-1"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HomeNewsComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
@@ -36314,7 +36314,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
         id: "home-slider"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "home-slider"
+        className: "home-slider site-mobile-margin-top"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "home-slider-item"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
@@ -36802,7 +36802,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
         id: "list-banner"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "list-banner"
+        className: "list-banner site-margin-top"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "banner-content"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
@@ -36820,9 +36820,11 @@ function (_Component) {
       }, "Filter\xA0", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
         className: "fa fa-chevron-down pl-2"
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "banner-sort"
+        className: "sort-dropdown-button",
+        "data-target": ".sort-dropdown-content-mobile",
+        "data-toggle": "collapse"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "sort-dropdown-content"
+        className: "sort-dropdown-button-title"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         className: "font-weight-bold"
       }, "Sort By:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
@@ -36862,6 +36864,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layouts/HeaderComponent */ "./resources/js/frontend/layouts/HeaderComponent.js");
 /* harmony import */ var _ListBannerComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ListBannerComponent */ "./resources/js/frontend/List/ListBannerComponent.js");
 /* harmony import */ var _ListContainerComponent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ListContainerComponent */ "./resources/js/frontend/List/ListContainerComponent.js");
+/* harmony import */ var _SortContentComponent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SortContentComponent */ "./resources/js/frontend/List/SortContentComponent.js");
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
 function _typeof(obj) {
@@ -36955,6 +36958,7 @@ function _setPrototypeOf(o, p) {
 
 
 
+
 var List =
 /*#__PURE__*/
 function (_Component) {
@@ -36971,7 +36975,9 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "list-container"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ListBannerComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ListContainerComponent__WEBPACK_IMPORTED_MODULE_5__["default"], null));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ListBannerComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SortContentComponent__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        type: "mobile-tablet"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ListContainerComponent__WEBPACK_IMPORTED_MODULE_5__["default"], null));
     }
   }]);
 
@@ -36998,7 +37004,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _SideBarComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SideBarComponent */ "./resources/js/frontend/List/SideBarComponent.js");
-/* harmony import */ var _shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/ProductCardComponent */ "./resources/js/frontend/shared/ProductCardComponent.js");
+/* harmony import */ var _shared_ProductsContainerComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../shared/ProductsContainerComponent */ "./resources/js/frontend/shared/ProductsContainerComponent.js");
 /* harmony import */ var _SortBarComponent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SortBarComponent */ "./resources/js/frontend/List/SortBarComponent.js");
 /* harmony import */ var _shared_PaginationComponent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../shared/PaginationComponent */ "./resources/js/frontend/shared/PaginationComponent.js");
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
@@ -37101,12 +37107,25 @@ function (_Component) {
   _inherits(ListContainer, _Component);
 
   function ListContainer(props) {
+    var _this;
+
     _classCallCheck(this, ListContainer);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(ListContainer).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(ListContainer).call(this, props));
+    _this.state = {
+      'productsContainerType': 'grid'
+    };
+    return _this;
   }
 
   _createClass(ListContainer, [{
+    key: "changeProductsContainerType",
+    value: function changeProductsContainerType(type) {
+      this.setState({
+        'productsContainerType': type
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -37120,41 +37139,12 @@ function (_Component) {
         id: "sidebar"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SideBarComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "col-lg-10"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SortBarComponent__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "row no-gutters"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_PaginationComponent__WEBPACK_IMPORTED_MODULE_6__["default"], null)))));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SortBarComponent__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        productsContainerType: this.changeProductsContainerType.bind(this),
+        type: this.state.productsContainerType
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductsContainerComponent__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        type: this.state.productsContainerType
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_PaginationComponent__WEBPACK_IMPORTED_MODULE_6__["default"], null)))));
     }
   }]);
 
@@ -37560,6 +37550,208 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _shared_BreadCrumbComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/BreadCrumbComponent */ "./resources/js/frontend/shared/BreadCrumbComponent.js");
+/* harmony import */ var _SortContentComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SortContentComponent */ "./resources/js/frontend/List/SortContentComponent.js");
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+
+
+
+
+var SortBar =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(SortBar, _Component);
+
+  function SortBar(props) {
+    var _this;
+
+    _classCallCheck(this, SortBar);
+
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(SortBar).call(this, props));
+    _this.productContainerGrid = _this.productContainerGrid.bind(_assertThisInitialized(_this));
+    _this.productContainerTable = _this.productContainerTable.bind(_assertThisInitialized(_this));
+    return _this;
+  }
+
+  _createClass(SortBar, [{
+    key: "productContainerGrid",
+    value: function productContainerGrid(e) {
+      this.props.productsContainerType('grid');
+    }
+  }, {
+    key: "productContainerTable",
+    value: function productContainerTable(e) {
+      this.props.productsContainerType('table');
+    }
+  }, {
+    key: "isGrid",
+    value: function isGrid() {
+      if (this.props.type == 'grid') {
+        return 'active';
+      }
+
+      return '';
+    }
+  }, {
+    key: "isTable",
+    value: function isTable() {
+      if (this.props.type == 'table') {
+        return 'active';
+      }
+
+      return '';
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "sortbar"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_BreadCrumbComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "sortbar-group"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "sort-dropdown dropdown d-none d-lg-flex"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "sort-dropdown-button ",
+        id: "dropdownMenuLink",
+        "data-toggle": "dropdown"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "sort-dropdown-button-title"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "font-weight-bold"
+      }, "Sort By:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "sort-dropdown-type"
+      }, "Feature")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-chevron-down",
+        "aria-hidden": "true"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "sort-dropdown-container dropdown-menu",
+        "aria-labelledby": "dropdownMenuLink"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SortContentComponent__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        type: ""
+      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "show-type ".concat(this.isGrid()),
+        onClick: this.productContainerGrid
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-th",
+        "aria-hidden": "true"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "show-type ".concat(this.isTable()),
+        onClick: this.productContainerTable
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-bars",
+        "aria-hidden": "true"
+      }))));
+    }
+  }]);
+
+  return SortBar;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (SortBar);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/List/SortContentComponent.js":
+/*!************************************************************!*\
+  !*** ./resources/js/frontend/List/SortContentComponent.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
 function _typeof(obj) {
@@ -37649,43 +37841,33 @@ function _setPrototypeOf(o, p) {
 
  //import component
 
-
-
-var SortBar =
+var SortContent =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(SortBar, _Component);
+  _inherits(SortContent, _Component);
 
-  function SortBar(props) {
-    _classCallCheck(this, SortBar);
+  function SortContent(props) {
+    _classCallCheck(this, SortContent);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(SortBar).call(this, props));
+    return _possibleConstructorReturn(this, _getPrototypeOf(SortContent).call(this, props));
   }
 
-  _createClass(SortBar, [{
+  _createClass(SortContent, [{
+    key: "addClassName",
+    value: function addClassName() {
+      var className = "";
+
+      if (this.props.type == "mobile-tablet") {
+        className = "collapse sort-dropdown-content-mobile";
+      }
+
+      return className;
+    }
+  }, {
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "sortbar"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_BreadCrumbComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "sortbar-group d-none d-lg-flex"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "sort-dropdown dropdown"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "sort-dropdown-button",
-        "data-toggle": "collapse",
-        "data-target": ".sort-dropdown-content"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "title"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "font-weight-bold"
-      }, "Sort By:"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "sort-dropdown-type"
-      }, "Feature")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "fa fa-chevron-down",
-        "aria-hidden": "true"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-        className: "sort-dropdown-content dropdown-menu collapse"
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+        className: "sort-dropdown-content ".concat(this.addClassName())
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
         className: "sort-dropdown-item"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
@@ -37722,24 +37904,14 @@ function (_Component) {
         className: "title"
       }, "Featured"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
         className: "content"
-      }, "The 'Featured' picks are chosen specifically for you by the StockX team.")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "show-type active"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "fa fa-th",
-        "aria-hidden": "true"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "show-type"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "fa fa-bars",
-        "aria-hidden": "true"
-      }))));
+      }, "The 'Featured' picks are chosen specifically for you by the StockX team.")));
     }
   }]);
 
-  return SortBar;
+  return SortContent;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (SortBar);
+/* harmony default export */ __webpack_exports__["default"] = (SortContent);
 
 /***/ }),
 
@@ -37786,7 +37958,9 @@ $('.home-slider').slick({
   variableHeight: true,
   vertical: true
 });
-$(document).ready(function () {});
+$(document).ready(function () {
+  $('.popoverData').popover();
+});
 
 /***/ }),
 
@@ -38917,6 +39091,265 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (ProductReleaseCard);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/shared/ProductsContainerComponent.js":
+/*!********************************************************************!*\
+  !*** ./resources/js/frontend/shared/ProductsContainerComponent.js ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../shared/ProductCardComponent */ "./resources/js/frontend/shared/ProductCardComponent.js");
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+
+
+
+var ListContainer =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ListContainer, _Component);
+
+  function ListContainer(props) {
+    _classCallCheck(this, ListContainer);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ListContainer).call(this, props));
+  }
+
+  _createClass(ListContainer, [{
+    key: "showProducs",
+    value: function showProducs(type) {
+      if (this.props.type == 'grid') {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(GridType, null);
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TableType, null);
+      }
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "products-container"
+      }, this.showProducs(this.props.type));
+    }
+  }]);
+
+  return ListContainer;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+function GridType() {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "row no-gutters"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "col-xl-2-5 col-lg-3 col-md-4 col-6 p-1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_ProductCardComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null)));
+}
+
+function TableType() {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
+    className: "table products-table table-responsive"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    width: "40%"
+  }, "Name"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    width: "15%",
+    className: "active sort-able"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Feature"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "fa fa-sort",
+    "aria-hidden": "true"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    width: "15%",
+    className: "sort-able"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Last Sale"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "fa fa-sort",
+    "aria-hidden": "true"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    width: "15%",
+    className: "sort-able"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "lowest ask"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "fa fa-sort",
+    "aria-hidden": "true"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    width: "15%",
+    className: "sort-able"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "highest bid"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "fa fa-sort",
+    "aria-hidden": "true"
+  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TableRow, {
+    type: "increase"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TableRow, {
+    type: "decrease"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TableRow, {
+    type: "increase"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TableRow, {
+    type: "increase"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TableRow, {
+    type: "decrease"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TableRow, {
+    type: "increase"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TableRow, {
+    type: "increase"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TableRow, {
+    type: "decrease"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TableRow, {
+    type: "decrease"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TableRow, {
+    type: "decrease"
+  })));
+}
+
+function TableRow(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
+    className: "product-title"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "product-image"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: ""
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+    src: "/storage/images/home/category-1.png"
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "product-name"
+  }, "Converse Chuck Taylor All-Star 70s Hi Comme des Garcons Play Multi-Heart Green")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
+    className: "product-pride"
+  }, "2491"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
+    className: "product-pride"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "$300"), "\xA0", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: props.type == "increase" ? "value-increase" : "value-decrease"
+  }, props.type == "increase" ? "+" : "-", "$30")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
+    className: "product-pride"
+  }, "$150"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", {
+    className: "product-pride"
+  }, "$400"));
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (ListContainer);
 
 /***/ }),
 
