@@ -8,7 +8,7 @@ import HomeSlider from './HomeSliderComponent'
 import HomeContainer from './HomeContainerComponent'
 import HomeTradeMark from './HomeTradeMarkComponent'
 import Switcher from './SwitcherComponent';
-import Header from '../layouts/HeaderComponent'
+import Header from '@/layouts/HeaderComponent'
 
 class Home extends Component {
 

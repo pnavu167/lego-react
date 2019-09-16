@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 //import component
-import SideBar from './SideBarComponent'
-import ProductsContainer from '../shared/ProductsContainerComponent'
-import SortBar from './SortBarComponent'
-import Pagination from '../shared/PaginationComponent'
+import SideBar from '@/product/list/SideBarComponent'
+import ProductsContainer from '@/shared/ProductsContainerComponent'
+import SortBar from '@/product/list/SortBarComponent'
+import Pagination from '@/shared/PaginationComponent'
 
 class ListContainer extends Component {
 

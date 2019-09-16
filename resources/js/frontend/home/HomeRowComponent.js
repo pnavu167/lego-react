@@ -3,8 +3,8 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 //import component
-import CategoryCard from '../shared/CategoryCardComponent'
-import ProductCard from '../shared/ProductCardComponent'
+import CategoryCard from '@/shared/CategoryCardComponent'
+import ProductCard from '@/shared/ProductCardComponent'
 
 class HomeRow extends Component {
 

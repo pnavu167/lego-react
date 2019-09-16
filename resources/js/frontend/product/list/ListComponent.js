@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 //import component
-import Header from '../layouts/HeaderComponent'
-import ListBanner from './ListBannerComponent'
-import ListContainer from './ListContainerComponent'
-import SortContent from './SortContentComponent'
+import Header from '@/layouts/HeaderComponent'
+import ListBanner from '@/product/list/ListBannerComponent'
+import ListContainer from '@/product/list/ListContainerComponent'
+import SortContent from '@/product/list/SortContentComponent'
 
-class List extends Component {
+class ProductList extends Component {
 
   	render() {
         return(
@@ -22,4 +22,4 @@ class List extends Component {
     }
 }
 
-export default List;
+export default ProductList;

@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 //import component
-import BreadCrumb from '../shared/BreadCrumbComponent'
-import SortContent from './SortContentComponent'
+import BreadCrumb from '@/shared/BreadCrumbComponent'
+import SortContent from '@/product/list/SortContentComponent'
 
 class SortBar extends Component {
 
