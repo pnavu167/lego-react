@@ -40,8 +40,11 @@ class CatPost extends Component {
             <div className="cat-post">
                 {this.setTitleName() &&
                     <div className="type-post">
-                        <h2 >{this.setTitleName()}</h2> 
-                        <a href="#" className="cat-post-section">View All</a>
+                        <h2 >{this.setTitleName()}</h2>
+                        {this.setTitleName() != "RELATED ARTICLES" &&
+                            <a href="#" className="cat-post-section">View All</a>
+                        } 
+                        
                     </div>
                 }
                 

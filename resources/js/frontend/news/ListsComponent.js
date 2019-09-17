@@ -20,7 +20,7 @@ class Lists extends Component {
   	render() {
         return(
             <div id="news-main-container">
-                <Header type="on-top home-topbar" />
+                <Header />
                 <SubMenu />
                 <HeaderBanner/>
 
