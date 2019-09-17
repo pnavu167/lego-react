@@ -29665,7 +29665,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
+/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -41368,7 +41368,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ContainerComponent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ContainerComponent */ "./resources/js/frontend/product/detail/ContainerComponent.js");
 /* harmony import */ var _MarketSummayComponent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./MarketSummayComponent */ "./resources/js/frontend/product/detail/MarketSummayComponent.js");
 /* harmony import */ var _RelatedProductsComponent__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./RelatedProductsComponent */ "./resources/js/frontend/product/detail/RelatedProductsComponent.js");
-/* harmony import */ var _StatisticalComponent__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./StatisticalComponent */ "./resources/js/frontend/product/detail/StatisticalComponent.js");
+/* harmony import */ var _StatisticalComponent__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./StatisticalComponent */ "./resources/js/frontend/product/detail/StatisticalComponent.js");
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
 function _typeof(obj) {
@@ -41486,7 +41486,7 @@ function (_Component) {
         className: "gray-gradient"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_BreadCrumbComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ContainerComponent__WEBPACK_IMPORTED_MODULE_5__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_MarketSummayComponent__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_RelatedProductsComponent__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_StatisticalComponent__WEBPACK_IMPORTED_MODULE_9__["default"], null));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_BreadCrumbComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ContainerComponent__WEBPACK_IMPORTED_MODULE_5__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_MarketSummayComponent__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_RelatedProductsComponent__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_StatisticalComponent__WEBPACK_IMPORTED_MODULE_8__["default"], null));
     }
   }]);
 
@@ -42238,9 +42238,198 @@ function (_Component) {
   !*** ./resources/js/frontend/product/detail/StatisticalComponent.js ***!
   \**********************************************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/anhvu/Documents/Vu/webproject/lego/resources/js/frontend/product/detail/StatisticalComponent.js: Unexpected token, expected \",\" (89:4)\n\n\u001b[0m \u001b[90m 87 | \u001b[39m            }]\u001b[0m\n\u001b[0m \u001b[90m 88 | \u001b[39m        }\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 89 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n    at Object.raise (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:6325:17)\n    at Object.unexpected (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:7642:16)\n    at Object.expect (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:7628:28)\n    at Object.parseCallExpressionArguments (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:8606:14)\n    at Object.parseSubscript (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:8514:29)\n    at Object.parseSubscripts (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:8433:19)\n    at Object.parseExprSubscripts (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:8422:17)\n    at Object.parseMaybeUnary (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:8392:21)\n    at Object.parseExprOps (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:8267:23)\n    at Object.parseMaybeConditional (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:8240:23)\n    at Object.parseMaybeAssign (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:8187:21)\n    at Object.parseExpression (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:8135:23)\n    at Object.parseStatementContent (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:9958:23)\n    at Object.parseStatement (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:9829:17)\n    at Object.parseBlockOrModuleBlockBody (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:10405:25)\n    at Object.parseBlockBody (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:10392:10)\n    at Object.parseTopLevel (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:9758:10)\n    at Object.parse (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:11270:17)\n    at parse (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/parser/lib/index.js:11306:38)\n    at parser (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/core/lib/transformation/normalize-file.js:170:34)\n    at normalizeFile (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/core/lib/transformation/normalize-file.js:138:11)\n    at runSync (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/core/lib/transformation/index.js:44:43)\n    at runAsync (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/core/lib/transformation/index.js:35:14)\n    at process.nextTick (/Users/anhvu/Documents/Vu/webproject/lego/node_modules/@babel/core/lib/transform.js:34:34)\n    at process._tickCallback (internal/process/next_tick.js:61:11)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+
+var ProductDetail =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(ProductDetail, _Component);
+
+  function ProductDetail() {
+    _classCallCheck(this, ProductDetail);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(ProductDetail).apply(this, arguments));
+  }
+
+  _createClass(ProductDetail, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
+        className: "statistical"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "statistical-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "related-banner"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "related-banner-content"
+      }, "lastest sale")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "row"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-md-8"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-md-4"
+      })))));
+    }
+  }]);
+
+  return ProductDetail;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (ProductDetail); // Highcharts.setOptions({
+//             // カスタムカラーを設定
+//             colors: ['#666666', '#dc3545', '#ffc107', '#1d8c69']
+//         });
+//         Highcharts.chart('chart-container', {
+//             chart: {
+//                 type: 'bar'
+//             },
+//             title: {
+//                 text: '{{$chartTitle}}'
+//             },
+//             credits: {
+//                 enabled: false
+//             },
+//             exporting: { 
+//                 enabled: false 
+//             },
+//             xAxis: {
+//                 categories: listMachine,
+//                 min: 0,
+//                 max: 5,
+//                 scrollbar: {
+//                     enabled: true
+//                 },
+//                 tickLength: 0
+//             },
+//             yAxis: {
+//                 min: 0,
+//                 title: {
+//                     text: '実績一覧'
+//                 },
+//                 max: 100
+//             },
+//             legend: {
+//                 reversed: true
+//             },
+//             plotOptions: {
+//                 series: {
+//                     stacking: 'normal'
+//                 }
+//             },
+//             series: [{
+//                 name: '電源OFF',
+//                 data: listData['STATUS_POWER_OFF']
+//             }, {
+//                 name: 'アラーム',
+//                 data: listData['STATUS_ALARM']
+//             }, {
+//                 name: '停止',
+//                 data: listData['STATUS_STOP']
+//             }, {
+//                 name: '自動運転',
+//                 data: listData['STATUS_DRIVING']
+//             }]
+//         }
+//     });
 
 /***/ }),
 
@@ -44506,7 +44695,7 @@ function TableRow(props) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\lego-react\resources\js\frontend\frontend.js */"./resources/js/frontend/frontend.js");
+module.exports = __webpack_require__(/*! /Users/anhvu/Documents/Vu/webproject/lego/resources/js/frontend/frontend.js */"./resources/js/frontend/frontend.js");
 
 
 /***/ })
