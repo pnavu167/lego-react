@@ -1,0 +1,1285 @@
+$mobile-width: 480px; 
+$tablet-width: 768px; 
+$small-laptop-width: 992px;
+$desktop-width: 1200px;
+
+
+@mixin desktop { 
+	@media (max-width: #{$desktop-width}) {
+		@content; 
+	} 
+}
+
+@mixin tablet { 
+	@media (max-width: #{$tablet-width}) {
+		@content; 
+	} 
+}
+
+@mixin mobile { 
+	@media (max-width: #{$mobile-width}) {
+		@content; 
+	} 
+}
+
+@mixin fontExtraSmall {
+	font-size: 12px !important;
+
+	@include mobile {
+		font-size: 10px !important;
+	}
+
+	@include tablet {
+		font-size: 10px !important;
+	}
+}
+
+@mixin fontSmall {
+	font-size: 13px !important;
+
+	@include mobile {
+		font-size: 14px !important;
+	}
+}
+
+@mixin fontMedium{
+	font-size: 18px !important;
+
+	@include mobile {
+		font-size: 14px !important;
+	}
+}
+
+@mixin fontDoubleExtraLarge {
+	font-size: 36px !important;
+
+	@include mobile {
+		font-size: 28px !important;
+	}
+}
+
+
+
+.blog{
+	// margin-top: 14px;
+    border-bottom: 1px solid #e5e5e5;
+	margin-top: 85px;
+    @include tablet {
+		display: none;
+	}
+}
+.pg-blog{
+	display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.blog-category {
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+	ul{
+		list-style-type: none;
+		display: flex;
+	    margin: 0;
+	    padding: 0;
+	    li {
+	    	padding: 23px 30px;
+	    	font-size: 14px;
+			transition: all .3s;
+	    	.type-news{
+	    		transition: all .3s;
+	    	}
+
+	    	&:hover{
+	    		box-shadow: -1px 0px 0px 0px #e5e5e5, 1px 0px 0px 0px #e5e5e5;
+	    		.type-news{
+	    			color: #41ad33;
+    				text-decoration: none;
+	    		}
+    			
+    		}
+	    }
+	    .first-category{
+	    	padding-left: 0;
+	    	a {
+	    		color: #000;
+	    	}
+	    	&:hover{
+	    		box-shadow: none;
+	    		a {
+	    			color: #337ab7;
+	    		}
+    			
+    			
+    		}
+	    }
+	}
+}
+
+.icon-fa:before {
+    font-family: fontawesome;
+    font-weight: 400!important;
+    font-style: normal!important;
+    text-transform: none!important;
+
+}
+
+.subscribe-link {
+	transition: all .3s;
+    &:before{
+	    content: '\f0e0';
+	    padding-right: 8px;
+    }
+
+    &:hover{	
+    	color: #41ad33;
+    	text-decoration: none;
+    }
+}
+
+
+
+.color-gray{
+	color: #808080;
+}
+
+.fnt-size-14{
+	font-size: 14px;
+}
+
+.bold{
+	font-weight: 600;
+}
+
+.cover-size{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.news{
+	display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    @include tablet {
+		display: block;
+    }
+}
+
+.news-slider{
+	width: 69%;
+    overflow: hidden;
+
+    .image-slider {
+    	width: 100%;
+    	height: 560px;
+    	background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: cover;
+    	background-image: url(https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-brand-blog.jpg);
+    	img {
+    		width: 100%;
+    	}
+    }
+
+    .slider-overlay {
+    	z-index: 1;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: linear-gradient(61deg, rgba(0,0,0,0.8) 5%,rgba(0,0,0,0.2) 100%);
+    }
+
+    .item {
+		position: relative;
+    }
+
+    @include tablet {
+		width: 100%;
+    }
+}
+
+.slider-detail{
+	z-index: 1;
+	position: absolute;
+    bottom: 69px;
+    color: #fff;
+    width: 69%;
+    margin: 0 55px;
+    
+
+    .headline-slider{
+    	font-size: 28px;
+    	margin: 15px 0;
+    }
+
+    .slider-excerpt{
+    	margin: 8px 0 25px 0;
+	    line-height: 1.4;
+	    color: #e5e5e5;
+	    font-size: 16px;
+	    letter-spacing: -0.5px;
+    }
+
+    .btn-read-more{
+    	height: 32px;
+	    font-size: 12px;
+	    font-weight: 500;
+	    line-height: 32px;
+    }
+
+
+}
+
+.blog-post{
+	color: #e5e5e5;
+	font-size: 14px;
+
+}
+
+.button {
+	border: 0px;
+    text-decoration: none;
+    background: #41ad33;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    height: 58px;
+    transition: all .3s;
+    line-height: 1rem;
+    cursor: pointer;
+    padding: 0 20px;
+    &:hover{
+		background: #1c4b16;
+	}
+}
+    
+
+
+.news-list {
+	width: 28%;
+	.list {
+		list-style: none;
+    	padding:  0;
+		li {
+			padding: 20px 0;
+			border-bottom: 1px solid #e5e5e5;
+		}
+	}
+
+	.blog-post {
+		margin-bottom: 11px;
+		color: #909090;
+		font-size: 14px;
+		font-weight: bold;
+		a {
+			color: #909090;
+			transition: all 0.3s;
+			&:hover{
+				color: #007c96;
+				text-decoration: none;
+			}
+		}
+
+		@include mobile {
+			margin-bottom: 0;
+		}
+	}
+
+	.block-title {
+		color: #000;
+	    font-weight: bold;
+	    font-size: 16px;
+	    transition: all 0.3s;
+		&:hover{
+			color: #41ad33;
+			text-decoration: none;
+		}
+
+	}
+
+	.block-meta {
+		color: #909090;
+	    font-size: 12px;
+	    margin-top: 16px;
+		font-weight: bold;
+	    a {
+	    	color: #000;
+	    	&:hover{
+				color: #007c96;
+				text-decoration: none;
+			}
+	    }
+
+	    @include mobile {
+			margin-top: 5px;
+		}
+	}
+	
+	.post-title{
+		color: #000;
+	    font-size: 36px;
+	    line-height: 1.3;
+	    max-width: 650px;
+	}
+
+	@include tablet {
+		width: 100%;
+		padding: 0 20px;
+    }
+}
+
+.no-border{
+	border: none !important;
+}
+
+.type-post{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000;
+    line-height: 1;
+	margin-bottom: 30px;
+	padding-bottom: 22px;
+	border-bottom: 1px solid #e5e5e5;
+	h2 {
+		text-transform: uppercase;
+	}
+}
+
+.cat-post{
+	@include tablet {
+		margin: 0 20px;
+    }
+}
+
+.cat-post-section{
+	font-size: 16px;
+	color: #41ad33;
+	transition: all 0.3s;
+
+	&:hover{
+		color: #1c4b16;
+		text-decoration: none;
+	}
+}
+
+.full-width{
+	width: 100% !important;
+}
+
+.blog-post-row {
+	margin-bottom: 80px;
+	display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.post-row{
+	justify-content: flex-start;
+	margin-left: 20px;
+
+	@include tablet {
+		margin-left: 0;
+	}
+}
+
+.post-item{
+	margin-bottom: 80px;
+	margin-right: 40px;
+
+	@include tablet {
+		margin-right: 35px;
+	}
+
+
+}
+
+.post-item:nth-of-type(3n) {
+    margin-right: 0;
+}
+
+.blog-post-block{
+	width: 30%;
+
+	@include mobile {
+		width: 100%;
+    	display: flex;
+    	margin-bottom: 15px;
+	}
+}
+
+.blog-img{
+	margin-bottom: 16px;
+	display: block;
+
+	img{
+		@include mobile {
+			width: 125px !important;
+		}
+	}
+}
+
+.container-subscribe{
+	background: #eefaee;
+	padding: 65px 0;
+	@include mobile {
+		padding: 40px 0;
+	}
+}
+
+.subscribe-form{
+	width: 35.5%;
+	margin: 15px 0;
+	@include tablet {
+		width: auto;
+	}
+	@include mobile {
+		width: 100%;
+		padding: 0 20px;
+		margin: 50px 0 0 ;
+	}
+
+}
+
+.form-element-subscribe {
+	margin-right: 15px;
+	float: left; 
+	width: 62%;
+
+	input{
+	    z-index: 2;
+	    height: 58px;
+	    padding: 0 20px;
+	    width: 100%;
+	    border-radius: 3px;
+	    box-shadow: 0px 0px 6px 2px rgba(170,170,170,0.15);
+	    border: 0;
+	}
+
+	
+
+	@include mobile {
+		width: 100%;
+    	margin: 0 0 15px 0;
+	}
+}
+
+.btn-subscribe{
+	@include mobile {
+		width: 100%;
+	}
+}
+
+.content-subscribe{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include tablet {
+		flex-direction: column;
+	}
+}
+
+.headline-subscribe{
+	margin: 0 20px;
+	font-size: 1.750rem;
+	text-transform: uppercase;
+	text-align: center;
+
+	@include mobile {
+		margin: 20px 0 10px;
+	}
+}
+
+.banner-header{
+	position: relative;
+	background-image: url(https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2018/08/Jordan-1-Retro-High-Off-White-University-Blue-643A0771-ed.jpg);
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 304px;
+	margin-bottom: 60px;
+    &:before{
+    	content: '';
+	    z-index: 1;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background: linear-gradient(61deg, rgba(0,0,0,0.8) 5%,rgba(0,0,0,0.2) 100%);
+    }
+}
+
+.banner-content{
+    z-index: 5;
+    position: absolute;
+    max-width: 1200px;
+    width: 100%;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(50%,50%);
+    color: #fff;
+    padding-left: 20px;
+
+    .banner-title{
+    	@include fontDoubleExtraLarge;
+    }
+
+}
+
+.banner-description{
+	max-width: 477px;
+    font-size: 16px;
+    color: #999;
+    line-height: 1.4;
+    font-weight: 600;
+
+    @include mobile {
+		padding-right: 16px;
+		font-weight: 100;
+	}
+}
+
+.load-more{
+	.page-numbers.pre:before{
+		content: '\f104';
+	}
+	.page-numbers.next:before{
+		content: '\f105';
+	}
+
+	.paging{
+		list-style: none;
+	    display: flex;
+	    padding: 0 0 80px 0;
+	    margin: 40px 0;
+	    justify-content: center;
+	    align-items: center;
+
+	    li{
+	    	margin: 0 3px;
+	    }
+	}
+
+	.page-numbers:not(.dots){
+		text-decoration: none;
+	    background: #f6f6f6;
+	    color: #303030;
+	    min-width: 32px;
+	    height: 32px;
+	    font-size: 12px;
+	    font-weight: 600;
+	    line-height: 32px;
+	    position: relative;
+	    display: inline-block;
+	    text-align: center;
+	    border-radius: 3px;
+	    transition: all .3s;
+	    cursor: pointer;
+	    padding: 0 6px;
+	    border: 1px solid transparent;
+	}
+
+	.page-numbers.next, .page-numbers.pre {
+	    background: #41ad33;
+	    color: #FFF;
+
+	    &:before{
+	    	font-family: 'FontAwesome';
+		    font-weight: 400 !important;
+		    font-style: normal !important;
+		    text-transform: none !important;
+		    text-rendering: optimizeLegibility;
+	    }
+	}
+
+	.page-numbers.current {
+	    background: none;
+	    color: #41ad33;
+	    border: 1px solid #e5e5e5;
+	}
+
+	.page-numbers:not(.dots):not(.current):hover {
+	    background: #1c4b16;
+	    color: #FFF;
+	}
+}
+
+.cover-size-post{
+	max-width: 1024px;
+	margin: 0 auto;
+
+		
+}
+
+.header-post{
+	margin-top: 80px;
+	.news-list{
+		width: 100%;
+	}
+	.header-post-top{
+		border-bottom: 1px solid #e5e5e5;
+    	padding-bottom: 20px;
+
+	}
+
+	.header-post-bottom {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 16px;
+		margin-bottom: 32px;
+		.intro-content{
+			max-width: 650px;
+			.blog-excerpt{
+				margin-top: 6px;
+			    font-weight: 400;
+			    font-size: 18px;
+			    color: #484848;
+			    line-height: 1.7;
+			}
+
+			.block-meta{
+				margin: 0;
+			}
+		}
+
+		.social-share{
+			display: flex;
+			.social-share-link{
+				display: inline-block;
+			    margin-right: 16px;
+			    transition: .3s;
+			    color: #909090;
+			    text-decoration: none;
+			    font-size: 23px;
+			    
+			}
+
+			.blog-count{
+				display: inline-table;
+    			font-size: 10px;
+				min-width: 25px;
+			    margin-left: 10px;
+			    border: 1px solid #909090;
+			    border-radius: 3px;
+			    color: #909090;
+			    padding: 3px 4px;
+			    text-align: center;
+			    vertical-align: top;
+			    position: relative;
+
+			    &:before{
+			    	content: '\f104';
+				    position: absolute;
+				    left: -5px;
+				    top: 1px;
+				    font-size: 13px;
+			    }
+
+			    &:after{
+			    	content: '';
+				    height: 6px;
+				    width: 1px;
+				    background: #FFF;
+				    z-index: 4;
+				    position: absolute;
+				    top: 7px;
+				    left: -1px;
+			    }
+			}
+
+			@include tablet {
+				margin-top: 20px;
+			}
+		}
+
+		@include tablet {
+			flex-wrap: wrap;
+		}
+	}
+
+	
+	
+}
+.post-body{
+	.post-featured-image{
+		width: 100%;
+	    height: auto;
+	    display: block;
+	    border: 1px solid #f1f3f2;
+	    margin-bottom: 42px;
+	}
+
+	.post-content{
+		p {
+			font-size: 18px;
+		    color: #484848;
+		    margin-bottom: 30px;
+			line-height: 1.8;
+		    a{
+		    	color: #000;
+		    	text-decoration: none;
+    			border-bottom: 1px solid #3fae2a;
+    			transition: all .3s;
+    			&:hover{
+    				color: #3fae2a;
+    			}
+		    }
+		}
+
+		h2 {
+			font-size: 24px;
+		}
+
+		h3{
+			
+			a{
+				color:#000;
+				font-weight: bold;
+				border-bottom: 1px solid #3fae2a;
+				padding-bottom: 3px;
+				transition: .3s;
+				&:hover{
+					color: #3fae2a;
+					text-decoration: none;
+				}
+			}
+		}
+		.post-container-img{
+			text-align: center;
+		}
+		.post-img-link{
+			display: inline-block;
+    		text-align: center;
+    		margin: 40px 0 5px;
+
+    		img{
+    			width: 100%;
+    		}
+		}
+
+		.post-img-caption{
+			text-align: center;
+		    font-size: 13px;
+		    color: #909090;
+		}
+	}
+
+	.stockx-product-img{
+		position: relative;
+	    border: 1px solid #f1f3f2;
+	    padding: 40px 0;
+	    width: 100%;
+	    border-radius: 3px;
+	    margin-bottom: 10px;
+
+	    img{
+	    	width: 70%;
+		    height: auto;
+		    display: block;
+		    margin: 0 auto !important;
+		    border: none !important;
+	    }	    
+	}
+
+	.stockx-product-title{
+    	color: #484848;
+		margin-bottom: 2px;
+
+		&:hover{
+    		text-decoration: underline;	
+    	}
+    }
+
+    .stockx-product-ask{
+    	font-weight: 700;
+		color: #000;
+
+		.stockx-product-ask-amount{
+			color: #41ad33;
+		}
+
+		&:hover{
+    		text-decoration: underline;	
+    	}
+    }
+
+    .stockx-product-item{
+    	margin-right: 10px;
+    	margin-bottom: 80px;
+    	width: 100%;
+    	&:hover{
+    		text-decoration: none;	
+    	}
+
+    	&:last-of-type {
+    		margin-right: 0;
+    	}
+
+    	@include mobile {
+    		margin-bottom: 28px;
+    	}
+    }
+
+    .stockx-product-wrapper{
+    	display: flex;
+    	justify-content: center;
+    	@include mobile {
+    		display: block;
+    	}
+    }
+
+    @include desktop {
+		margin: 0 20px;
+    }
+}
+
+.author-details{
+	padding: 30px 25px;
+	display: flex;
+    background: #f9f9f9;
+    border-radius: 3px;
+    margin: 80px 0;
+
+    @include mobile {
+		padding: 20px 15px;
+    }
+}
+
+.author-img{
+	border-radius: 50%;
+    margin-right: 25px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #e7e7e7;
+    width: 100px;
+    height: 100px;
+    background-image:url('https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2018/11/Image-from-iOS.jpg');
+
+    @include mobile {
+    	width: 85px;
+   		height: 85px;
+    }
+}
+
+.author-info{
+	flex: 1;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.author-description{
+	line-height: 1.5;
+    margin-top: 6px;
+    color: #484848;
+
+    @include fontMedium;
+}
+
+.author-headline{
+	
+    text-decoration: none;
+    transition: .3s;
+
+    a{
+    	color: #41ad33;
+    	&:hover{
+    		color: #1c4b16;
+    	}
+    }
+}
+
+.social-container{
+	width: 30%;
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+		width: 45%;
+	}
+
+	@include mobile {
+		margin: 15px 0;
+    	width: 85%;
+	}
+}
+
+.subscribe_overlay {
+	display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 90px;
+    z-index: 9;
+    background: #FFF;
+
+    .pg-header-bar {
+	    background: #41ad33;
+	    color: #FFF;
+	    text-align: center;
+	    line-height: 1;
+	    padding: 11px 0 0;
+	    height: 40px;
+	    position: relative;
+	    z-index: 2;
+	}
+
+	.pg-header-bar-link{
+		text-decoration: none;
+	    color: #FFF;
+	    display: inline-block;
+	    font-size: 14px;
+	    font-weight: 700;
+	    &:before{
+	    	content: '\f177';
+		    padding-right: 6px;
+		    vertical-align: center;
+		    transition: .3s;
+		    position: relative;
+		    left: 0;
+	    }
+
+	    &:hover{
+	    	color: #007c96;
+
+	    	&:before{
+	    		left: -5px;
+	    	}
+	    }
+	}
+
+	.pg-subscribe{
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    padding: 0 20px;
+
+	    .pg-subscribe-container{
+	    	width: 100%;
+	    }
+
+	    .pg-subscribe-header-logo{
+	    	width: 65px;
+    		margin: 0 auto 40px;
+	    }
+
+	    .headline-subscribe{
+	    	text-transform: uppercase;
+		    font-family: bebasneue,sans-serif;
+		    font-size: 1.750rem;
+		    letter-spacing: 2.1px;
+		    margin-bottom: 10px;
+	    }
+
+	    .pg-subscribe-header-description{
+	    	color: #999;
+    		line-height: 1.6;
+    		text-align: center;
+	    }
+
+	    .pg-subscribe-form{
+	    	max-width: 425px;
+    		margin: 50px auto 0;
+    		position: relative;
+
+    		form{
+    			display: flex;
+    			justify-content: space-between;
+    		}
+	    }
+
+	    .form-element-field-subscribe{
+	    	width: 70%;
+	    	input{
+	    		position: relative;
+			    z-index: 2;
+			    height: 58px;
+			    padding: 0 20px;
+			    width: 100%;
+			    border-radius: 3px;
+			    box-shadow: 0px 0px 6px 2px rgba(170,170,170,0.15);
+			    border: 0;
+	    	}
+	    }
+	}
+
+}
+
+.editor-content {
+	img{
+		max-width: 100%;
+	    height: auto;
+	    display: block;
+	    margin: 40px 0;
+	    width: auto;
+	}
+
+	iframe{
+		background: white;
+	    max-width: 540px;
+	    width: calc(100% - 2px);
+	    border-radius: 3px;
+	    border: 1px solid rgb(219, 219, 219);
+	    box-shadow: none;
+	    display: block;
+	    margin: 0px 0px 12px;
+	    min-width: 326px;
+	    padding: 0px;
+	}
+
+}
+
+.blog-article-main{
+	@include fontMedium;
+	
+	.editor-content {
+		.post-content  p{
+
+			margin-bottom: 0;
+		}
+	}
+	
+}
+
+.blog-article{
+	display: flex;
+	@include tablet {
+		display: block;
+	}
+}
+
+.blog-article-sidebar{
+	margin: 0 0 0 10%;
+	width: 54%;
+	h2{
+		font-weight: 700;
+	    padding-bottom: 10px;
+	    border-bottom: 1px solid #e5e5e5;
+	    margin-bottom: 25px;
+	}
+
+	@include tablet {
+		width: 250px;	
+		margin: 0;
+	}
+}
+.blog-article-sidebar-block{
+	margin-bottom: 70px;
+	.news-slider{
+		border: 1px solid #e5e5e5;
+    	border-radius: 3px;
+    	width: 100%;
+	}
+	
+}
+.tweet-slide-container{
+	padding: 15px;
+    color: #484848;
+    line-height: 1.5;
+
+    .tweet-slide-date{
+		margin-top: 32px;
+	    color: #999;
+	    font-size: 0.750rem;
+
+
+	}
+
+	.tweet-slide-nav {
+	    border-top: 1px solid #e5e5e5;
+	    padding-top: 8px;
+	    margin-bottom: 15px;
+	    text-align: right;
+	    position: relative;
+	}
+
+	.tweet-slide-handle{
+		border: 1px solid #e5e5e5;
+	    border-radius: 3px;
+	    padding: 4px 8px;
+	    color: #484848;
+	    position: absolute;
+	    left: 0;
+	    top: 8px;
+	    line-height: 1;
+	    text-decoration: none;
+	}
+
+	a {
+		color: #41ad33;
+    	transition: .3s;
+	}
+
+	.tweet-slide-nav-link-reply:before {
+		content: '\f112';
+	}
+
+	.tweet-slide-nav-link-retweet:before {
+	    content: '\f079';
+	}
+
+	.tweet-slide-nav-link-like:before {
+	    content: '\f08a';
+	}
+
+	@include fontSmall;
+}
+
+.dot-number-slider{
+
+	position: sticky !important;
+	li {
+		border: 1px solid #000 !important;
+		margin-right: 6px !important;
+	}
+
+	.active{
+		background-color: #000 !important;
+
+	}
+
+}
+
+.instagram-feed{
+	display: flex;
+    flex-flow: row wrap;
+    .instagram-feed-item {
+    	width: calc(50% - 5px);
+    	margin: 0 10px 10px 0;
+
+    	img {
+    		width: 100%;
+		    height: auto;
+		    display: block;
+    	}
+    }
+
+    .instagram-feed-item:nth-of-type(2n) {
+	    margin-right: 0;
+	}
+}
+
+.blog-article-editorial-header{
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 120px);
+    position: relative;
+    background-image: url(https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/08/0UjfJ5YQ-1100x786.jpeg);
+	.blog-article-editorial-details{
+		z-index: 5;
+	    padding: 0;
+	    position: absolute;
+	    max-width: 800px;
+	    width: 100%;
+	    transform: translateX(50%);
+	    right: 50%;
+	    bottom: 80px;
+		
+	    .blog-post-vertical{
+	    	
+		    font-weight: 700;
+		    display: inline-block;
+		    text-decoration: none;
+		    margin-bottom: 8px;
+
+		    a {
+		    	color: #909090;
+		    }
+
+		    @include fontSmall;
+	    }
+
+	    .headline-blog-editorial{
+	    	color: #FFF;
+		    font-size: 2.250rem;
+		    font-family: BebasNeue-Regular,sans-serif;
+		    letter-spacing: 2.1px;
+		    margin-top: 20px;
+		    text-transform: uppercase;
+	    }
+
+	    .blog-article-editorial-excerpt{
+	    	margin-top: 10px;
+		    line-height: 1.7;
+		    color: #999;
+	    }
+
+	    @include tablet {
+	    	padding: 0 20px;
+	    }
+	}
+}
+
+.blog-article-editorial-overlay{
+	z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(61deg, rgba(0,0,0,0.8) 5%,rgba(0,0,0,0.2) 100%);
+}
+
+.cover-size-post-secial{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.post-secial{
+	margin: 0 0 60px;
+
+	.header-post-bottom{
+		margin: 0;
+		padding: 24px 0;
+		border-bottom: 1px solid #e5e5e5;
+
+		@include tablet {
+			display: block;
+		}
+	}
+}
+
+.social-media-links-item{
+	color: #41ad33;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 12px;
+    transition: .3s;
+
+    @include fontMedium;
+}
+
+.social-media-links-item-instagram:before {
+    content: '\f16d';
+}
+
+
+
+
+
+
+

@@ -35093,6 +35093,3221 @@ module.exports = g;
 
 /***/ }),
 
+/***/ "./resources/js/frontend/List/ListComponent.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/frontend/List/ListComponent.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layouts/HeaderComponent */ "./resources/js/frontend/layouts/HeaderComponent.js");
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+
+ // import ListBanner from './ListBannerComponent'
+// import ListContainer from './ListContainerComponent'
+
+var List =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(List, _Component);
+
+  function List() {
+    _classCallCheck(this, List);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(List).apply(this, arguments));
+  }
+
+  _createClass(List, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "list-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListBanner, null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListContainer, null));
+    }
+  }]);
+
+  return List;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (List);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/BlogBlock.js":
+/*!*************************************************!*\
+  !*** ./resources/js/frontend/News/BlogBlock.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+// import ContainerSearch from './ContainerSearchComponent';
+
+var BlogBlock =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(BlogBlock, _Component);
+
+  function BlogBlock(props) {
+    _classCallCheck(this, BlogBlock);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(BlogBlock).call(this, props));
+  }
+
+  _createClass(BlogBlock, [{
+    key: "addPostItem",
+    value: function addPostItem() {
+      if (this.props.postItem) {
+        return "blog-post-block " + this.props.postItem;
+      }
+
+      return "blog-post-block";
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: this.addPostItem()
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "blog-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg",
+        alt: "Fall Essentials: Sneakers",
+        className: "full-width"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Fall Essentials: Sneakers"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, " Kevin Kosanovich "), ", 10 hours ago")));
+    }
+  }]);
+
+  return BlogBlock;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (BlogBlock);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/BlogRow.js":
+/*!***********************************************!*\
+  !*** ./resources/js/frontend/News/BlogRow.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _BlogBlock__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BlogBlock */ "./resources/js/frontend/News/BlogBlock.js");
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+
+
+
+var BlogRow =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(BlogRow, _Component);
+
+  function BlogRow(props) {
+    _classCallCheck(this, BlogRow);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(BlogRow).call(this, props));
+  }
+
+  _createClass(BlogRow, [{
+    key: "addPostItem",
+    value: function addPostItem() {
+      if (this.props.postItem) {
+        return this.props.postItem;
+      }
+
+      return "";
+    }
+  }, {
+    key: "addPostRow",
+    value: function addPostRow() {
+      if (this.props.postRow) {
+        return "blog-post-row " + this.props.postRow;
+      }
+
+      return "blog-post-row";
+    }
+  }, {
+    key: "createBlogBlock",
+    value: function createBlogBlock() {
+      var indents = [];
+      var number = 3;
+
+      if (this.props.number) {
+        number = this.props.number;
+      }
+
+      for (var i = 0; i < number; i++) {
+        indents.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_BlogBlock__WEBPACK_IMPORTED_MODULE_3__["default"], {
+          postItem: this.addPostItem(),
+          key: i
+        }));
+      }
+
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: this.addPostRow()
+      }, indents);
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, this.createBlogBlock());
+    }
+  }]);
+
+  return BlogRow;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (BlogRow);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/CatPost.js":
+/*!***********************************************!*\
+  !*** ./resources/js/frontend/News/CatPost.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _BlogRow__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BlogRow */ "./resources/js/frontend/News/BlogRow.js");
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+
+
+
+var CatPost =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(CatPost, _Component);
+
+  function CatPost(props) {
+    _classCallCheck(this, CatPost);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(CatPost).call(this, props));
+  }
+
+  _createClass(CatPost, [{
+    key: "setTitleName",
+    value: function setTitleName() {
+      return this.props.title;
+    }
+  }, {
+    key: "addPostItem",
+    value: function addPostItem() {
+      if (this.props.postItem) {
+        return this.props.postItem;
+      }
+
+      return "";
+    }
+  }, {
+    key: "addPostRow",
+    value: function addPostRow() {
+      if (this.props.postRow) {
+        return "blog-post-row " + this.props.postRow;
+      }
+
+      return "blog-post-row";
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cat-post"
+      }, this.setTitleName() && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "type-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, this.setTitleName()), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "cat-post-section"
+      }, "View All")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_BlogRow__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        postItem: this.addPostItem(),
+        postRow: this.addPostRow(),
+        number: this.props.number
+      }));
+    }
+  }]);
+
+  return CatPost;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (CatPost);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/HeaderBanner.js":
+/*!****************************************************!*\
+  !*** ./resources/js/frontend/News/HeaderBanner.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+// import ContainerSearch from './ContainerSearchComponent';
+
+var HeaderBanner =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(HeaderBanner, _Component);
+
+  function HeaderBanner() {
+    _classCallCheck(this, HeaderBanner);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(HeaderBanner).apply(this, arguments));
+  }
+
+  _createClass(HeaderBanner, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "banner-header"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cover-size"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "banner-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+        className: "banner-title"
+      }, "Sneakers"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+        className: "banner-description"
+      }, "From forecasting a sneaker\u2019s market price, to their historical & cultural relevance, the StockX blog has you covered with all of the sneaker analysis you need."))));
+    }
+  }]);
+
+  return HeaderBanner;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (HeaderBanner);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/ListsComponent.js":
+/*!******************************************************!*\
+  !*** ./resources/js/frontend/News/ListsComponent.js ***!
+  \******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layouts/HeaderComponent */ "./resources/js/frontend/layouts/HeaderComponent.js");
+/* harmony import */ var _layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../layouts/FooterComponent */ "./resources/js/frontend/layouts/FooterComponent.js");
+/* harmony import */ var _HeaderBanner__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./HeaderBanner */ "./resources/js/frontend/News/HeaderBanner.js");
+/* harmony import */ var _SubMenu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SubMenu */ "./resources/js/frontend/News/SubMenu.js");
+/* harmony import */ var _SubscribeBanner__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SubscribeBanner */ "./resources/js/frontend/News/SubscribeBanner.js");
+/* harmony import */ var _CatPost__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./CatPost */ "./resources/js/frontend/News/CatPost.js");
+/* harmony import */ var _NumberPage__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./NumberPage */ "./resources/js/frontend/News/NumberPage.js");
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+// import ContainerSearch from './ContainerSearchComponent';
+
+
+
+
+
+
+
+
+
+var Lists =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Lists, _Component);
+
+  function Lists() {
+    _classCallCheck(this, Lists);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Lists).apply(this, arguments));
+  }
+
+  _createClass(Lists, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "news-main-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        type: "on-top home-topbar"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SubMenu__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HeaderBanner__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cover-size"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CatPost__WEBPACK_IMPORTED_MODULE_8__["default"], {
+        postItem: "post-item",
+        postRow: "post-row",
+        number: "20"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_NumberPage__WEBPACK_IMPORTED_MODULE_9__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SubscribeBanner__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+    }
+  }]);
+
+  return Lists;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Lists);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/NewsComponent.js":
+/*!*****************************************************!*\
+  !*** ./resources/js/frontend/News/NewsComponent.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layouts/HeaderComponent */ "./resources/js/frontend/layouts/HeaderComponent.js");
+/* harmony import */ var _layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../layouts/FooterComponent */ "./resources/js/frontend/layouts/FooterComponent.js");
+/* harmony import */ var _CatPost__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./CatPost */ "./resources/js/frontend/News/CatPost.js");
+/* harmony import */ var _SubMenu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SubMenu */ "./resources/js/frontend/News/SubMenu.js");
+/* harmony import */ var _NewsSlider__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./NewsSlider */ "./resources/js/frontend/News/NewsSlider.js");
+/* harmony import */ var _SubscribeBanner__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./SubscribeBanner */ "./resources/js/frontend/News/SubscribeBanner.js");
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+// import ContainerSearch from './ContainerSearchComponent';
+
+
+
+
+
+
+
+
+var News =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(News, _Component);
+
+  function News() {
+    _classCallCheck(this, News);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(News).apply(this, arguments));
+  }
+
+  _createClass(News, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "news-main-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        type: "on-top home-topbar"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SubMenu__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cover-size"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_NewsSlider__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CatPost__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        title: "sneakers"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CatPost__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        title: "streetwear"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CatPost__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        title: "handbags"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CatPost__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        title: "watches"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_CatPost__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        title: "editorial"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SubscribeBanner__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+    }
+  }]);
+
+  return News;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (News);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/NewsSlider.js":
+/*!**************************************************!*\
+  !*** ./resources/js/frontend/News/NewsSlider.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+
+var NewsSlider =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(NewsSlider, _Component);
+
+  function NewsSlider() {
+    _classCallCheck(this, NewsSlider);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(NewsSlider).apply(this, arguments));
+  }
+
+  _createClass(NewsSlider, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-slider"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "newsCarousel",
+        className: "carousel slide",
+        "data-ride": "carousel"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ol", {
+        className: "carousel-indicators"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+        "data-target": "#newsCarousel",
+        "data-slide-to": "0",
+        className: "active"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "carousel-inner"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "item active"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "image-slider"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "slider-overlay"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "slider-detail"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Editorial")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "headline-slider"
+      }, "Fall Essentials by StockX"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "slider-excerpt"
+      }, "With another fall season inevitably creeping up on us, StockX is here to help ease your seasonal closet transition in the best way possible, with our selection of \"Fall Essentials\"."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+        type: "button",
+        className: "button btn-read-more"
+      }, "Read More")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+        className: "list"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "recent-item"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Editorial")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Off The Top | DeAndre Hopkins"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, " Kevin Kosanovich "), ", 10 hours ago"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "recent-item"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Editorial")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Off The Top | DeAndre Hopkins"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, " Kevin Kosanovich "), ", 10 hours ago"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "recent-item"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Editorial")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "The MCA Virgil Abloh: \"Figures of Speech\" Interview"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, " Kevin Kosanovich "), ", 10 hours ago"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+        className: "no-border"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "recent-item"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Editorial")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Off The Top | DeAndre Hopkins"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, " Kevin Kosanovich "), ", 10 hours ago"))))));
+    }
+  }]);
+
+  return NewsSlider;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (NewsSlider);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/NumberPage.js":
+/*!**************************************************!*\
+  !*** ./resources/js/frontend/News/NumberPage.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+
+var NumberPage =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(NumberPage, _Component);
+
+  function NumberPage() {
+    _classCallCheck(this, NumberPage);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(NumberPage).apply(this, arguments));
+  }
+
+  _createClass(NumberPage, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "load-more"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+        className: "paging"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "pre page-numbers",
+        href: "#"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "page-numbers",
+        href: "#"
+      }, "1")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "page-numbers current",
+        href: "#"
+      }, "2")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "page-numbers",
+        href: "#"
+      }, "3")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "page-numbers dots"
+      }, "\u2026")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "page-numbers",
+        href: "#"
+      }, "35")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "page-numbers",
+        href: "#"
+      }, "36")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "next page-numbers",
+        href: "#"
+      }, " "))));
+    }
+  }]);
+
+  return NumberPage;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (NumberPage);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/PostOneComponent.js":
+/*!********************************************************!*\
+  !*** ./resources/js/frontend/News/PostOneComponent.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layouts/HeaderComponent */ "./resources/js/frontend/layouts/HeaderComponent.js");
+/* harmony import */ var _layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../layouts/FooterComponent */ "./resources/js/frontend/layouts/FooterComponent.js");
+/* harmony import */ var _SubMenu__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SubMenu */ "./resources/js/frontend/News/SubMenu.js");
+/* harmony import */ var _SubscribeBanner__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SubscribeBanner */ "./resources/js/frontend/News/SubscribeBanner.js");
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+// import ContainerSearch from './ContainerSearchComponent';
+
+
+
+
+
+
+var PostOne =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(PostOne, _Component);
+
+  function PostOne() {
+    _classCallCheck(this, PostOne);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(PostOne).apply(this, arguments));
+  }
+
+  _createClass(PostOne, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "new-main-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        type: "on-top home-topbar"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SubMenu__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cover-size-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "header-post full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "header-post-top"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Editorial")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+        className: "post-title"
+      }, "StockX Needle Movers: August Streetwear New Arrivals")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "header-post-bottom"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "intro-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kevin Kosanovich"), ", 10 hours ago"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-excerpt"
+      }, "Needle Movers is a monthly segment highlighting the latest streetwear collaborations and brands recently added to StockX. Check out the collections below - just click the photos to shop.")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "social-share"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link facebook icon-fa",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-facebook"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link twitter icon-fa",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-twitter"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link pinterest icon-fa",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-pinterest-p"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link subscribe-link icon-fa",
+        href: "#"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-count icon-fa"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "0")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "post-body"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "post-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        className: "post-featured-image",
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/spongebob.jpg",
+        alt: "StockX Needle Movers: August Streetwear New Arrivals"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "post-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "For the streetwear world, August was a return to something a little more normal than the non-traditional pandemonium of releases we\u2019ve been seeing since May. With Supreme and Palace returning to their regular drop schedules and people like Travis Scott and KAWS taking a little bit of a break, August felt fast-paced but in a way far more familiar than June or July. Although we didn\u2019t see some of our Needle Movers big hitters return, Nike and Spongebob delivered a collection that went crazy and Fear Of God\u2019s Essentials line was able to step up and deliver something special for us as well. Scroll down to check out everything we added this month at StockX and don\u2019t forget to click the images to shop."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "editor-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Spongebob Kyrie")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "post-container-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        className: "post-img-link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        className: "wp-image-73267 size-full",
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/5d4d9a697e337f36f302c89a.png",
+        alt: "Nike Kyrie x Spongebob apparel"
+      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+        id: "caption",
+        className: "post-img-caption"
+      }, "Photo: Nike"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "An unlikely subject took both the sneaker and streetwear world by storm in August, SpongeBob SquarePants. Everyone\u2019s favorite childhood cartoon character (opinion, but not really), was the subject of a collaboration with Nike Athlete and Brooklyn Net\u2019s star, Kyrie Irving. The collection featured both sneakers and apparel centered around each of the major characters featured on the show (SpongeBob SquarePants, Patrick The Star, Squidward Tentacles, Mr. Krabs, and Sandy Cheeks). The collaboration did big numbers on both the streetwear and sneakers front, providing a perfect fix for anyone that couldn\u2019t hold out for most of the month until Supreme. Highlights from the apparel release are featured below and the entire drop can be shopped ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank"
+      }, "here"), ".")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/products/streetwear/Nike-Kyrie-x-Spongebob-Dri-Fit-Hoodie-Dynamic-Yellow-Product.jpg?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1568041911"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "Nike Kyrie x Spongebob Dri-Fit Hoodie Dynamic Yellow"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$78"), " \u2022 Lowest Ask")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/products/streetwear/Nike-Kyrie-x-Spongebob-Dri-Fit-Hoodie-Dynamic-Yellow-Product.jpg?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1568041911"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "Nike Kyrie x Spongebob Dri-Fit Hoodie Dynamic Yellow"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$78"), " \u2022 Lowest Ask")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/products/streetwear/Nike-Kyrie-x-Spongebob-Dri-Fit-Hoodie-Dynamic-Yellow-Product.jpg?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1568041911"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "Nike Kyrie x Spongebob Dri-Fit Hoodie Dynamic Yellow"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$78"), " \u2022 Lowest Ask")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/products/streetwear/Nike-Kyrie-x-Spongebob-Dri-Fit-Hoodie-Dynamic-Yellow-Product.jpg?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1568041911"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "Nike Kyrie x Spongebob Dri-Fit Hoodie Dynamic Yellow"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$78"), " \u2022 Lowest Ask"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "editor-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "FOG Essentials Photo Gear")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        className: "post-img-link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        className: "wp-image-73267 size-full",
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/FOG_Essentials_New_Items_Internal_Banners_ffffffPush-Android.jpg",
+        alt: "Nike Kyrie x Spongebob apparel"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+        id: "caption",
+        className: "post-img-caption"
+      }, "Fear Of God Essentials\u2019 newly released photo drop"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Supermalls rejoice, Starcourt doesn\u2019t have to close because Pacsun is determined to carry everyone else on their back. Fear Of God\u2019s Essentials line dropped more quick-to-sell-out pieces last month through the super mall mainstay that near instantly did numbers on StockX. Like the above, highlights have been featured below and the whole drop can be shopped ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank"
+      }, "here"), ".")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/products/streetwear/FEAR-OF-GOD-ESSENTIALS-Photo-T-shirt-Black.png?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1565964406"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "FEAR OF GOD ESSENTIALS Photo T-shirt Black"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$68"), " \u2022 Lowest Ask")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/products/streetwear/FEAR-OF-GOD-ESSENTIALS-Photo-T-shirt-Black.png?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1565964406"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "FEAR OF GOD ESSENTIALS Photo T-shirt Black"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$68"), " \u2022 Lowest Ask")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/products/streetwear/FEAR-OF-GOD-ESSENTIALS-Photo-T-shirt-Black.png?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1565964406"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "FEAR OF GOD ESSENTIALS Photo T-shirt Black"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$68"), " \u2022 Lowest Ask")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/products/streetwear/FEAR-OF-GOD-ESSENTIALS-Photo-T-shirt-Black.png?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1565964406"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "FEAR OF GOD ESSENTIALS Photo T-shirt Black"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$78"), " \u2022 Lowest Ask"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "editor-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "FOG Essentials Photo Gear"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/products/streetwear/FEAR-OF-GOD-ESSENTIALS-Photo-T-shirt-Black.png?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1565964406"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "FEAR OF GOD ESSENTIALS Photo T-shirt Black"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$68"), " \u2022 Lowest Ask"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "editor-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Supermalls rejoice, Starcourt doesn\u2019t have to close because Pacsun is determined to carry everyone else on their back. Fear Of God\u2019s Essentials line dropped more quick-to-sell-out pieces last month through the super mall mainstay that near instantly did numbers on StockX. Like the above, highlights have been featured below and the whole drop can be shopped ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank"
+      }, "here"), ".")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Collectibles")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        rel: "noopener"
+      }, "Daniel Arsham")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        rel: "noopener"
+      }, "Father Steve")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-details"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-img"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-info"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-headline"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nick Matthies")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+        className: "author-description"
+      }, "Only thing dripping is my coffee maker...IG: @nickmatthies"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "social-media-links"
+      }))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cat-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "type-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Related Articles")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-row"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "blog-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg",
+        alt: "Fall Essentials: Sneakers",
+        className: "full-width"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Fall Essentials: Sneakers"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kevin Kosanovich"), ", 10 hours ago"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "blog-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg",
+        alt: "Fall Essentials: Sneakers",
+        className: "full-width"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers"), "and", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Streetwear")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Obsidian UNC Jordans & Satins Shatter Records | StockX MKT Watch"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kevin Kosanovich"), ", 10 hours ago"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "blog-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg",
+        alt: "Fall Essentials: Sneakers",
+        className: "full-width"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Fall Essentials: Sneakers"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kevin Kosanovich"), ", 10 hours ago")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SubscribeBanner__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+    }
+  }]);
+
+  return PostOne;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (PostOne);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/PostThreeComponent.js":
+/*!**********************************************************!*\
+  !*** ./resources/js/frontend/News/PostThreeComponent.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layouts/HeaderComponent */ "./resources/js/frontend/layouts/HeaderComponent.js");
+/* harmony import */ var _layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../layouts/FooterComponent */ "./resources/js/frontend/layouts/FooterComponent.js");
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+// import ContainerSearch from './ContainerSearchComponent';
+
+
+
+
+var PostThree =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(PostThree, _Component);
+
+  function PostThree() {
+    _classCallCheck(this, PostThree);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(PostThree).apply(this, arguments));
+  }
+
+  _createClass(PostThree, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "new-main-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        type: "on-top home-topbar"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "pg-blog"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-category"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+        className: "first-category"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "News")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Sneakers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Streetwear")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Handbags")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Watches")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Editorial")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "subscribe-link icon-fa fnt-size-14 color-gray bold"
+      }, "Subscribe")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-article-editorial-header"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-article-editorial-overlay"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-article-editorial-details"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-vertical"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+        className: "headline-blog-editorial"
+      }, "The Drop List 9.11.19"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-article-editorial-excerpt"
+      }, "The StockX Drop List is a weekly collection of all the hottest releases in sneakers."))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cover-size-post-secial"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "header-post full-width post-secial"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "header-post-bottom"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "intro-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kevin Kosanovich"), ", 10 hours ago")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "social-share"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link facebook icon-fa",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-facebook"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link twitter icon-fa",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-twitter"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link pinterest icon-fa",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-pinterest-p"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link subscribe-link icon-fa",
+        href: "#"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-count icon-fa"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "0")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "post-body"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "post-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "The past few days have been very interesting: ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nicki Minaj"), " announced she\u2019s retiring from music, ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "AB "), "signed to the New England Patriots, and ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kanye West "), "divided a sea of fans with his tiny hands. I guess we only get odd news when dope sneakers release because this week\u2019s Drop List is crazy.\xA0"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "\xA0"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "editor-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Sacai x Nike LDV Waffle")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("iframe", {
+        src: "https://www.instagram.com/p/B2A3_VkHB1I/embed/?cr=1&v=12&wp=540&rd=https%3A%2F%2Fstockx.com&rp=%2Fnews%2Fthe-drop-list-9-11-19%2F#%7B%22ci%22%3A0%2C%22os%22%3A2327.1800000220537%7Dembed/captioned",
+        width: "500",
+        height: "700",
+        scrolling: "no",
+        allowtransparency: "true"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Nike is looking to prepare the dopest brunch of all time by releasing some new sacai x Nike LDV Waffle sneakers. This sacai bundle comes in three different colorways \u201C", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Black Anthracite,"), "\u201D \u201C", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "White Grey"), ",\u201D and \u201C", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Green Purple"), ".\u201D I think the \u201CGreen Purple\u201D colorway is the coldest of the three releasing on Thursday because it\u2019s a sneaker that catches the eye but doesn\u2019t scream, \u201CLook at me.\u201D If we\u2019re being honest, none of the OG colorways can compare. Nike could\u2019ve kept those basic kicks to themselves. Those OG waffles barely crack my top five sneakers of the year. My top five sneakers are:", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "AJ1 Travis High"), ",", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "CPFM"), ",", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "MCA AF-1"), ", and", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "AJ1 Satin Black Toe High."), "In other news, follow in my footsteps and grab these sacai sneakers early on StockX.")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "editor-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Sacai x Nike LDV Waffle")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("iframe", {
+        src: "https://www.instagram.com/p/B2A3_VkHB1I/embed/?cr=1&v=12&wp=540&rd=https%3A%2F%2Fstockx.com&rp=%2Fnews%2Fthe-drop-list-9-11-19%2F#%7B%22ci%22%3A0%2C%22os%22%3A2327.1800000220537%7Dembed/captioned",
+        width: "500",
+        height: "700",
+        scrolling: "no",
+        allowtransparency: "true"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Nike is looking to prepare the dopest brunch of all time by releasing some new sacai x Nike LDV Waffle sneakers. This sacai bundle comes in three different colorways \u201C", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Black Anthracite,"), "\u201D \u201C", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "White Grey"), ",\u201D and \u201C", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Green Purple"), ".\u201D I think the \u201CGreen Purple\u201D colorway is the coldest of the three releasing on Thursday because it\u2019s a sneaker that catches the eye but doesn\u2019t scream, \u201CLook at me.\u201D If we\u2019re being honest, none of the OG colorways can compare. Nike could\u2019ve kept those basic kicks to themselves. Those OG waffles barely crack my top five sneakers of the year. My top five sneakers are:", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "AJ1 Travis High"), ",", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "CPFM"), ",", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "MCA AF-1"), ", and", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, " AJ1 Satin Black Toe High."), "In other news, follow in my footsteps and grab these sacai sneakers early on StockX.")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "editor-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "Yeezy Desert Boot")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("iframe", {
+        src: "https://www.instagram.com/p/B2PS71oIK6t/embed/?cr=1&v=12&wp=540&rd=https%3A%2F%2Fstockx.com&rp=%2Fnews%2Fthe-drop-list-9-11-19%2F#%7B%22ci%22%3A2%2C%22os%22%3A1303.0649999855086%7Dembed/captioned",
+        width: "500",
+        height: "700",
+        scrolling: "no",
+        allowtransparency: "true"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Adidas is set to release the new Yeezy Desert Boot, which can potentially be hotter than a Kanye West Sunday Service. These boots are dropping in a \u201CSalt,\u201D \u201CRock,\u201D and \u201COil\u201D colorway. I like these boots and could see them becoming the hottest release of the fall. If Yeezy is going to continue releasing boots then he should drop new colorways of the Yeezy 950, as well. Let\u2019s have a boot season for once. I\u2019m going to try and buy a pair of the Yeezy Desert Boots Saturday and if I\u2019m not successful then you can catch me on StockX where they never run out of sizes. "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Stay tuned for more sneaker releases every Wednesday from the Drop List, and remember to check out StockX if you miss any of these sneaker drops.")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/Air-Jordan-3-Retro-Knicks.png?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1568137283"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "FEAR OF GOD ESSENTIALS Photo T-shirt Black"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$68"), " \u2022 Lowest Ask")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/Air-Jordan-3-Retro-Knicks.png?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1568137283"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "FEAR OF GOD ESSENTIALS Photo T-shirt Black"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$68"), " \u2022 Lowest Ask")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/Air-Jordan-3-Retro-Knicks.png?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1568137283"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "FEAR OF GOD ESSENTIALS Photo T-shirt Black"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$68"), " \u2022 Lowest Ask")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "stockx-product-item",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://stockx.imgix.net/Air-Jordan-3-Retro-Knicks.png?fit=fill&bg=FFFFFF&w=300&h=214&auto=format,compress&trim=color&q=90&dpr=2&updated_at=1568137283"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-title"
+      }, "FEAR OF GOD ESSENTIALS Photo T-shirt Black"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "stockx-product-ask"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+        className: "stockx-product-ask-amount"
+      }, "$78"), " \u2022 Lowest Ask"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-details"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-img"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-info"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-headline"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nick Matthies")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+        className: "author-description"
+      }, "Only thing dripping is my coffee maker...IG: @nickmatthies"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "social-media-links"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "https://www.instagram.com/tamarrdavis/",
+        target: "_blank",
+        className: "social-media-links-item social-media-links-item-instagram icon-fa"
+      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cat-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "type-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Related Articles")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-row"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "blog-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg",
+        alt: "Fall Essentials: Sneakers",
+        className: "full-width"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Fall Essentials: Sneakers"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kevin Kosanovich"), ", 10 hours ago"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "blog-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg",
+        alt: "Fall Essentials: Sneakers",
+        className: "full-width"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers"), "and", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Streetwear")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Obsidian UNC Jordans & Satins Shatter Records | StockX MKT Watch"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kevin Kosanovich"), ", 10 hours ago"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "blog-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg",
+        alt: "Fall Essentials: Sneakers",
+        className: "full-width"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Fall Essentials: Sneakers"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kevin Kosanovich"), ", 10 hours ago")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "container-subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cover-size"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "content-subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "headline-subscribe"
+      }, "Stockx News. Sign Up. Stay Updated."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form subscribe-form"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+        method: "post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-element-subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "email",
+        placeholder: "Enter email for StockX news",
+        name: "email",
+        className: "color-gray bold"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "submit",
+        value: "Subscribe",
+        className: "button btn-subscribe"
+      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+    }
+  }]);
+
+  return PostThree;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (PostThree);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/PostTwoComponent.js":
+/*!********************************************************!*\
+  !*** ./resources/js/frontend/News/PostTwoComponent.js ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layouts/HeaderComponent */ "./resources/js/frontend/layouts/HeaderComponent.js");
+/* harmony import */ var _layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../layouts/FooterComponent */ "./resources/js/frontend/layouts/FooterComponent.js");
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+// import ContainerSearch from './ContainerSearchComponent';
+
+
+
+
+var PostTwo =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(PostTwo, _Component);
+
+  function PostTwo() {
+    _classCallCheck(this, PostTwo);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(PostTwo).apply(this, arguments));
+  }
+
+  _createClass(PostTwo, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "new-main-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        type: "on-top home-topbar"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "pg-blog"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-category"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+        className: "first-category"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "News")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Sneakers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Streetwear")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Handbags")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Watches")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Editorial")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "subscribe-link icon-fa fnt-size-14 color-gray bold"
+      }, "Subscribe")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cover-size-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "header-post full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "header-post-top"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", {
+        className: "post-title"
+      }, "Sell Off Your Summer With 50% Off Seller Fees on StockX")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "header-post-bottom"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "intro-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Aida"), ", 3 days ago"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-excerpt"
+      }, "It\u2019s that time of year again. The air starts getting cool and the fits even cooler. What better time to sell your sneakers, streetwear, handbags, and watches than the start of a new season?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "social-share"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link facebook icon-fa",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-facebook"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link twitter icon-fa",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-twitter"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link pinterest icon-fa",
+        href: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-pinterest-p"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "social-share-link subscribe-link icon-fa",
+        href: "#"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-count icon-fa"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "0")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "post-body"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-article"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-article-main"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "editor-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "https://stockx.com",
+        target: "_blank",
+        rel: "noopener noreferrer"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        className: "alignnone size-full wp-image-73123 aligncenter",
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/50off-SellerFee-ig-story.jpg",
+        alt: "",
+        width: "1080",
+        height: "1920"
+      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Clean out your closet and get some extra cash for your fall looks with 50% off all seller fees starting\xA0 Tuesday, September 10, 2019 at 7:00AM PT and lasting only until 11:59PM PT."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "That style transition between summer and fall is always a bit difficult but with half off seller fees you can get rid of the things that were so last season and look forward to what\u2019s coming up.\xA0"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        rel: "noopener noreferrer"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        className: "alignnone size-full wp-image-73997",
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/CTA_SellNow.jpg",
+        alt: "Sell Now",
+        width: "1200",
+        height: "80"
+      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", null, "How It Works")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+        className: "post-content"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Create a StockX account online or via our mobile app, which is available in the", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        rel: "noopener noreferrer"
+      }, "Apple App Store"), "or", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        rel: "noopener noreferrer"
+      }, "Google Play Store"), ".")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Sell any item on StockX at a minimum price of $150 for streetwear or $200 for sneakers, handbags, and watches to receive a 50% discount on your seller fee.")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "This promotion runs from Tuesday, September 10, 2019 at 7:00AM PT to 11:59PM PT.")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("b", null, "Please note: Your Ask must be accepted within the above timeframe to receive the discount."))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "All StockX customers are eligible.", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "https://stockx.com/"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "Start selling ASAP!")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-details"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-img"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-info"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "author-headline"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nick Matthies")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", {
+        className: "author-description"
+      }, "Only thing dripping is my coffee maker...IG: @nickmatthies"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "social-media-links"
+      })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-article-sidebar"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-article-sidebar-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "StockX Sneakers on Twitter"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-slider"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        id: "newsCarousel",
+        className: "carousel slide",
+        "data-ride": "carousel"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "carousel-inner"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "item active"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "tweet-slide-container"
+      }, "Nike extends their power-lacing offering with the debut of the Adapt Huarache.Cop the kicks in both colorways on\u2026", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank"
+      }, "twitter.com/i/web/status/1\u2026"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "tweet-slide-date"
+      }, "5:01 PM - 12 Sep 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "tweet-slide-nav"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "tweet-slide-handle",
+        href: "#",
+        target: "_blank"
+      }, "@stockxsneakers"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        target: "_blank",
+        className: "tweet-slide-nav-link tweet-slide-nav-link-reply icon-fa",
+        href: "#"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        target: "_blank",
+        className: "tweet-slide-nav-link tweet-slide-nav-link-retweet icon-fa",
+        href: "#"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        target: "_blank",
+        className: "tweet-slide-nav-link tweet-slide-nav-link-like icon-fa",
+        href: "#"
+      })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "item"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "tweet-slide-container"
+      }, "Nike extends their power-lacing offering with the debut of the Adapt Huarache.Cop the kicks in both colorways on\u2026", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank"
+      }, "twitter.com/i/web/status/1\u2026"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "tweet-slide-date"
+      }, "5:01 PM - 12 Sep 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "tweet-slide-nav"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "tweet-slide-handle",
+        href: "#",
+        target: "_blank"
+      }, "@stockxsneakers"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        target: "_blank",
+        className: "tweet-slide-nav-link tweet-slide-nav-link-reply icon-fa",
+        href: "#"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        target: "_blank",
+        className: "tweet-slide-nav-link tweet-slide-nav-link-retweet icon-fa",
+        href: "#"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        target: "_blank",
+        className: "tweet-slide-nav-link tweet-slide-nav-link-like icon-fa",
+        href: "#"
+      }))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ol", {
+        className: "carousel-indicators dot-number-slider"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+        "data-target": "#newsCarousel",
+        "data-slide-to": "0",
+        className: "active"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+        "data-starget": "#newsCarousel",
+        "data-slide-to": "1",
+        className: ""
+      }))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-article-sidebar-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "StockX Sneakers on Instagram"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "instagram-feed"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "instagram-feed-item",
+        href: "#",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//scontent-iad3-1.cdninstagram.com/vp/57ba8560bf966d4a855be62109c8592d/5DEA6BAF/t51.2885-15/e35/c0.169.1349.1349a/s320x320/66071159_514501736020236_4425368955267773495_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com",
+        alt: " "
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "instagram-feed-item",
+        href: "#",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//scontent-iad3-1.cdninstagram.com/vp/48403797ed84349440f572c7d83b748f/5DDD2BC3/t51.2885-15/e35/c0.169.1349.1349a/s320x320/67123372_400452907264984_131440326612497540_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com",
+        alt: " "
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "instagram-feed-item",
+        href: "#",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//scontent-iad3-1.cdninstagram.com/vp/7e915ae3bc81f9f98f29a3771b2a3de7/5DEC9C99/t51.2885-15/e35/s320x320/66268620_139076673970569_5108318227121826569_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com",
+        alt: " "
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "instagram-feed-item",
+        href: "#",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//scontent-iad3-1.cdninstagram.com/vp/cd7209ef6678fcd82a209336af23fcdf/5DD93297/t51.2885-15/e35/c0.169.1349.1349a/s320x320/66467618_123476835588598_2593335469457481758_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com",
+        alt: " "
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "instagram-feed-item",
+        href: "#",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//scontent-iad3-1.cdninstagram.com/vp/88c3495dd6f04383b0494353c0e82fe6/5DD63AB7/t51.2885-15/e35/c0.168.1350.1350a/s320x320/66673589_2881539651917545_6214695070770999469_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com",
+        alt: " "
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "instagram-feed-item",
+        href: "#",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//scontent-iad3-1.cdninstagram.com/vp/695c5ade7b86a807c95845bc25ce03c8/5DE79311/t51.2885-15/e35/c0.149.1193.1193a/s320x320/66796162_372993903402050_6239576296337498026_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com",
+        alt: " "
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "instagram-feed-item",
+        href: "#",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//scontent-iad3-1.cdninstagram.com/vp/baa01e9c38222977129519bde146ccb1/5DEEDBF0/t51.2885-15/e35/c0.169.1349.1349a/s320x320/66646208_488688091887305_1612170726216153255_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com",
+        alt: " "
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        className: "instagram-feed-item",
+        href: "#",
+        target: "_blank"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//scontent-iad3-1.cdninstagram.com/vp/e945568eca212a66d8f5498b93fac5cd/5DCD69FC/t51.2885-15/e35/s320x320/67073550_348844006015601_5126578344981644267_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com",
+        alt: " "
+      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cat-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "type-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Related Articles")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-row"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "blog-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg",
+        alt: "Fall Essentials: Sneakers",
+        className: "full-width"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Fall Essentials: Sneakers"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kevin Kosanovich"), ", 10 hours ago"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "blog-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg",
+        alt: "Fall Essentials: Sneakers",
+        className: "full-width"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers"), "and", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Streetwear")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Obsidian UNC Jordans & Satins Shatter Records | StockX MKT Watch"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kevin Kosanovich"), ", 10 hours ago"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "blog-img"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg",
+        alt: "Fall Essentials: Sneakers",
+        className: "full-width"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "news-list full-width"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Sneakers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "block-title"
+      }, "Fall Essentials: Sneakers"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "block-meta"
+      }, "By", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kevin Kosanovich"), ", 10 hours ago")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "container-subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cover-size"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "content-subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "headline-subscribe"
+      }, "Stockx News. Sign Up. Stay Updated."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form subscribe-form"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+        method: "post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-element-subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "email",
+        placeholder: "Enter email for StockX news",
+        name: "email",
+        className: "color-gray bold"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "submit",
+        value: "Subscribe",
+        className: "button btn-subscribe"
+      })))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+    }
+  }]);
+
+  return PostTwo;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (PostTwo);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/SubMenu.js":
+/*!***********************************************!*\
+  !*** ./resources/js/frontend/News/SubMenu.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+
+var SubMenu =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(SubMenu, _Component);
+
+  function SubMenu() {
+    _classCallCheck(this, SubMenu);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(SubMenu).apply(this, arguments));
+  }
+
+  _createClass(SubMenu, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "pg-blog"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "blog-category"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+        className: "first-category"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "News")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Sneakers")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Streetwear")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Handbags")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Watches")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "color-gray bold type-news"
+      }, "Editorial")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        className: "subscribe-link icon-fa fnt-size-14 color-gray bold"
+      }, "Subscribe"))));
+    }
+  }]);
+
+  return SubMenu;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (SubMenu);
+
+/***/ }),
+
+/***/ "./resources/js/frontend/News/SubscribeBanner.js":
+/*!*******************************************************!*\
+  !*** ./resources/js/frontend/News/SubscribeBanner.js ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+ //import component
+// import LitleContent from './LitleContentComponent';
+// import BigContent from './BigContentComponent';
+// import ContainerSearch from './ContainerSearchComponent';
+
+var SubscribeBanner =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(SubscribeBanner, _Component);
+
+  function SubscribeBanner() {
+    _classCallCheck(this, SubscribeBanner);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(SubscribeBanner).apply(this, arguments));
+  }
+
+  _createClass(SubscribeBanner, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "container-subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "cover-size"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "content-subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "headline-subscribe"
+      }, "Stockx News. Sign Up. Stay Updated."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form subscribe-form"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", {
+        method: "post"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "form-element-subscribe"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "email",
+        placeholder: "Enter email for StockX news",
+        name: "email",
+        className: "color-gray bold"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+        type: "submit",
+        value: "Subscribe",
+        className: "button btn-subscribe"
+      }))))));
+    }
+  }]);
+
+  return SubscribeBanner;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (SubscribeBanner);
+
+/***/ }),
+
 /***/ "./resources/js/frontend/frontend.js":
 /*!*******************************************!*\
   !*** ./resources/js/frontend/frontend.js ***!
@@ -35315,7 +38530,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HomeContainerComponent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./HomeContainerComponent */ "./resources/js/frontend/home/HomeContainerComponent.js");
 /* harmony import */ var _HomeTradeMarkComponent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./HomeTradeMarkComponent */ "./resources/js/frontend/home/HomeTradeMarkComponent.js");
 /* harmony import */ var _SwitcherComponent__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SwitcherComponent */ "./resources/js/frontend/home/SwitcherComponent.js");
-/* harmony import */ var _layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/layouts/HeaderComponent */ "./resources/js/frontend/layouts/HeaderComponent.js");
+/* harmony import */ var _layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../layouts/FooterComponent */ "./resources/js/frontend/layouts/FooterComponent.js");
+/* harmony import */ var _layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/layouts/HeaderComponent */ "./resources/js/frontend/layouts/HeaderComponent.js");
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
 function _typeof(obj) {
@@ -35412,6 +38628,7 @@ function _setPrototypeOf(o, p) {
 
 
 
+
 var Home =
 /*#__PURE__*/
 function (_Component) {
@@ -35428,7 +38645,7 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         id: "home-container"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_HeaderComponent__WEBPACK_IMPORTED_MODULE_9__["default"], {
         type: "on-top home-topbar"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HomeBannerComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HomeSliderComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SwitcherComponent__WEBPACK_IMPORTED_MODULE_7__["default"], {
         type: "mobile-tablet"
@@ -35436,7 +38653,7 @@ function (_Component) {
         type: "mobile-tablet"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HomeContainerComponent__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_HomeTradeMarkComponent__WEBPACK_IMPORTED_MODULE_6__["default"], {
         type: ""
-      }));
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_8__["default"], null));
     }
   }]);
 
@@ -36731,13 +39948,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
-/* harmony import */ var _home_HomeComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/home/HomeComponent */ "./resources/js/frontend/home/HomeComponent.js");
-/* harmony import */ var _product_list_ListComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/product/list/ListComponent */ "./resources/js/frontend/product/list/ListComponent.js");
-/* harmony import */ var _product_detail_DetailComponent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/product/detail/DetailComponent */ "./resources/js/frontend/product/detail/DetailComponent.js");
+/* harmony import */ var _List_ListComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../List/ListComponent */ "./resources/js/frontend/List/ListComponent.js");
+/* harmony import */ var _News_NewsComponent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../News/NewsComponent */ "./resources/js/frontend/News/NewsComponent.js");
+/* harmony import */ var _News_ListsComponent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../News/ListsComponent */ "./resources/js/frontend/News/ListsComponent.js");
+/* harmony import */ var _News_PostOneComponent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../News/PostOneComponent */ "./resources/js/frontend/News/PostOneComponent.js");
+/* harmony import */ var _News_PostTwoComponent__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../News/PostTwoComponent */ "./resources/js/frontend/News/PostTwoComponent.js");
+/* harmony import */ var _News_PostThreeComponent__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../News/PostThreeComponent */ "./resources/js/frontend/News/PostThreeComponent.js");
+/* harmony import */ var _home_HomeComponent__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/home/HomeComponent */ "./resources/js/frontend/home/HomeComponent.js");
+/* harmony import */ var _product_list_ListComponent__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/product/list/ListComponent */ "./resources/js/frontend/product/list/ListComponent.js");
+/* harmony import */ var _product_detail_DetailComponent__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @/product/detail/DetailComponent */ "./resources/js/frontend/product/detail/DetailComponent.js");
 
 
  //import component
 // import Header from './HeaderComponent'
+// import Home from '../Home/HomeComponent'
+
+
+
+
+
+
 
 
 
@@ -36747,16 +39977,400 @@ Object(react_dom__WEBPACK_IMPORTED_MODULE_1__["render"])(react__WEBPACK_IMPORTED
 }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
   exact: true,
   path: "/",
-  component: _home_HomeComponent__WEBPACK_IMPORTED_MODULE_3__["default"]
+  component: _home_HomeComponent__WEBPACK_IMPORTED_MODULE_9__["default"]
 }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
   exact: true,
+  path: "/list",
+  component: _List_ListComponent__WEBPACK_IMPORTED_MODULE_3__["default"]
+}), "//News", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+  exact: true,
+  path: "/news",
+  component: _News_NewsComponent__WEBPACK_IMPORTED_MODULE_4__["default"]
+}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+  exact: true,
+  path: "/news/list",
+  component: _News_ListsComponent__WEBPACK_IMPORTED_MODULE_5__["default"]
+}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+  exact: true,
+  path: "/news/post_one",
+  component: _News_PostOneComponent__WEBPACK_IMPORTED_MODULE_6__["default"]
+}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+  exact: true,
+  path: "/news/post_two",
+  component: _News_PostTwoComponent__WEBPACK_IMPORTED_MODULE_7__["default"]
+}), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+  exact: true,
+  path: "/news/post_two",
+  component: _News_PostTwoComponent__WEBPACK_IMPORTED_MODULE_7__["default"]
+}), "//End News", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+  exact: true,
   path: "/products",
-  component: _product_list_ListComponent__WEBPACK_IMPORTED_MODULE_4__["default"]
+  component: _product_list_ListComponent__WEBPACK_IMPORTED_MODULE_10__["default"]
 }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
   exact: true,
   path: "/product-detail",
-  component: _product_detail_DetailComponent__WEBPACK_IMPORTED_MODULE_5__["default"]
+  component: _product_detail_DetailComponent__WEBPACK_IMPORTED_MODULE_11__["default"]
 })))), document.getElementById('root'));
+
+/***/ }),
+
+/***/ "./resources/js/frontend/layouts/FooterComponent.js":
+/*!**********************************************************!*\
+  !*** ./resources/js/frontend/layouts/FooterComponent.js ***!
+  \**********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+
+function _typeof(obj) {
+  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
+    _typeof = function _typeof(obj) {
+      return _typeof2(obj);
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+
+
+
+
+var Footer =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(Footer, _Component);
+
+  function Footer() {
+    _classCallCheck(this, Footer);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(Footer).apply(this, arguments));
+  }
+
+  _createClass(Footer, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "footer"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "brand  "
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-brand  "
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "title-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Recent Updates")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "list-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 1 UNC High Leather")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 1 UNC High Leather Analysis")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Yeezy 700 V2 Inertia")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 6 Travis Scott")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Yeezy 350 Lundmark")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 1 Satin Black Toe"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-brand "
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "title-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Popular Releases")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "list-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nike Supreme Dunk Low Silver")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Yeezy 350 Lundmark")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Yeezy 500 Bone White")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 1 Satin Black Toe")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 1 UNC High Leather")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Yeezy 700 V2 Inertia"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-brand "
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "title-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Air Jordan")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "list-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 1 Shattered Backboard Low")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 1 Travis Scott Low")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 6 Travis Scott")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 1 Satin Black Toe")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 1 UNC High Leather")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jordan 1 Mid Shattered Backboard"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-brand "
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "title-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "adidas")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "list-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "adidas Yeezy Boost 350")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "adidas Yeezy 500")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "adidas Yeezy Boost 700")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "adidas Yeezy Powerphase")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "adidas Ultra Boost")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "adidas NMD"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-brand "
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "title-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nike")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "list-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nike Sacai Waffle Grey")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nike Sacai Waffle Black")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nike Sacai Waffle Green Purple")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nike SB Dunk Low Supreme Silver")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nike SB Dunk Low Supreme Red")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Nike SB Dunk Low Supreme Gold"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-brand"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+        className: "title-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Streetwear")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "list-option"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Supreme")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kith")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Off-White")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Bape")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Palace")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Kaws")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "contract "
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "container-contract"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "language "
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "btn-change"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "English (en)"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "$ USD"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "social-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "social "
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        className: "social-link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//stockx-assets.imgix.net/svg/icons/twitter-footer.svg?auto=compress,format",
+        className: "icon"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        className: "social-link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//stockx-assets.imgix.net/svg/icons/facebook-footer.svg?auto=compress,format",
+        className: "icon"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        className: "social-link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//stockx-assets.imgix.net/svg/icons/instagram-footer.svg?auto=compress,format",
+        className: "icon"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        className: "social-link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//stockx-assets.imgix.net/emails/the-outsole/youtube-black.png?auto=compress,format",
+        className: "icon"
+      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "app "
+      }, "Get the app", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        className: "app-link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//stockx-assets.imgix.net/svg/icons/apple-logo-white.svg?auto=compress,format",
+        className: "icon"
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank",
+        className: "app-link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "//stockx-assets.imgix.net/svg/icons/android-logo-white.svg?auto=compress,format",
+        className: "icon"
+      })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "proudly "
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "fa fa-cog"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#",
+        target: "_blank"
+      }, " Proudly Built in Detroit")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "footerBottom"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "site-footer cover-size"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "information-link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "link firt-link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "FAQ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "How It Works")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Review")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Privacy")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Terms")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Jobs")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Contact")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Product Request")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "link"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+        href: "#"
+      }, "Press"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "copyright"
+      }, "\xA92019 StockX. All Rights Reserved."))));
+    }
+  }]);
+
+  return Footer;
+}(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+/* harmony default export */ __webpack_exports__["default"] = (Footer);
 
 /***/ }),
 
@@ -40892,7 +44506,7 @@ function TableRow(props) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/anhvu/Documents/Vu/webproject/lego/resources/js/frontend/frontend.js */"./resources/js/frontend/frontend.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\lego-react\resources\js\frontend\frontend.js */"./resources/js/frontend/frontend.js");
 
 
 /***/ })

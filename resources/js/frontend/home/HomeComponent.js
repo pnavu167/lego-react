@@ -8,6 +8,9 @@ import HomeSlider from './HomeSliderComponent'
 import HomeContainer from './HomeContainerComponent'
 import HomeTradeMark from './HomeTradeMarkComponent'
 import Switcher from './SwitcherComponent';
+
+import Footer from '../layouts/FooterComponent'
+
 import Header from '@/layouts/HeaderComponent'
 
 class Home extends Component {
@@ -22,7 +25,9 @@ class Home extends Component {
                 <HomeTradeMark type="mobile-tablet" />
             	<HomeContainer />
             	<HomeTradeMark type="" />
+                <Footer/>
             </div>
+
         );
     }
 }

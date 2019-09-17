@@ -12,14 +12,17 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css')
-   .react('resources/js/frontend/frontend.js', 'public/js/frontend')
-   .sass('resources/sass/frontend/frontend.scss', 'public/css/frontend')
-   .webpackConfig({
-		resolve: {
-			extensions: ['.js', '.json'],
-			alias: {
-				'@': __dirname + '/resources/js/frontend'
-			},
+
+.sass('resources/sass/frontend/news.scss', 'public/css/frontend')
+.sass('resources/sass/app.scss', 'public/css')
+.react('resources/js/frontend/frontend.js', 'public/js/frontend')
+.sass('resources/sass/frontend/frontend.scss', 'public/css/frontend')
+.webpackConfig({
+	resolve: {
+		extensions: ['.js', '.json'],
+		alias: {
+			'@': __dirname + '/resources/js/frontend'
 		},
-	});
+	},
+});
+
