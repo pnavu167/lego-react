@@ -404,9 +404,7 @@ $desktop-width: 1200px;
 		margin-right: 35px;
 	}
 
-	@include tablet {
-		margin-right: 0;
-	}
+
 }
 
 .post-item:nth-of-type(3n) {

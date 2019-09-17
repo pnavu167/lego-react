@@ -8,6 +8,8 @@ import axios from 'axios';
 // import ContainerSearch from './ContainerSearchComponent';
 import Header from '../layouts/HeaderComponent'
 import Footer from '../layouts/FooterComponent'
+import SubMenu from './SubMenu'
+import SubscribeBanner from './SubscribeBanner'
 
 class PostOne extends Component {
 
@@ -15,26 +17,7 @@ class PostOne extends Component {
         return(
             <div id="new-main-container">
                 <Header type="on-top home-topbar" />
-                    <div className="blog">
-                        <div className="pg-blog">
-                            <div className="blog-category">
-                                <ul>
-                                    <li className="first-category">
-                                        <a href="#" className="color-gray bold type-news">News</a>
-                                    </li>
-                                    <li><a href="#" className="color-gray bold type-news">Sneakers</a></li>
-                                    <li><a href="#" className="color-gray bold type-news">Streetwear</a></li>
-                                    <li><a href="#" className="color-gray bold type-news">Handbags</a></li>
-                                    <li><a href="#" className="color-gray bold type-news">Watches</a></li>
-                                    <li><a href="#" className="color-gray bold type-news">Editorial</a></li>
-                                </ul>
-                            </div>
-                            <div className="subscribe">
-                                <a href="#" className="subscribe-link icon-fa fnt-size-14 color-gray bold">Subscribe</a>
-                            </div>
-
-                        </div>
-                    </div>
+                <SubMenu />
 
                     <div className="cover-size-post">
                         <div className="header-post full-width">
@@ -310,22 +293,7 @@ class PostOne extends Component {
                         </div>
                     </div>
 
-                    <div className="container-subscribe">
-                        <div className="cover-size">
-                            <div className="content-subscribe">
-                                <h2 className="headline-subscribe">Stockx News. Sign Up. Stay Updated.</h2>
-                                <div className="form subscribe-form">
-                                    <form method="post"> 
-                                        <div className="form-element-subscribe"> 
-                                            <input type="email" placeholder="Enter email for StockX news" name="email" className="color-gray bold"/> 
-                                        </div> 
-                                        <input type="submit" value="Subscribe" className="button btn-subscribe"/> 
-                                    </form>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
+                <SubscribeBanner />
                 <Footer/>
             </div>
         );
