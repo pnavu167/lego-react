@@ -66224,10 +66224,10 @@ if (document.getElementById('example')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/anhvu/Documents/Vu/webproject/lego/resources/js/app.js */"./resources/js/app.js");
-__webpack_require__(/*! /Users/anhvu/Documents/Vu/webproject/lego/resources/sass/frontend/news.scss */"./resources/sass/frontend/news.scss");
-__webpack_require__(/*! /Users/anhvu/Documents/Vu/webproject/lego/resources/sass/app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! /Users/anhvu/Documents/Vu/webproject/lego/resources/sass/frontend/frontend.scss */"./resources/sass/frontend/frontend.scss");
+__webpack_require__(/*! C:\xampp\htdocs\lego-react\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\xampp\htdocs\lego-react\resources\sass\frontend\news.scss */"./resources/sass/frontend/news.scss");
+__webpack_require__(/*! C:\xampp\htdocs\lego-react\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\lego-react\resources\sass\frontend\frontend.scss */"./resources/sass/frontend/frontend.scss");
 
 
 /***/ })

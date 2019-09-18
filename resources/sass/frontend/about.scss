@@ -1,0 +1,332 @@
+@import 'frontend_variables';
+
+@mixin use-for-pc { 
+	@media (min-width: #{$tablet-width}) {
+		@content;   
+	} 
+}
+
+.about{
+	background-image: url(http://stockx-assets.imgix.net/png/icons/works/background.png?auto=compress,format,format);
+	background-color: #000;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 100px;
+    padding: 80px 0;
+    margin-top: 90px;
+    @include smaller-than-tablet {
+		margin-top: 0;
+    }
+}
+
+.container {
+    @include small-tablet {
+    	max-width: none;
+    }
+}
+
+.about-container{
+	display: flex;
+	@include smaller-than-small-desktop {
+		flex-wrap: wrap;
+	}
+}
+
+.content, .video {
+	width: 50%;
+
+	@include smaller-than-small-desktop {
+		width: 100%;
+	}
+}
+
+.content {
+	color: #fff;
+	h1 {
+		font-size: 75px;
+	    margin-top: 0;
+	    margin-bottom: 10px;
+	    @include smaller-than-small-desktop {
+			font-size: 35px;
+		}
+	}
+
+	p {
+		font-size: 26px;
+	    letter-spacing: 1px;
+	    margin-right: 35px;
+	    @include smaller-than-small-desktop {
+			font-size: 18px;
+		}
+	}
+
+	@include smaller-than-small-desktop {
+		order: 2;
+	}
+}
+
+.hidden-sm {
+	@include smaller-than-small-desktop {
+		display: none;
+	}
+}
+
+.video{
+	@include smaller-than-small-desktop {
+		order: 1;
+		margin-bottom: 20px;
+	}
+}
+
+a {
+	&:hover {
+		cursor: pointer;
+	}	
+}
+
+.guide-container{
+	.explanation-container{
+		color: #000;
+	    text-align: center;
+	}
+}
+
+.explanation-container{
+	color: #000;
+    text-align: center;
+	
+	h1 {
+		font-size: 60px;
+	    margin-top: 0;
+	    margin-bottom: 20px;
+	}
+
+
+    .anonymity{
+    	color: #fec110;
+		.explain-icon{
+			background-image: url(http://stockx-assets.imgix.net/svg/icons/works/anonymous.svg?auto=compress,format,format);
+		}
+
+    }
+
+    .transparency{
+    	color: #509e2f;
+		.explain-icon{
+			background-image: url(http://stockx-assets.imgix.net/svg/icons/works/computer-with-chart.svg?auto=compress,format,format);
+		}
+
+    }
+
+    .authenticity{
+    	color: #00bbe3;
+		.explain-icon{
+			background-image: url(http:////stockx-assets.imgix.net/svg/icons/works/microscope.svg?auto=compress,format);
+		}
+
+    }
+
+    .explain-icon {
+    	height: 188px;
+	    width: 188px;
+	    border: 10px solid;
+	    border-radius: 50%;
+	    margin: auto;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-size: 100px 100px;
+	    @include smaller-than-tablet {
+			height: 94px;
+		    width: 94px;
+		    border: 5px solid;
+		    background-size: 50px 50px;
+	    }
+    }
+
+    .explain-title{
+    	font-size: 40px;
+    	margin: 20px 0 10px;
+    	@include smaller-than-tablet {
+			font-size: 30px;
+	    }
+    }
+
+    .explain-description{
+    	letter-spacing: 1.5px;
+	    font-size: 21px;
+	    color: #000;
+	    @include smaller-than-tablet {
+			font-size: 18px;
+			
+	    }
+
+	    @include mobile {
+			padding: 0 12px;
+	    }
+    }
+}
+
+
+.works-container{
+	min-height: 100px;
+    padding: 80px 0;
+    color: #fff;
+    h1 {
+		font-size: 60px;
+	    margin-top: 0;
+	    margin-bottom: 20px;
+
+	    @include smaller-than-tablet {
+	    	font-size: 30px;
+	    }
+	}	
+}
+
+.explanation-row{
+    display: flex;
+    margin-bottom: 40px;
+
+    .step{
+    	width: calc(98% - 100px);
+    	@include smaller-than-tablet {
+	    	width: calc(98% - 50px);
+	    }
+    }
+
+    .step-title{
+    	font-size: 40px;
+    	margin: 20px 0 0;
+    	@include smaller-than-tablet {
+	    	font-size: 24px;
+	    }
+    }
+
+    .step-description{
+    	letter-spacing: 1px;
+    	font-size: 24px;
+    	@include smaller-than-tablet {
+	    	font-size: 18px;
+	    }
+    }
+
+    
+
+    .filled-icon{
+    	margin-top: 25px;
+	    height: 100px;
+	    width: 100px;
+	    border-radius: 50%;
+	    background-color: #fff;
+	    background-position: 50% 50%;
+	    background-repeat: no-repeat;
+	    background-size: 75px;
+	    margin-right: 2%;
+
+	    @include smaller-than-tablet {
+	    	height: 50px;
+	    	width: 50px;
+	    	background-size: 30px!important;
+	    }
+    }
+ 
+}
+
+.learn-more{
+	text-align: center;
+	.btn-flat{
+		white-space: normal;
+		padding: 15px;
+		letter-spacing: 1.5px;
+		font: 700 18px proxima-nova,sans-serif;
+		margin: 50px 0;
+		background: #fff;
+		border: 0;
+
+		&:hover {
+			background: #e6e6e6;
+		}
+	}
+}
+
+.buying-container{
+	background: #00bbe3;
+	.learn-more{
+    	.btn-flat{
+    		color: #00bbe3;
+    	}
+    }
+
+    .bid{
+    	background-image: url(http://stockx-assets.imgix.net/svg/icons/works/bid.svg?auto=compress,format);
+    }
+
+    .authenticate{
+    	background-image: url(http:////stockx-assets.imgix.net/svg/icons/blue-ribbon.svg?auto=compress,format);
+    }
+
+    .prosper{
+    	background-image: url(http://stockx-assets.imgix.net/svg/icons/money-stack-blue.svg?auto=compress,format);
+    }
+}
+
+
+.selling-container{
+	background: #525252;
+
+	.learn-more{
+    	.btn-flat{
+    		color: #525252;
+    	}
+    }
+
+    .sell{
+    	background-image: url(http://stockx-assets.imgix.net/svg/icons/info/dollar-bubble.svg?auto=compress,format);
+    }
+
+    .authenticate{
+    	background-image: url(http://stockx-assets.imgix.net/svg/icons/info/shipping-box.svg?auto=compress,format);
+    }
+
+    .prosper{
+    	background-image: url(http://stockx-assets.imgix.net/svg/icons/info/dollar-bill.svg?auto=compress,format);
+    }
+}
+
+.now-u-know {
+	display: flex;
+    justify-content: center;
+    background: rgb(80, 158, 47);
+}
+
+.modal {
+	.modal-content{
+		border-radius: 0;
+    	border: none;
+	}
+}
+
+.video-modal {
+	.modal-lg {
+		@include use-for-pc {
+			width: 80%!important;
+			max-width: none;
+		}
+	}
+}
+
+.video-wrapper{
+	position: relative;
+    padding-bottom: 54%;
+    padding-top: 25px;
+    height: 0;
+
+    iframe {
+    	border: 0;
+    	position: absolute;
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+    }
+}
+

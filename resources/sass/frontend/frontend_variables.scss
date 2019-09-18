@@ -63,6 +63,7 @@ $desktop-width: 1200px;
 		@content;   
 	} 
 }
+
 //<=991
 @mixin smaller-than-small-desktop {   
 	@media (max-width: #{$small-desktop-width - 1px}) {     
