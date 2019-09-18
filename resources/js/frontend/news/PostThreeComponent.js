@@ -14,7 +14,7 @@ class PostThree extends Component {
   	render() {
         return(
             <div id="new-main-container">
-                <Header type="on-top home-topbar" />
+                <Header />
                 <div className="blog">
                     <div className="pg-blog">
                         <div className="blog-category">

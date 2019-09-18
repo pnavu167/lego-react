@@ -12,7 +12,7 @@ class ProductList extends Component {
 
   	render() {
         return(
-            <div id="list-container">
+            <div id="product-list">
             	<Header />
             	<ListBanner />
             	<SortContent type="mobile-tablet" />
