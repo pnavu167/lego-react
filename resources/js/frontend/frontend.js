@@ -34,5 +34,15 @@ $('.home-slider').slick({
 });
 
 $(document).ready(function() {
-	$('.popoverData').popover()
+	$('.popoverData').popover();
+
+	$( ".vice" ).click(function() {
+		if( $(this).hasClass('button-light-green') ){
+			$(this).removeClass('button-light-green');
+
+		}else {
+			$(this).addClass('button-light-green');
+			
+		}
+	});
 })

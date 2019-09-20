@@ -1,9 +1,6 @@
-$mobile-width: 480px; 
-$tablet-width: 768px; 
-$small-laptop-width: 992px;
-$desktop-width: 1200px;
 
 
+@import 'frontend_variables';
 @mixin desktop { 
 	@media (max-width: #{$desktop-width}) {
 		@content; 
@@ -21,6 +18,7 @@ $desktop-width: 1200px;
 		@content; 
 	} 
 }
+
 
 @mixin fontExtraSmall {
 	font-size: 12px !important;
@@ -54,6 +52,10 @@ $desktop-width: 1200px;
 	font-size: 36px !important;
 
 	@include mobile {
+		font-size: 28px !important;
+	}
+
+	@include desktop {
 		font-size: 28px !important;
 	}
 }
@@ -244,28 +246,6 @@ $desktop-width: 1200px;
 
 }
 
-.button {
-	border: 0px;
-    text-decoration: none;
-    background: #41ad33;
-    color: #FFF;
-    font-size: 14px;
-    font-weight: 700;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    border-radius: 3px;
-    height: 58px;
-    transition: all .3s;
-    line-height: 1rem;
-    cursor: pointer;
-    padding: 0 20px;
-    &:hover{
-		background: #1c4b16;
-	}
-}
-    
-
 
 .news-list {
 	width: 28%;
@@ -334,7 +314,7 @@ $desktop-width: 1200px;
 	    max-width: 650px;
 	}
 
-	@include tablet {
+	@include desktop {
 		width: 100%;
 		padding: 0 20px;
     }
@@ -354,7 +334,10 @@ $desktop-width: 1200px;
 	padding-bottom: 22px;
 	border-bottom: 1px solid #e5e5e5;
 	h2 {
+		font-family: BebasNeue;
 		text-transform: uppercase;
+		font-size: 30px;
+		letter-spacing: 2px;
 	}
 }
 
@@ -368,7 +351,7 @@ $desktop-width: 1200px;
 	font-size: 16px;
 	color: #41ad33;
 	transition: all 0.3s;
-
+	
 	&:hover{
 		color: #1c4b16;
 		text-decoration: none;
@@ -441,24 +424,82 @@ $desktop-width: 1200px;
 }
 
 .subscribe-form{
-	width: 35.5%;
+	width: 425px	;
 	margin: 15px 0;
-	@include tablet {
-		width: auto;
-	}
+
 	@include mobile {
 		width: 100%;
 		padding: 0 20px;
 		margin: 50px 0 0 ;
 	}
+	.button {
+		border: 0px;
+	    text-decoration: none;
+	    background: #41ad33;
+	    color: #FFF;
+	    font-size: 14px;
+	    font-weight: 700;
+	    position: relative;
+	    display: inline-block;
+	    text-align: center;
+	    border-radius: 3px;
+	    height: 58px;
+	    transition: all .3s;
+	    line-height: 1rem;
+	    cursor: pointer;
+	    padding: 0 20px;
+	    &:hover{
+			background: #1c4b16;
+		}
 
+		@include tablet {
+			width: 125px;
+		}
+
+		@include mobile {
+			width: 100%;
+		}
+
+
+	}
+
+	form {
+		@include tablet {
+			display: flex;
+		}
+
+		@include mobile {
+			flex-direction: column;
+		}
+	}
+}
+
+.button {
+	border: 0px;
+    text-decoration: none;
+    background: #41ad33;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    height: 58px;
+    transition: all .3s;
+    line-height: 1rem;
+    cursor: pointer;
+    padding: 0 20px;
+    &:hover{
+		background: #1c4b16;
+	}
 }
 
 .form-element-subscribe {
 	margin-right: 15px;
 	float: left; 
-	width: 62%;
-
+	width: 100%;
+	max-width: 284px;
 	input{
 	    z-index: 2;
 	    height: 58px;
@@ -469,11 +510,10 @@ $desktop-width: 1200px;
 	    border: 0;
 	}
 
-	
-
 	@include mobile {
 		width: 100%;
     	margin: 0 0 15px 0;
+    	max-width: none;
 	}
 }
 
@@ -488,7 +528,7 @@ $desktop-width: 1200px;
     align-items: center;
     justify-content: center;
 
-    @include tablet {
+	@include smaller-than-small-desktop {
 		flex-direction: column;
 	}
 }
@@ -498,7 +538,8 @@ $desktop-width: 1200px;
 	font-size: 1.750rem;
 	text-transform: uppercase;
 	text-align: center;
-
+	font-family: BebasNeue;
+	letter-spacing: 2.1px;
 	@include mobile {
 		margin: 20px 0 10px;
 	}
@@ -523,24 +564,28 @@ $desktop-width: 1200px;
 	    height: 100%;
 	    background: linear-gradient(61deg, rgba(0,0,0,0.8) 5%,rgba(0,0,0,0.2) 100%);
     }
+
+    .banner-content{
+	    z-index: 5;
+	    position: absolute;
+	    max-width: 1200px;
+	    width: 100%;
+	    bottom: 50%;
+	    right: 50%;
+	    transform: translate(50%,50%);
+	    color: #fff;
+	    padding-left: 20px;
+
+	    .banner-title{
+	    	letter-spacing: 2.1px;
+	    	@include fontDoubleExtraLarge;
+	    }
+
+	}
 }
 
-.banner-content{
-    z-index: 5;
-    position: absolute;
-    max-width: 1200px;
-    width: 100%;
-    bottom: 50%;
-    right: 50%;
-    transform: translate(50%,50%);
-    color: #fff;
-    padding-left: 20px;
 
-    .banner-title{
-    	@include fontDoubleExtraLarge;
-    }
 
-}
 
 .banner-description{
 	max-width: 477px;
@@ -643,6 +688,7 @@ $desktop-width: 1200px;
 		justify-content: space-between;
 		margin-top: 16px;
 		margin-bottom: 32px;
+		padding-right: 20px;
 		.intro-content{
 			max-width: 650px;
 			.blog-excerpt{
@@ -660,6 +706,8 @@ $desktop-width: 1200px;
 
 		.social-share{
 			display: flex;
+			position: relative;
+			width: fit-content;
 			.social-share-link{
 				display: inline-block;
 			    margin-right: 16px;
@@ -701,6 +749,12 @@ $desktop-width: 1200px;
 				    top: 7px;
 				    left: -1px;
 			    }
+			}
+
+			.number-messenger {
+				top: 4px;
+			    position: absolute;
+			    right: -10px;
 			}
 
 			@include tablet {
@@ -1048,6 +1102,10 @@ $desktop-width: 1200px;
 	    margin: 0px 0px 12px;
 	    min-width: 326px;
 	    padding: 0px;
+
+	    @include mobile {
+	    	max-height: 600px;
+	    }
 	}
 
 }
@@ -1075,10 +1133,11 @@ $desktop-width: 1200px;
 	margin: 0 0 0 10%;
 	width: 54%;
 	h2{
-		font-weight: 700;
 	    padding-bottom: 10px;
 	    border-bottom: 1px solid #e5e5e5;
 	    margin-bottom: 25px;
+	    font-family: BebasNeue;
+	    letter-spacing: 2px;
 	}
 
 	@include tablet {
@@ -1131,6 +1190,7 @@ $desktop-width: 1200px;
 	a {
 		color: #41ad33;
     	transition: .3s;
+    	margin-left: 4px;
 	}
 
 	.tweet-slide-nav-link-reply:before {
@@ -1217,7 +1277,7 @@ $desktop-width: 1200px;
 	    .headline-blog-editorial{
 	    	color: #FFF;
 		    font-size: 2.250rem;
-		    font-family: BebasNeue-Regular,sans-serif;
+		    font-family: BebasNeue,sans-serif;
 		    letter-spacing: 2.1px;
 		    margin-top: 20px;
 		    text-transform: uppercase;
@@ -1257,7 +1317,7 @@ $desktop-width: 1200px;
 		margin: 0;
 		padding: 24px 0;
 		border-bottom: 1px solid #e5e5e5;
-
+		padding-right: 20px;
 		@include tablet {
 			display: block;
 		}
@@ -1276,6 +1336,14 @@ $desktop-width: 1200px;
 
 .social-media-links-item-instagram:before {
     content: '\f16d';
+}
+
+.pg-lr {
+	padding: 0 20px;
+
+	@include mobile {
+		padding: 0;
+	}
 }
 
 

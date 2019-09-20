@@ -81,8 +81,10 @@ class PostOne extends Component {
                                 <AuthorComponent/>
                             </div>
                         </div>
-
-                        <CatPost title = "RELATED ARTICLES"/>
+                        <div className = "pg-lr">
+                            <CatPost title = "RELATED ARTICLES"/>
+                        </div>
+                        
                     </div>
 
                 <SubscribeBanner />

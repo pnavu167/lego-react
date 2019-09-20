@@ -80,7 +80,7 @@ ul {
 		display: flex;
 		align-items: center;
 		min-height: 90px;
-		z-index: 1;
+		z-index: 6;
 		@include smaller-than-tablet {
 			display: none;
 		}
@@ -153,7 +153,7 @@ ul {
 		height: 45px;
 		width: 100%;
 		background-color: $white;
-		z-index: 1;
+		z-index: 6;
 		@include smaller-than-tablet {
 			display: flex;
 			justify-content: space-between;
@@ -610,7 +610,7 @@ ul {
     		padding-right: 5px;
     		@include tablet {
 				flex-flow: wrap;
-				width: 33%;
+				width: 27%;
 			}
 
 			@include smaller-than-tablet {
@@ -625,10 +625,10 @@ ul {
 			}
     	}
 
-    	@include smaller-than-tablet {
-			flex-flow: wrap;
-			justify-content: center;
-		}
+    	@include smaller-than-small-desktop {
+    		flex-flow: wrap;
+    		justify-content: center;
+    	}
 
 		@include mobile {
 			display: block;
@@ -737,12 +737,16 @@ ul {
 			flex-direction: column;
 		}
 
+		@include smaller-than-tablet {
+			width: 82%;
+		}
+
    	}
 	
 	.footerBottom{
 		background: #2d2d2d;
 
-		@include mobile {
+		@include smaller-than-tablet {
 			display: flex;
 	    	justify-content: center;
 		}
@@ -766,11 +770,19 @@ ul {
     			a{
     				text-transform: uppercase;
     				color: #808080;
+
+    				@include smaller-than-small-desktop {
+    					font-size: 10px;
+    				}
     			}
 
-    			@include mobile {
-					padding: 10px 12px;
+    			@include smaller-than-tablet {
+					padding: 10px 25px;
 					border: 0;
+				}
+
+				@include mobile {
+					padding: 10px 12px;
 				}
 
 				@include tablet {
@@ -784,7 +796,7 @@ ul {
 
     		}
 
-    		@include mobile {
+    		@include smaller-than-tablet {
 			    flex-wrap: wrap;
 			    justify-content: space-around;
 			}
@@ -808,13 +820,14 @@ ul {
 			@include fontExtraSmall;
    		}
 
-   		@include mobile {
+   		@include smaller-than-tablet {
 		    flex-direction: column;
-		    width: 290px;
+		    width: 64%;
 		    justify-content: center;
 		    text-align: center;
 		    padding: 10px 0 0;
 		}
+
    	}
 
 }
@@ -839,9 +852,20 @@ ul {
 	margin: auto;
 }
 
+.mg-top-header{
+	margin-top: 90px;
+
+	@include smaller-than-tablet {
+		margin-top: 52px;
+	}
+}
+
+
 
 
 @import 'home';
 @import 'list_products';
 @import 'product_detail';
 @import 'about';
+@import 'account';
+@import 'application';

@@ -8,6 +8,12 @@ import axios from 'axios';
 // import ContainerSearch from './ContainerSearchComponent';
 import Header from '../layouts/HeaderComponent'
 import Footer from '../layouts/FooterComponent'
+import SubscribeBanner from './SubscribeBanner'
+import PostHeader from './PostHeader'
+import CatPost from './CatPost'
+import ProductWrapper from './ProductWrapper'
+import AuthorComponent from './AuthorComponent'
+import SubMenu from './SubMenu'
 
 class PostThree extends Component {
 
@@ -15,26 +21,7 @@ class PostThree extends Component {
         return(
             <div id="new-main-container">
                 <Header />
-                <div className="blog">
-                    <div className="pg-blog">
-                        <div className="blog-category">
-                            <ul>
-                                <li className="first-category">
-                                    <a href="#" className="color-gray bold type-news">News</a>
-                                </li>
-                                <li><a href="#" className="color-gray bold type-news">Sneakers</a></li>
-                                <li><a href="#" className="color-gray bold type-news">Streetwear</a></li>
-                                <li><a href="#" className="color-gray bold type-news">Handbags</a></li>
-                                <li><a href="#" className="color-gray bold type-news">Watches</a></li>
-                                <li><a href="#" className="color-gray bold type-news">Editorial</a></li>
-                            </ul>
-                        </div>
-                        <div className="subscribe">
-                            <a href="#" className="subscribe-link icon-fa fnt-size-14 color-gray bold">Subscribe</a>
-                        </div>
-
-                    </div>
-                </div>
+                <SubMenu/>
 
                 <div className="blog-article-editorial-header">
                     <div className="blog-article-editorial-overlay"></div>
@@ -55,7 +42,7 @@ class PostThree extends Component {
                                 <div className="intro-content">
                                     <div className="block-meta">
                                         By 
-                                        <a href="#">Kevin Kosanovich</a>
+                                        <a href="#"> Kevin Kosanovich </a>
                                         , 10 hours ago
                                     </div>
                                 </div>
@@ -76,8 +63,10 @@ class PostThree extends Component {
                                     <a className="social-share-link subscribe-link icon-fa" href="#">
 
                                     </a>
-                                    <div className="blog-count icon-fa">
-                                        <span>0</span>
+                                    <div className = "number-messenger">
+                                        <div className="blog-count icon-fa">
+                                            <span>0</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +83,7 @@ class PostThree extends Component {
 
                             <div className="editor-content">             
                                 <h2><strong>Sacai x Nike LDV Waffle</strong></h2>
-                                <iframe src="https://www.instagram.com/p/B2A3_VkHB1I/embed/?cr=1&v=12&wp=540&rd=https%3A%2F%2Fstockx.com&rp=%2Fnews%2Fthe-drop-list-9-11-19%2F#%7B%22ci%22%3A0%2C%22os%22%3A2327.1800000220537%7Dembed/captioned" width="500" height="700"  scrolling="no" allowtransparency="true"></iframe>
+                                <iframe src="https://www.instagram.com/p/B2A3_VkHB1I/embed/?cr=1&v=12&wp=540&rd=https%3A%2F%2Fstockx.com&rp=%2Fnews%2Fthe-drop-list-9-11-19%2F#%7B%22ci%22%3A0%2C%22os%22%3A2327.1800000220537%7Dembed/captioned" width="500" height="750"  scrolling="no" allowtransparency="true"></iframe>
                                 <br/>
                                 <p>Nike is looking to prepare the dopest brunch of all time by releasing some new sacai x Nike LDV Waffle sneakers. This sacai bundle comes in three different colorways “
                                     <a href="#">Black Anthracite,</a>
@@ -116,7 +105,7 @@ class PostThree extends Component {
                             
                             <div className="editor-content">             
                                 <h2><strong>Sacai x Nike LDV Waffle</strong></h2>
-                                <iframe src="https://www.instagram.com/p/B2A3_VkHB1I/embed/?cr=1&v=12&wp=540&rd=https%3A%2F%2Fstockx.com&rp=%2Fnews%2Fthe-drop-list-9-11-19%2F#%7B%22ci%22%3A0%2C%22os%22%3A2327.1800000220537%7Dembed/captioned" width="500" height="700" scrolling="no" allowtransparency="true"></iframe>
+                                <iframe src="https://www.instagram.com/p/B2A3_VkHB1I/embed/?cr=1&v=12&wp=540&rd=https%3A%2F%2Fstockx.com&rp=%2Fnews%2Fthe-drop-list-9-11-19%2F#%7B%22ci%22%3A0%2C%22os%22%3A2327.1800000220537%7Dembed/captioned" width="500" height="750" scrolling="no" allowtransparency="true"></iframe>
                                 <br/>
                                 <p>Nike is looking to prepare the dopest brunch of all time by releasing some new sacai x Nike LDV Waffle sneakers. This sacai bundle comes in three different colorways “
                                     <a href="#">Black Anthracite,</a>
@@ -140,7 +129,7 @@ class PostThree extends Component {
                             <div className="editor-content">             
                                 <h2><strong>Yeezy Desert Boot</strong></h2>
                                 
-                                <iframe src="https://www.instagram.com/p/B2PS71oIK6t/embed/?cr=1&v=12&wp=540&rd=https%3A%2F%2Fstockx.com&rp=%2Fnews%2Fthe-drop-list-9-11-19%2F#%7B%22ci%22%3A2%2C%22os%22%3A1303.0649999855086%7Dembed/captioned" width="500" height="700" scrolling="no" allowtransparency="true"></iframe>
+                                <iframe src="https://www.instagram.com/p/B2PS71oIK6t/embed/?cr=1&v=12&wp=540&rd=https%3A%2F%2Fstockx.com&rp=%2Fnews%2Fthe-drop-list-9-11-19%2F#%7B%22ci%22%3A2%2C%22os%22%3A1303.0649999855086%7Dembed/captioned" width="500" height="750" scrolling="no" allowtransparency="true"></iframe>
                                 <br/>
                                 <p>Adidas is set to release the new Yeezy Desert Boot, which can potentially be hotter than a Kanye West Sunday Service. These boots are dropping in a “Salt,” “Rock,” and “Oil” colorway. I like these boots and could see them becoming the hottest release of the fall. If Yeezy is going to continue releasing boots then he should drop new colorways of the Yeezy 950, as well. Let’s have a boot season for once. I’m going to try and buy a pair of the Yeezy Desert Boots Saturday and if I’m not successful then you can catch me on StockX where they never run out of sizes. </p>
 
@@ -190,109 +179,16 @@ class PostThree extends Component {
                             </div>
 
                             
-                            <div className="author-details">
-                                <div className="author-img">
-                                    
-                                </div>
-                                <div className="author-info">
-                                    <div className="author-headline">
-                                        <a href="#">Nick Matthies</a>
-                                    </div>
-                                    <p className="author-description">Only thing dripping is my coffee maker...IG: @nickmatthies</p>
-                                    <div className="social-media-links"> 
-                                        <a href="https://www.instagram.com/tamarrdavis/" target="_blank" className="social-media-links-item social-media-links-item-instagram icon-fa"></a>
-                                    </div>
-                                </div>
-                            </div>
+                            <AuthorComponent/>
                         </div>
                     </div>
 
-                    <div className="cat-post">
-                        <div className="type-post">
-                            <h2 >Related Articles</h2> 
-                        </div>
-
-                        <div className="blog-post-row">
-                            <div className="blog-post-block">
-                                <a href="#" className="blog-img">
-                                    <img src="https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg" alt="Fall Essentials: Sneakers" 
-                                    className="full-width"/>
-                                </a>
-
-                                <div className="news-list full-width">
-                                    <div className="blog-post"> 
-                                        <a href="#">Sneakers</a>
-                                    </div> 
-                                    <a href="#" className="block-title">Fall Essentials: Sneakers</a>
-                                    <div className="block-meta">
-                                        By 
-                                        <a href="#">Kevin Kosanovich</a>
-                                        , 10 hours ago
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="blog-post-block">
-                                <a href="#" className="blog-img">
-                                    <img src="https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg" alt="Fall Essentials: Sneakers" 
-                                    className="full-width"/>
-                                </a>
-
-                                <div className="news-list full-width">
-                                    <div className="blog-post"> 
-                                        <a href="#">Sneakers</a>
-                                        and
-                                        <a href="#">Streetwear</a>
-                                    </div> 
-                                    <a href="#" className="block-title">
-                                        Obsidian UNC Jordans & Satins Shatter Records | StockX MKT Watch
-                                    </a>
-                                    <div className="block-meta">
-                                        By 
-                                        <a href="#">Kevin Kosanovich</a>
-                                        , 10 hours ago
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="blog-post-block">
-                                <a href="#" className="blog-img">
-                                    <img src="https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg" alt="Fall Essentials: Sneakers" 
-                                    className="full-width"/>
-                                </a>
-
-                                <div className="news-list full-width">
-                                    <div className="blog-post"> 
-                                        <a href="#">Sneakers</a>
-                                    </div> 
-                                    <a href="#" className="block-title">Fall Essentials: Sneakers</a>
-                                    <div className="block-meta">
-                                        By 
-                                        <a href="#">Kevin Kosanovich</a>
-                                        , 10 hours ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className = "pg-lr">
+                        <CatPost title = "RELATED ARTICLES"/>
                     </div>
                 </div>
 
-                <div className="container-subscribe">
-                    <div className="cover-size">
-                        <div className="content-subscribe">
-                            <h2 className="headline-subscribe">Stockx News. Sign Up. Stay Updated.</h2>
-                            <div className="form subscribe-form">
-                                <form method="post"> 
-                                    <div className="form-element-subscribe"> 
-                                        <input type="email" placeholder="Enter email for StockX news" name="email" className="color-gray bold"/> 
-                                    </div> 
-                                    <input type="submit" value="Subscribe" className="button btn-subscribe"/> 
-                                </form>
-                            </div>
-                        </div>
-                        
-                    </div>     
-                </div>
+                <SubscribeBanner />
             
 
                 <Footer/>

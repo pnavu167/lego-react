@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+@font-face {
+  font-family: BebasNeue;
+  src: local("BebasNeue Regular"), local("BebasNeue-Regular"), url("/plugins/bebas_neue/fonts/BebasNeue-Regular.woff2") format("woff2");
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
