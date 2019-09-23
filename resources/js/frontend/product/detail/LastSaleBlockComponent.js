@@ -9,7 +9,7 @@ class LastSaleBlock extends Component {
 
   	render() {
         return(
-            <div className="last-sale-block">
+            <div className={`last-sale-block ${this.props.type}`}>
                 <div className="last-sale">
                     <h3>Last Sale</h3>
                     <div className="sale-value">

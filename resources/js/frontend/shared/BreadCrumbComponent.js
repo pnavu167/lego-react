@@ -12,7 +12,7 @@ class BreadCrumb extends Component {
 
   	render() {
         return(
-            <div className="custom-breadcrumb">
+            <div className="custom-breadcrumb d-none d-md-flex">
                 <div className="breadcrumb-item">
                     <a href="#" className="breadcrumb-link">Home</a>
                 </div>

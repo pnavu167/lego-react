@@ -7,6 +7,7 @@ import LastSaleBlock from "./LastSaleBlockComponent"
 import SelectOptions from "./SelectOptionsComponent"
 import ButtonBig from "./ButtonBigComponent"
 import Content from "./ContentComponent"
+import HeaderContainer from "./HeaderContainerComponent"
 
 class Container extends Component {
 
@@ -28,34 +29,7 @@ class Container extends Component {
                 <div className="product-detail-header">
                     <div className="row">
                         <div className="col-md-12">
-                            <h1>
-                                Converse Chuck Taylor All-Star 70s Hi Comme des Garcons Play Multi-Heart Green
-                            </h1>
-                            <small>
-                                <div className="header-stat">
-                                    <span className="header-stat-title">
-                                        Condition:
-                                    </span>
-                                    <span className="header-stat-green">
-                                        New
-                                    </span>
-                                </div>
-                                <span className="divider-pipe">|</span>
-                                <div className="header-stat">
-                                    <span className="header-stat-title">
-                                        Ticker:
-                                    </span>
-                                    <span className="header-stat-black">
-                                        AIRMAG-2016
-                                    </span>
-                                </div>
-                                <span className="divider-pipe">|</span>
-                                 <div className="header-stat">
-                                    <span className="header-stat-green">
-                                        100% Authentic
-                                    </span>
-                                </div>
-                            </small>
+                            <HeaderContainer />
                         </div>
                     </div>
                     <div className="market-summary">
