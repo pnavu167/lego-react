@@ -17,7 +17,7 @@ class ProductDetail extends Component {
             <div id="product-detail" className="site-margin-top">
             	<Header />
             	<div className="gray-gradient"></div>
-            	<div className="container">
+            	<div className="container mobile-container border-bottom">
             		<BreadCrumb />
             		<Container />
             	</div>

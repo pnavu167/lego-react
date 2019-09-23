@@ -499,7 +499,7 @@
   background: linear-gradient(61deg, rgba(0, 0, 0, 0.8) 5%, rgba(0, 0, 0, 0.2) 100%);
 }
 
-.banner-content {
+.banner-header .banner-content {
   z-index: 5;
   position: absolute;
   max-width: 1200px;
@@ -511,17 +511,17 @@
   padding-left: 20px;
 }
 
-.banner-content .banner-title {
+.banner-header .banner-content .banner-title {
   font-size: 36px !important;
 }
 
 @media (max-width: 480px) {
-  .banner-content .banner-title {
+  .banner-header .banner-content .banner-title {
     font-size: 28px !important;
   }
 }
 
-.banner-description {
+.banner-header .banner-description {
   max-width: 477px;
   font-size: 16px;
   color: #999;
@@ -530,7 +530,7 @@
 }
 
 @media (max-width: 480px) {
-  .banner-description {
+  .banner-header .banner-description {
     padding-right: 16px;
     font-weight: 100;
   }

@@ -1,47 +1,32 @@
 .product-detail-container {
 	.product-detail-header {
-		h1 {
-			font-family: proxima-nova,sans-serif;
-		    letter-spacing: 0;
-		    font-weight: 700;
-		}
-		small {
-			color: $black;
-		    display: block;
-		    letter-spacing: .3px;
-		    font-weight: 600;
-		    @include fontMedium;
-		    text-transform: uppercase;
-		    margin-top: 5px;
-		    .header-stat {
-				margin-top: 5px;
-			    text-transform: capitalize;
-			    color: $statTitleColor;
-			    display: inline;
-			    .header-stat-green {
-			    	color: $green;
-			    	font-weight: 700;
-			    }
-			    .header-stat-black {
-			    	color: $black;
-			    }
-			}
-			.divider-pipe {
-				font-weight: 600;
-			    padding: 0 10px;
-			    display: inline;
-			}
-		}
 		.market-summary {
 		    display: flex;
 		    margin-top: 40px;
+		    @include smaller-than-tablet {
+		    	position: fixed;
+		    	top: 0;
+		    	left: 0;
+		    	width: 100%;
+		    	z-index: 5;
+		    	background-color: $white;
+		    	padding: 15px 5px 10px;
+		    }
 		    .options {
 		    	padding-right: 25px;
 			    border-right: 1px solid #ccc;
 			    margin-bottom: 20px;
+			    @include smaller-than-tablet {
+			    	display: flex;
+			    	flex-direction: column;
+			    	align-items: center;
+			    	border-right: 0px;
+			    	width: 20%;
+			    	padding: 0px;
+			    }
 			    label {
 		    		color: $statTitleColor;
-		    		font-size: 18px;
+					@include fontMedium;
 		    	}
 		    	.select-options {
 		    		color: $black;
@@ -53,7 +38,9 @@
 			    		@include smaller-than-desktop {
 							font-size: 24px;
 			    		}
-
+						@include smaller-than-tablet {
+							font-size: 18px;
+			    		}
 					    font-family: proxima-nova,sans-serif;
 					    font-weight: 500;
 					    display: flex;
@@ -73,61 +60,131 @@
 		    		
 		    	}
 		    }
-		    .last-sale-block {
-	    		padding: 0 20px;
-	    		text-align: center;
-	    		@include smaller-than-desktop {
-					padding: 0 10px;
-	    		}
-			    display: flex;
-			    justify-content: center;
-			    flex-direction: column;
-			    margin-top: 12px;
-
-			    .last-sale {
-				    display: flex;
-				    justify-content: center;
-				    align-items: center;
-				    @include smaller-than-small-desktop {
-						flex-direction: column;
-						text-align: center;
-		    		}
-				    h3 {
-						font-family: proxima-nova,sans-serif;
-					    letter-spacing: 0;
-					    font-weight: 700;
-					    color: $statTitleColor;
-					    margin: 0;
-					    font-size: 16px;
-					    white-space: nowrap;
-				    }
-				    .sale-value {
-				    	font-family: proxima-nova,sans-serif;
-					    letter-spacing: 0;
-					    font-weight: 700;
-					    font-size: 30px;
-					    @include smaller-than-desktop {
-							font-size: 24px;
-			    		}
-					    margin: 0 5px 0 10px;
-					    font-weight: 500;
-				    }
-			    }
-	    	}
+		    
 		}
 	}
+}
+.header-container {
+	@include smaller-than-tablet  {
+		&:not(.mobile) {
+			display: none;
+		}
+	}
+	h1 {
+		font-family: proxima-nova,sans-serif;
+	    letter-spacing: 0;
+	    font-weight: 700;
+	}
+	small {
+		color: $black;
+	    display: block;
+	    letter-spacing: .3px;
+	    font-weight: 600;
+	    text-transform: uppercase;
+	    margin-top: 5px;
+	    @include fontMedium;
+		
+	    .header-stat {
+			margin-top: 5px;
+		    text-transform: capitalize;
+		    color: $statTitleColor;
+		    display: inline;
+		    
+		    .header-stat-green {
+		    	color: $green;
+		    	font-weight: 700;
+		    }
+		    .header-stat-black {
+		    	color: $black;
+		    }
+		}
+		.divider-pipe {
+			font-weight: 600;
+		    padding: 0 10px;
+		    display: inline;
+		}
+	}
+	&.mobile {
+		@include smaller-than-tablet {
+			display: flex;
+		}
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		margin-top: 10px;
+		small {
+			@include fontSmall;
+		}
+	}
+}
+.last-sale-block {
+	padding: 0 20px;
+	text-align: center;
+	@include smaller-than-desktop {
+		padding: 0 10px;
+	}
+	&:not(.mobile) {
+		@include smaller-than-tablet {
+			display: none;
+		}
+	}
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12px;
+
+    .last-sale {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    @include smaller-than-small-desktop {
+			flex-direction: column;
+			text-align: center;
+		}
+		@include smaller-than-tablet  {
+			flex-direction: row;
+		}
+	    h3 {
+			font-family: proxima-nova,sans-serif;
+		    letter-spacing: 0;
+		    font-weight: 700;
+		    color: $statTitleColor;
+		    margin: 0;
+		    font-size: 16px;
+		    white-space: nowrap;
+	    }
+	    .sale-value {
+	    	font-family: proxima-nova,sans-serif;
+		    letter-spacing: 0;
+		    font-weight: 700;
+		    font-size: 30px;
+		    @include smaller-than-desktop {
+				font-size: 24px;
+    		}
+		    margin: 0 5px 0 10px;
+		    font-weight: 500;
+	    }
+    }
 }
 .size-container {
 	display: flex;
 	margin: 5px auto 0;
 	font-weight: bold;
 	@include fontSmall;
+	.size-info {
+		@include smaller-than-tablet {
+			display: none;
+		}
+	}
 	.size-divider {
 		border-left: 1px solid $statTitleColor;
 	    align-self: stretch;
 	    margin: 5px 10px;
 	    @include smaller-than-small-desktop {
 			margin: 5px;
+		}
+		@include smaller-than-tablet {
+			display: none;
 		}
 	}
 }
@@ -137,6 +194,9 @@
 	padding: 0 20px;
 	@include smaller-than-desktop {
 		padding: 0 10px;
+	}
+	@include smaller-than-tablet {
+		width: 40%;
 	}
 	.button-big-contaner {
     	display: flex;
@@ -169,6 +229,9 @@
 		    @include smaller-than-desktop {
 				font-size: 24px;
 			}
+			@include smaller-than-tablet {
+				@include fontMedium;
+			}
 		    color: $white;
 	    }
 	    .small {
@@ -180,6 +243,9 @@
 		    @include smaller-than-desktop {
 				font-size: 16px;
 			}
+			@include smaller-than-tablet {
+				@include fontSmall;
+			}
 		    white-space: nowrap;
 		    font-weight: 600;
 	    }
@@ -187,6 +253,9 @@
     		border-left: 1px solid #fff;
     		align-self: stretch;
 		    margin: 0 18px;
+		    @include smaller-than-tablet {
+		    	margin: 0 5px;
+		    }
     	}
 	}
 }	
@@ -218,8 +287,11 @@
 	}
 }
 .product-media {
+	@include smaller-than-tablet {
+		margin-top: 115px;
+	}
 	.image-media {
-		min-height: 400px;
+		// min-height: 400px;
 		// pointer-events: none;
 		cursor: ew-resize;
 		-webkit-touch-callout: none;
@@ -237,20 +309,41 @@
 		}
 	}
 }
-.product-info {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	.info {
-		.title {
-			font-weight: bold;
-			margin-right: 3px;
-			text-transform: uppercase;
+.product-info-container {
+	margin-top: 20px;
+	.product-info {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		align-items: center;
+		@include smaller-than-tablet {
+			flex-direction: column;
+			padding: 0 15px;
+		}
+		.info {
+			display: flex;
+			justify-content: space-between;
+
+			@include smaller-than-tablet {
+				width: 100%;
+				padding: 0 10px;
+				margin-bottom: 10px;
+				border-bottom: 1px solid $black;
+			}
+			.title {
+				font-weight: bold;
+				margin-right: 3px;
+				text-transform: uppercase;
+			}
 		}
 	}
 }
+
 .product-market-summary-wrap {
 	background: $gray;
+	@include smaller-than-tablet {
+		display: none;
+	}
 	.product-market-summary {
 		display: flex;
 		justify-content: space-between;

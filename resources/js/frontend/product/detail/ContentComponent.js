@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import axios from 'axios';
 
 //import component
+import HeaderContainer from "./HeaderContainerComponent"
+import LastSaleBlock from "./LastSaleBlockComponent"
 
 class Content extends Component {
 
@@ -82,26 +84,28 @@ class Content extends Component {
                         <input type="range" min="1" max="36" value={this.state.value} onChange={this.handleSlider.bind(this)} className="range-slider" />
                     </div>
                 </div>
+                <div className="row">
+                    <div className="col-12">
+                        <HeaderContainer type="mobile" />
+                        <LastSaleBlock type="mobile" />
+                    </div>
+                </div>
                 <div className="product-info-container">
-                    <div className="product-info row">
+                    <div className="product-info">
                         <div className="info">
-                            <span className="icon"></span>
                             <span className="title">Style</span>
                             <span className="content"> CK3480-001 </span>
                             
                         </div>
                         <div className="info">
-                            <span className="icon"></span>
                             <span className="title">Colorway</span>
                             <span className="content"> Metallic Silver/Metallic Silver-Black </span>
                         </div>
                         <div className="info">
-                            <span className="icon"></span>
                             <span className="title">Retail Price</span>
                             <span className="content"> $110 </span>
                         </div>
                         <div className="info">
-                            <span className="icon"></span>
                             <span className="title">Release Date</span>
                             <span className="content"> 09/14/2019 </span>
                         </div>
