@@ -25,7 +25,7 @@ class PostHeader extends Component {
                         <div className="intro-content">
                             <div className="block-meta">
                                 By 
-                                <a href="#">Kevin Kosanovich</a>
+                                <a href="#"> Kevin Kosanovich </a>
                                 , 10 hours ago
                             </div>
 
@@ -48,9 +48,12 @@ class PostHeader extends Component {
                             <a className="social-share-link subscribe-link icon-fa" href="#">
 
                             </a>
-                            <div className="blog-count icon-fa">
-                                <span>0</span>
+                            <div className = "number-messenger">
+                                <div className="blog-count icon-fa">
+                                    <span>0</span>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>

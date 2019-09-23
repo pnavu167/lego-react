@@ -20,7 +20,9 @@ class AuthorComponent extends Component {
                         <a href="#">Nick Matthies</a>
                     </div>
                     <p className="author-description">Only thing dripping is my coffee maker...IG: @nickmatthies</p>
-                    <div className="social-media-links"></div>
+                    <div className="social-media-links"> 
+                        <a href="https://www.instagram.com/tamarrdavis/" target="_blank" className="social-media-links-item social-media-links-item-instagram icon-fa"></a>
+                    </div>
                 </div>
             </div>
         );

@@ -8,6 +8,12 @@ import axios from 'axios';
 // import ContainerSearch from './ContainerSearchComponent';
 import Header from '../layouts/HeaderComponent'
 import Footer from '../layouts/FooterComponent'
+import SubscribeBanner from './SubscribeBanner'
+import PostHeader from './PostHeader'
+import CatPost from './CatPost'
+import ProductWrapper from './ProductWrapper'
+import AuthorComponent from './AuthorComponent'
+import SubMenu from './SubMenu'
 
 class PostTwo extends Component {
 
@@ -15,75 +21,10 @@ class PostTwo extends Component {
         return(
             <div id="new-main-container">
                 <Header />
-                    <div className="blog">
-                        <div className="pg-blog">
-                            <div className="blog-category">
-                                <ul>
-                                    <li className="first-category">
-                                        <a href="#" className="color-gray bold type-news">News</a>
-                                    </li>
-                                    <li><a href="#" className="color-gray bold type-news">Sneakers</a></li>
-                                    <li><a href="#" className="color-gray bold type-news">Streetwear</a></li>
-                                    <li><a href="#" className="color-gray bold type-news">Handbags</a></li>
-                                    <li><a href="#" className="color-gray bold type-news">Watches</a></li>
-                                    <li><a href="#" className="color-gray bold type-news">Editorial</a></li>
-                                </ul>
-                            </div>
-                            <div className="subscribe">
-                                <a href="#" className="subscribe-link icon-fa fnt-size-14 color-gray bold">Subscribe</a>
-                            </div>
-
-                        </div>
-                    </div>
+                <SubMenu />
 
                 <div className="cover-size-post">
-                    <div className="header-post full-width">
-
-                        <div className="news-list">
-                            <div className="header-post-top">
-                                <div className="blog-post"> 
-                                    <a href="#">Sneakers</a>
-                                </div> 
-                                <h1 className="post-title">
-                                    Sell Off Your Summer With 50% Off Seller Fees on StockX
-                                </h1>
-                            </div>
-                            
-                            <div className="header-post-bottom">
-                                <div className="intro-content">
-                                    <div className="block-meta">
-                                        By 
-                                        <a href="#">Aida</a>
-                                        , 3 days ago
-                                    </div>
-
-                                    <div className="blog-excerpt">It’s that time of year again. The air starts getting cool and the fits even cooler. What better time to sell your sneakers, streetwear, handbags, and watches than the start of a new season?</div>
-                                </div>
-                                
-                                <div className="social-share">
-                                    <a className="social-share-link facebook icon-fa"  href="#">
-                                        <i className="fa fa-facebook"></i>
-                                    </a>
-
-                                    <a className="social-share-link twitter icon-fa"  href="#">
-                                        <i className="fa fa-twitter"></i>
-                                    </a>
-
-                                    <a className="social-share-link pinterest icon-fa" href="#">
-                                        <i className="fa fa-pinterest-p"></i>
-                                    </a>
-
-                                    <a className="social-share-link subscribe-link icon-fa" href="#">
-
-                                    </a>
-                                    <div className="blog-count icon-fa">
-                                        <span>0</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    </div>
+                    <PostHeader/>
                     
                     <div className="post-body">
                         <div className="blog-article">
@@ -116,10 +57,10 @@ class PostTwo extends Component {
                                             <p>
                                                 Create a StockX account online or via our mobile app, which is available in the 
                                                 <a href="#" target="_blank" rel="noopener noreferrer">
-                                                Apple App Store
+                                                 Apple App Store 
                                                 </a> 
                                                 or 
-                                                <a href="#" target="_blank" rel="noopener noreferrer">Google Play Store</a>.
+                                                <a href="#" target="_blank" rel="noopener noreferrer"> Google Play Store</a>.
                                             </p>
                                         </li>
                                         <li>
@@ -136,7 +77,7 @@ class PostTwo extends Component {
                                                 
                                                 All StockX customers are eligible. 
                                                 <a href="https://stockx.com/">
-                                                    <span>Start selling ASAP!</span>
+                                                    <span> Start selling ASAP!</span>
                                                 </a>
 
                                             </p>
@@ -144,17 +85,7 @@ class PostTwo extends Component {
                                     </ul>
                                 </div>
 
-                                <div className="author-details">
-                                    <div className="author-img">
-                                    </div>
-                                    <div className="author-info">
-                                        <div className="author-headline">
-                                            <a href="#">Nick Matthies</a>
-                                        </div>
-                                        <p className="author-description">Only thing dripping is my coffee maker...IG: @nickmatthies</p>
-                                        <div className="social-media-links"></div>
-                                    </div>
-                                </div>
+                                <AuthorComponent/>
                             </div>
 
                             <div className="blog-article-sidebar">
@@ -239,92 +170,12 @@ class PostTwo extends Component {
 
                     </div>
 
-                    <div className="cat-post">
-                        <div className="type-post">
-                            <h2 >Related Articles</h2> 
-                        </div>
-
-                        <div className="blog-post-row">
-                            <div className="blog-post-block">
-                                <a href="#" className="blog-img">
-                                    <img src="https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg" alt="Fall Essentials: Sneakers" 
-                                    className="full-width"/>
-                                </a>
-
-                                <div className="news-list full-width">
-                                    <div className="blog-post"> 
-                                        <a href="#">Sneakers</a>
-                                    </div> 
-                                    <a href="#" className="block-title">Fall Essentials: Sneakers</a>
-                                    <div className="block-meta">
-                                        By 
-                                        <a href="#">Kevin Kosanovich</a>
-                                        , 10 hours ago
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="blog-post-block">
-                                <a href="#" className="blog-img">
-                                    <img src="https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg" alt="Fall Essentials: Sneakers" 
-                                    className="full-width"/>
-                                </a>
-
-                                <div className="news-list full-width">
-                                    <div className="blog-post"> 
-                                        <a href="#">Sneakers</a>
-                                        and
-                                        <a href="#">Streetwear</a>
-                                    </div> 
-                                    <a href="#" className="block-title">
-                                        Obsidian UNC Jordans & Satins Shatter Records | StockX MKT Watch
-                                    </a>
-                                    <div className="block-meta">
-                                        By 
-                                        <a href="#">Kevin Kosanovich</a>
-                                        , 10 hours ago
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="blog-post-block">
-                                <a href="#" className="blog-img">
-                                    <img src="https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg" alt="Fall Essentials: Sneakers" 
-                                    className="full-width"/>
-                                </a>
-
-                                <div className="news-list full-width">
-                                    <div className="blog-post"> 
-                                        <a href="#">Sneakers</a>
-                                    </div> 
-                                    <a href="#" className="block-title">Fall Essentials: Sneakers</a>
-                                    <div className="block-meta">
-                                        By 
-                                        <a href="#">Kevin Kosanovich</a>
-                                        , 10 hours ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div className = "pg-lr">
+                        <CatPost title = "RELATED ARTICLES"/>
                     </div>
                 </div>
 
-                    <div className="container-subscribe">
-                        <div className="cover-size">
-                            <div className="content-subscribe">
-                                <h2 className="headline-subscribe">Stockx News. Sign Up. Stay Updated.</h2>
-                                <div className="form subscribe-form">
-                                    <form method="post"> 
-                                        <div className="form-element-subscribe"> 
-                                            <input type="email" placeholder="Enter email for StockX news" name="email" className="color-gray bold"/> 
-                                        </div> 
-                                        <input type="submit" value="Subscribe" className="button btn-subscribe"/> 
-                                    </form>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
+                <SubscribeBanner />
                 <Footer/>
             </div>
         );

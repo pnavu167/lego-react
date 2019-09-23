@@ -1,0 +1,161 @@
+.page-container {
+	min-height: 100vh;
+    position: relative;
+}
+
+.text-app-background {
+	background-image: url(http://stockx-assets.imgix.net/png/text-background.png?auto=compress%2Cformat);
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    min-height: 76vh;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+
+    .text-app-row {
+    	align-items: center;
+
+    	@include smaller-than-desktop {
+	    	flex-direction: column-reverse;
+	    }
+
+    	.img-cell-hand {
+    		align-self: flex-end;
+		    margin-top: 5rem;
+		    width: 33%;
+
+		    img {
+		    	max-width: 400px;
+    			max-height: 600px;
+		    }
+
+		    @include smaller-than-desktop {
+		    	display: none;
+		    }
+    	}
+
+    	.text-app-hr {
+		    margin: 10px auto;
+
+		    .bottom-border {
+			    border-bottom: 1.5px solid #fff !important;
+			}
+		}
+
+    	.text-app-copy {
+		    padding: 0 20px;
+		    min-width: 33%;
+
+		    h1 {
+		    	margin: -3px 0;
+			    font-size: 55px;
+			    letter-spacing: 4px;
+				font-family: BebasNeue;
+
+			    @include smaller-than-tablet {
+					font-size: 36px;
+				}
+		    }
+
+		    p {
+		    	font-size: 20px;
+
+		    	.phone-text {
+		    		@include smaller-than-desktop {
+				    	display: none;
+				    }
+		    	}
+
+		    	@include smaller-than-desktop {
+			    	font-size: 14px;
+			    }
+		    }
+
+		    .hr {
+		    	display: flex;
+		    	.hr-width {
+		    		width: 100%;
+    				margin: auto;
+		    	}
+		    }
+
+		    .hr-with-logo {
+			    display: flex;
+			    align-items: center;
+			    justify-content: center;
+
+			    .logo-container {
+				    width: 101px;
+				    height: 101px;
+				    margin: 13px 1px 24px 11px;
+
+				    img {
+				    	max-width: 100%;
+    					max-height: 100%;
+				    }
+				}
+
+				.bottom-border {
+				    border-bottom: 1px solid #000;
+				    flex-grow: 1;
+				}
+			}
+
+			.text-app-input {
+			    display: flex;
+			    justify-content: center;
+
+			    input {
+				    height: 51px;
+				    margin-right: 1rem;
+				    max-width: 400px;
+				    border-radius: 2px;
+				    border: 0;
+				}
+
+				.btn {
+				    letter-spacing: 2px;
+				    padding: 9px 16px 9px;
+				    border-radius: 5px;
+				    border: none;
+				    @include fontExtraLarge;
+				}
+
+				@include smaller-than-tablet {
+					display: none;
+				}
+			}
+
+			.mobile-download-btn {
+				display: none;
+				font-family: BebasNeue;
+				@include smaller-than-tablet {
+					display: inline-block;
+				    letter-spacing: 2px;
+				    padding: 15px 16px 12px;
+				    border-radius: 5px;
+				}
+			}
+		}
+
+		.text-center {
+		    text-align: center;
+		}
+    }
+}
+
+.btn-success {
+	background-color: #509e2f;
+	border-color: #509e2f;
+	font-family: BebasNeue;
+}
+
+.text-app-background, .text-app-row {
+    width: 100%;
+    display: flex;
+}
+
+.white {
+	color: #fff;
+}

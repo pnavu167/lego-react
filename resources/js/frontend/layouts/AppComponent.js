@@ -14,6 +14,10 @@ import Home from '@/home/HomeComponent'
 import ProductList from '@/product/list/ListComponent'
 import ProductDetail from '@/product/detail/DetailComponent'
 import Guide from '@/about/GuideComponent'
+import Press from '@/about/PressComponent'
+import Login from '@/account/LoginComponent'
+import Application from '@/app/ApplicationComponent'
+import Sell from '@/sell/SellComponent'
 
 
 render (
@@ -26,13 +30,26 @@ render (
 				<Route exact path='/news/list' component={News_List} />
 				<Route exact path='/news/post_one' component={PostOne} />
 				<Route exact path='/news/post_two' component={PostTwo} />
-				<Route exact path='/news/post_two' component={PostTwo} />
+				<Route exact path='/news/post_three' component={PostThree} />
 				{/*End News*/}
 				<Route exact path='/products' component={ProductList} />
 				<Route exact path='/product-detail' component={ProductDetail} />
 				{/*About*/}
 				<Route exact path='/how-it-works' component={Guide} />
+				<Route exact path='/press' component={Press} />
 				{/*End About*/}
+
+				{/*Login*/}
+				<Route exact path='/log-in' component={Login} />
+				{/*End Login*/}
+
+				{/*Application*/}
+				<Route exact path='/app' component={Application} />
+				{/*End Application*/}
+
+				{/*Sell*/}
+				<Route exact path='/sell' component={Sell} />
+				{/*End Sell*/}
 			</Switch>
 		</div>
 	</BrowserRouter>, document.getElementById('root')

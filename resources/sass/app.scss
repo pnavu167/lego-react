@@ -1,6 +1,9 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
+@font-face {
+    font-family: BebasNeue;
+    src: local('BebasNeue Regular'), local('BebasNeue-Regular'), url('/plugins/bebas_neue/fonts/BebasNeue-Regular.woff2') format('woff2');
+}
 // Variables
 @import 'variables';
 
