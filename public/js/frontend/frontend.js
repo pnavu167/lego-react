@@ -47393,7 +47393,15 @@ function (_React$Component) {
         className: "select-grid-subtitle-container"
       }, "U.S. Men's Sizes  | Highest Bids"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "grid-tiles"
-      }, indents)));
+      }, indents)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: " form-error-container alert-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "error-body animated fadeIn"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        "class": "message"
+      }, "You must enter an ask amount to proceed"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        "class": "fa fa-exclamation-triangle"
+      }))));
     }
   }]);
 

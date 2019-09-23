@@ -46,6 +46,13 @@ class SelectSize extends React.Component {
 						</div>
 					</div>
 				}
+
+				<div className = " form-error-container alert-container">
+					<div className = "error-body animated fadeIn">
+						<div class="message">You must enter an ask amount to proceed</div>
+						<i class="fa fa-exclamation-triangle"></i>
+					</div>
+				</div>
 			</div>
 		);
 	}
