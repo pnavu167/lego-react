@@ -10,61 +10,21 @@ import Header from '../layouts/HeaderComponent'
 import Footer from '../layouts/FooterComponent'
 import SubMenu from './SubMenu'
 import SubscribeBanner from './SubscribeBanner'
+import PostHeader from './PostHeader'
+import CatPost from './CatPost'
+import ProductWrapper from './ProductWrapper'
+import AuthorComponent from './AuthorComponent'
 
 class PostOne extends Component {
 
   	render() {
         return(
             <div id="new-main-container">
-                <Header type="on-top home-topbar" />
+                <Header/>
                 <SubMenu />
 
                     <div className="cover-size-post">
-                        <div className="header-post full-width">
-
-                            <div className="news-list">
-                                <div className="header-post-top">
-                                    <div className="blog-post"> 
-                                        <a href="#">Editorial</a>
-                                    </div> 
-                                    <h1 className="post-title">StockX Needle Movers: August Streetwear New Arrivals</h1>
-                                </div>
-                                
-                                <div className="header-post-bottom">
-                                    <div className="intro-content">
-                                        <div className="block-meta">
-                                            By 
-                                            <a href="#">Kevin Kosanovich</a>
-                                            , 10 hours ago
-                                        </div>
-
-                                        <div className="blog-excerpt">Needle Movers is a monthly segment highlighting the latest streetwear collaborations and brands recently added to StockX. Check out the collections below - just click the photos to shop.</div>
-                                    </div>
-                                    
-                                    <div className="social-share">
-                                        <a className="social-share-link facebook icon-fa"  href="#">
-                                            <i className="fa fa-facebook"></i>
-                                        </a>
-
-                                        <a className="social-share-link twitter icon-fa"  href="#">
-                                            <i className="fa fa-twitter"></i>
-                                        </a>
-
-                                        <a className="social-share-link pinterest icon-fa" href="#">
-                                            <i className="fa fa-pinterest-p"></i>
-                                        </a>
-
-                                        <a className="social-share-link subscribe-link icon-fa" href="#">
-
-                                        </a>
-                                        <div className="blog-count icon-fa">
-                                            <span>0</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                        </div>
+                        <PostHeader/>
                         
                         <div className="post-body">
                             <div className="post-img">
@@ -85,47 +45,7 @@ class PostOne extends Component {
 
                                     <p>An unlikely subject took both the sneaker and streetwear world by storm in August, SpongeBob SquarePants. Everyone’s favorite childhood cartoon character (opinion, but not really), was the subject of a collaboration with Nike Athlete and Brooklyn Net’s star, Kyrie Irving. The collection featured both sneakers and apparel centered around each of the major characters featured on the show (SpongeBob SquarePants, Patrick The Star, Squidward Tentacles, Mr. Krabs, and Sandy Cheeks). The collaboration did big numbers on both the streetwear and sneakers front, providing a perfect fix for anyone that couldn’t hold out for most of the month until Supreme. Highlights from the apparel release are featured below and the entire drop can be shopped <a href="#" target="_blank" >here</a>.</p>
                                 </div>
-                                <div className="stockx-product-wrapper">
-                                        <a className="stockx-product-item" href="#">
-                                            <div className="stockx-product-img">
-                                                <img src="https://stockx.imgix.net/products/streetwear/Nike-Kyrie-x-Spongebob-Dri-Fit-Hoodie-Dynamic-Yellow-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;auto=format,compress&amp;trim=color&amp;q=90&amp;dpr=2&amp;updated_at=1568041911"/>
-                                            </div>      
-                                            <div className="stockx-product-title">Nike Kyrie x Spongebob Dri-Fit Hoodie Dynamic Yellow</div>
-                                            <div className="stockx-product-ask">
-                                                <span className="stockx-product-ask-amount">$78</span> • Lowest Ask
-                                            </div>
-                                        </a>
-
-                                        <a className="stockx-product-item" href="#">
-                                            <div className="stockx-product-img">
-                                                <img src="https://stockx.imgix.net/products/streetwear/Nike-Kyrie-x-Spongebob-Dri-Fit-Hoodie-Dynamic-Yellow-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;auto=format,compress&amp;trim=color&amp;q=90&amp;dpr=2&amp;updated_at=1568041911"/>
-                                            </div>      
-                                            <div className="stockx-product-title">Nike Kyrie x Spongebob Dri-Fit Hoodie Dynamic Yellow</div>
-                                            <div className="stockx-product-ask">
-                                                <span className="stockx-product-ask-amount">$78</span> • Lowest Ask
-                                            </div>
-                                        </a>
-
-                                        <a className="stockx-product-item" href="#">
-                                            <div className="stockx-product-img">
-                                                <img src="https://stockx.imgix.net/products/streetwear/Nike-Kyrie-x-Spongebob-Dri-Fit-Hoodie-Dynamic-Yellow-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;auto=format,compress&amp;trim=color&amp;q=90&amp;dpr=2&amp;updated_at=1568041911"/>
-                                            </div>      
-                                            <div className="stockx-product-title">Nike Kyrie x Spongebob Dri-Fit Hoodie Dynamic Yellow</div>
-                                            <div className="stockx-product-ask">
-                                                <span className="stockx-product-ask-amount">$78</span> • Lowest Ask
-                                            </div>
-                                        </a>
-
-                                        <a className="stockx-product-item" href="#">
-                                            <div className="stockx-product-img">
-                                                <img src="https://stockx.imgix.net/products/streetwear/Nike-Kyrie-x-Spongebob-Dri-Fit-Hoodie-Dynamic-Yellow-Product.jpg?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;auto=format,compress&amp;trim=color&amp;q=90&amp;dpr=2&amp;updated_at=1568041911"/>
-                                            </div>      
-                                            <div className="stockx-product-title">Nike Kyrie x Spongebob Dri-Fit Hoodie Dynamic Yellow</div>
-                                            <div className="stockx-product-ask">
-                                                <span className="stockx-product-ask-amount">$78</span> • Lowest Ask
-                                            </div>
-                                        </a>
-                                </div>
+                                <ProductWrapper/>
 
                                 <div className="editor-content">             
                                     <h2><strong>FOG Essentials Photo Gear</strong></h2>
@@ -138,63 +58,13 @@ class PostOne extends Component {
                                     <p>Supermalls rejoice, Starcourt doesn’t have to close because Pacsun is determined to carry everyone else on their back. Fear Of God’s Essentials line dropped more quick-to-sell-out pieces last month through the super mall mainstay that near instantly did numbers on StockX. Like the above, highlights have been featured below and the whole drop can be shopped <a href="#" target="_blank" >here</a>.</p>
                                 </div>
 
-                                <div className="stockx-product-wrapper">
-                                    <a className="stockx-product-item" href="#">
-                                        <div className="stockx-product-img">
-                                            <img src="https://stockx.imgix.net/products/streetwear/FEAR-OF-GOD-ESSENTIALS-Photo-T-shirt-Black.png?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;auto=format,compress&amp;trim=color&amp;q=90&amp;dpr=2&amp;updated_at=1565964406"/>
-                                        </div>      
-                                        <div className="stockx-product-title">FEAR OF GOD ESSENTIALS Photo T-shirt Black</div>
-                                        <div className="stockx-product-ask">
-                                            <span className="stockx-product-ask-amount">$68</span> • Lowest Ask
-                                        </div>
-                                    </a>
-
-                                    <a className="stockx-product-item" href="#">
-                                        <div className="stockx-product-img">
-                                            <img src="https://stockx.imgix.net/products/streetwear/FEAR-OF-GOD-ESSENTIALS-Photo-T-shirt-Black.png?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;auto=format,compress&amp;trim=color&amp;q=90&amp;dpr=2&amp;updated_at=1565964406"/>
-                                        </div>      
-                                        <div className="stockx-product-title">FEAR OF GOD ESSENTIALS Photo T-shirt Black</div>
-                                        <div className="stockx-product-ask">
-                                            <span className="stockx-product-ask-amount">$68</span> • Lowest Ask
-                                        </div>
-                                    </a>
-
-                                    <a className="stockx-product-item" href="#">
-                                        <div className="stockx-product-img">
-                                            <img src="https://stockx.imgix.net/products/streetwear/FEAR-OF-GOD-ESSENTIALS-Photo-T-shirt-Black.png?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;auto=format,compress&amp;trim=color&amp;q=90&amp;dpr=2&amp;updated_at=1565964406"/>
-                                        </div>      
-                                        <div className="stockx-product-title">FEAR OF GOD ESSENTIALS Photo T-shirt Black</div>
-                                        <div className="stockx-product-ask">
-                                            <span className="stockx-product-ask-amount">$68</span> • Lowest Ask
-                                        </div>
-                                    </a>
-
-                                    <a className="stockx-product-item" href="#">
-                                        <div className="stockx-product-img">
-                                            <img src="https://stockx.imgix.net/products/streetwear/FEAR-OF-GOD-ESSENTIALS-Photo-T-shirt-Black.png?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;auto=format,compress&amp;trim=color&amp;q=90&amp;dpr=2&amp;updated_at=1565964406"/>
-                                        </div>      
-                                        <div className="stockx-product-title">FEAR OF GOD ESSENTIALS Photo T-shirt Black</div>
-                                        <div className="stockx-product-ask">
-                                            <span className="stockx-product-ask-amount">$78</span> • Lowest Ask
-                                        </div>
-                                    </a>
-                                </div>
+                                <ProductWrapper/>
 
                                 <div className="editor-content">             
                                     <h2><strong>FOG Essentials Photo Gear</strong></h2>
                                 </div>
 
-                                <div className="stockx-product-wrapper">
-                                    <a className="stockx-product-item" href="#">
-                                        <div className="stockx-product-img">
-                                            <img src="https://stockx.imgix.net/products/streetwear/FEAR-OF-GOD-ESSENTIALS-Photo-T-shirt-Black.png?fit=fill&amp;bg=FFFFFF&amp;w=300&amp;h=214&amp;auto=format,compress&amp;trim=color&amp;q=90&amp;dpr=2&amp;updated_at=1565964406"/>
-                                        </div>      
-                                        <div className="stockx-product-title">FEAR OF GOD ESSENTIALS Photo T-shirt Black</div>
-                                        <div className="stockx-product-ask">
-                                            <span className="stockx-product-ask-amount">$68</span> • Lowest Ask
-                                        </div>
-                                    </a>
-                                </div>
+                                <ProductWrapper number="1"/>
 
                                 <div className="editor-content">             
                                     <p>Supermalls rejoice, Starcourt doesn’t have to close because Pacsun is determined to carry everyone else on their back. Fear Of God’s Essentials line dropped more quick-to-sell-out pieces last month through the super mall mainstay that near instantly did numbers on StockX. Like the above, highlights have been featured below and the whole drop can be shopped <a href="#" target="_blank" >here</a>.</p>
@@ -208,89 +78,11 @@ class PostOne extends Component {
                                     <a href="#" target="_blank" rel="noopener">Father Steve</a>
                                 </h3>
                                 
-                                <div className="author-details">
-                                    <div className="author-img">
-                                        
-                                    </div>
-                                    <div className="author-info">
-                                        <div className="author-headline">
-                                            <a href="#">Nick Matthies</a>
-                                        </div>
-                                        <p className="author-description">Only thing dripping is my coffee maker...IG: @nickmatthies</p>
-                                        <div className="social-media-links"></div>
-                                    </div>
-                                </div>
+                                <AuthorComponent/>
                             </div>
                         </div>
 
-                        <div className="cat-post">
-                            <div className="type-post">
-                                <h2 >Related Articles</h2> 
-                            </div>
-
-                            <div className="blog-post-row">
-                                <div className="blog-post-block">
-                                    <a href="#" className="blog-img">
-                                        <img src="https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg" alt="Fall Essentials: Sneakers" 
-                                        className="full-width"/>
-                                    </a>
-
-                                    <div className="news-list full-width">
-                                        <div className="blog-post"> 
-                                            <a href="#">Sneakers</a>
-                                        </div> 
-                                        <a href="#" className="block-title">Fall Essentials: Sneakers</a>
-                                        <div className="block-meta">
-                                            By 
-                                            <a href="#">Kevin Kosanovich</a>
-                                            , 10 hours ago
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="blog-post-block">
-                                    <a href="#" className="blog-img">
-                                        <img src="https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg" alt="Fall Essentials: Sneakers" 
-                                        className="full-width"/>
-                                    </a>
-
-                                    <div className="news-list full-width">
-                                        <div className="blog-post"> 
-                                            <a href="#">Sneakers</a>
-                                            and
-                                            <a href="#">Streetwear</a>
-                                        </div> 
-                                        <a href="#" className="block-title">
-                                            Obsidian UNC Jordans & Satins Shatter Records | StockX MKT Watch
-                                        </a>
-                                        <div className="block-meta">
-                                            By 
-                                            <a href="#">Kevin Kosanovich</a>
-                                            , 10 hours ago
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="blog-post-block">
-                                    <a href="#" className="blog-img">
-                                        <img src="https://s3.amazonaws.com/stockx-sneaker-analysis/wp-content/uploads/2019/09/Fall-sneakers-blog.jpg" alt="Fall Essentials: Sneakers" 
-                                        className="full-width"/>
-                                    </a>
-
-                                    <div className="news-list full-width">
-                                        <div className="blog-post"> 
-                                            <a href="#">Sneakers</a>
-                                        </div> 
-                                        <a href="#" className="block-title">Fall Essentials: Sneakers</a>
-                                        <div className="block-meta">
-                                            By 
-                                            <a href="#">Kevin Kosanovich</a>
-                                            , 10 hours ago
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <CatPost title = "RELATED ARTICLES"/>
                     </div>
 
                 <SubscribeBanner />

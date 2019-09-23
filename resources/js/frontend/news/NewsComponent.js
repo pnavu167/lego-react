@@ -18,7 +18,7 @@ class News extends Component {
   	render() {
         return(
             <div id="news-main-container">
-                <Header type="on-top home-topbar" />
+                <Header/>
                     <SubMenu />
                     <div className="cover-size">
                         <NewsSlider/>

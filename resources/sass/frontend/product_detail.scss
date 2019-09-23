@@ -105,6 +105,7 @@
 		}
 	}
 	&.mobile {
+		display: none;
 		@include smaller-than-tablet {
 			display: flex;
 		}
@@ -132,7 +133,12 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 12px;
-
+	&.mobile {
+		display: none;
+		@include smaller-than-tablet {
+			display: flex;
+		}
+	}
     .last-sale {
 	    display: flex;
 	    justify-content: center;
@@ -323,7 +329,6 @@
 		.info {
 			display: flex;
 			justify-content: space-between;
-
 			@include smaller-than-tablet {
 				width: 100%;
 				padding: 0 10px;
@@ -334,6 +339,9 @@
 				font-weight: bold;
 				margin-right: 3px;
 				text-transform: uppercase;
+			}
+			.content {
+				color: $black;
 			}
 		}
 	}
@@ -358,6 +366,8 @@
 			.content {
 				font-weight: bold;
 				text-transform: uppercase;
+				white-space: nowrap;
+				color: $black;
 				.value {
 					margin-left: 5px;
 				}

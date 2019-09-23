@@ -80,7 +80,7 @@ ul {
 		display: flex;
 		align-items: center;
 		min-height: 90px;
-		z-index: 100000000;
+		z-index: 1;
 		@include smaller-than-tablet {
 			display: none;
 		}
@@ -153,7 +153,7 @@ ul {
 		height: 45px;
 		width: 100%;
 		background-color: $white;
-		z-index: 100000;
+		z-index: 1;
 		@include smaller-than-tablet {
 			display: flex;
 			justify-content: space-between;
@@ -613,13 +613,21 @@ ul {
 				width: 33%;
 			}
 
+			@include smaller-than-tablet {
+				flex-flow: wrap;
+				width: 30%;
+				margin-left: 25px;
+			}
+
 			@include mobile {
 				width: 100%;
+				margin-left: 0;
 			}
     	}
 
-    	@include tablet {
+    	@include smaller-than-tablet {
 			flex-flow: wrap;
+			justify-content: center;
 		}
 
 		@include mobile {
@@ -631,11 +639,14 @@ ul {
    	.title-option{
    		font-size: 13px;
    		padding: 20px 0 10px;
+   		font-weight: 700;
    		a {
    			color: #fff;
    		}
 
-		@include fontSmall;   		
+		@include smaller-than-tablet {
+			font-size: 15px;
+		}   		
    		
    	}
 
@@ -647,11 +658,15 @@ ul {
 			overflow: hidden;
 			li{
 				padding-top: 8px;
-				font-size: 13px;
+				font-size: 12px;
 				a{
 					font-weight: bold;
 					color: #808080;
 				}
+
+				@include smaller-than-tablet {
+					font-size: 13px;
+				} 
 			}
    		}
    	}
@@ -774,7 +789,11 @@ ul {
 			    justify-content: space-around;
 			}
 
-			@include fontExtraSmall;
+			@include smaller-than-tablet {
+			    font-size: 10px;
+			}
+
+			
    		}
 
    		.copyright{
@@ -791,7 +810,7 @@ ul {
 
    		@include mobile {
 		    flex-direction: column;
-		    width: 260px;
+		    width: 290px;
 		    justify-content: center;
 		    text-align: center;
 		    padding: 10px 0 0;
@@ -818,11 +837,15 @@ ul {
 .cover-size{
 	max-width: 1200px;
 	margin: auto;
-}mobile
+}
 
 .mobile {
 	display: none;
 }
+
+
+
 @import 'home';
 @import 'list_products';
 @import 'product_detail';
+@import 'about';
