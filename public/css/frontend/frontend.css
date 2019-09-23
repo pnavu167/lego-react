@@ -2296,12 +2296,6 @@ ul {
   }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
-  .container {
-    max-width: none;
-  }
-}
-
 .about-container {
   display: flex;
 }
@@ -2312,14 +2306,20 @@ ul {
   }
 }
 
-.content,
-.video {
+@media (min-width: 480px) and (max-width: 767px) {
+  .about-container {
+    max-width: none;
+  }
+}
+
+.about-container .content,
+.about-container .video {
   width: 50%;
 }
 
 @media (max-width: 991px) {
-  .content,
-  .video {
+  .about-container .content,
+  .about-container .video {
     width: 100%;
   }
 }
@@ -2948,6 +2948,54 @@ a:hover {
   margin: 0;
 }
 
+.signup-bottom .vice-row .show-menu-arrow {
+  padding: 8px 25px 6px 12px;
+  border-radius: 2px;
+  height: auto;
+}
+
+.signup-bottom .vice-row .show-menu-arrow ul {
+  list-style-type: none;
+  max-height: 73px;
+  overflow-y: auto;
+}
+
+.signup-bottom .vice-row .show-menu-arrow ul li a {
+  padding: 3px 20px;
+  color: #000;
+  display: block;
+}
+
+.signup-bottom .vice-row .select-size-exaplainer {
+  padding-bottom: 12px;
+}
+
+.signup-bottom .vice-row .vice-size-sneaker {
+  width: 100%;
+}
+
+.signup-bottom .vice-row .dropdown-toggle {
+  padding: 0;
+  font-size: 18px;
+}
+
+.signup-bottom .vice-row .dropdown-toggle:after {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.signup-bottom .vice-row .dropdown-menu {
+  width: 100%;
+  top: 4px !important;
+  left: -12px !important;
+  border-radius: 4px;
+}
+
+.signup-bottom .vice-row .dropdown-toggle:focus {
+  box-shadow: none;
+}
+
 .signup-bottom .vice-btns {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -3312,5 +3360,130 @@ a:hover {
 
 .white {
   color: #fff;
+}
+
+.buysell-header .pane-header {
+  text-align: center;
+}
+
+.buysell-header .pane-header h1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.buysell-header .pane-header .market-summary {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.buysell-header .header-image {
+  width: 80%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.buysell-header .image-container img {
+  max-width: 100%;
+}
+
+.pane {
+  padding: 0 30px 100px;
+}
+
+.pane .pane-header {
+  padding-top: 30px;
+}
+
+.proxima-heading {
+  font-family: proxima-nova, sans-serif;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.pane.sixty {
+  width: 60%;
+}
+
+.pane.forty {
+  width: 40%;
+  min-width: 500px;
+}
+
+.pane.pane-grey {
+  background: #fafafa;
+}
+
+.split-pane-page {
+  display: flex;
+}
+
+.size-select-grid {
+  padding-top: 30px;
+}
+
+.size-select-grid .select-grid-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  padding-bottom: 16px;
+  margin: 0px;
+}
+
+.size-select-grid .select-grid-subtitle-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 13px;
+  height: 40px;
+}
+
+.size-select-grid .grid-tiles,
+.size-select-grid .grid-tile {
+  display: flex;
+  align-items: center;
+}
+
+.size-select-grid .grid-tiles {
+  flex-flow: row wrap;
+}
+
+.size-select-grid .grid-tile {
+  justify-content: center;
+  cursor: pointer;
+  font-size: 16px;
+  width: 23%;
+  height: 70px;
+  margin: 4px;
+}
+
+.size-select-grid .grid-tile .tile-inner {
+  background: #fff;
+  border: 1px solid #e5e7ea;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  width: 94px;
+  height: 70px;
+}
+
+.size-select-grid .grid-tile .tile-inner:hover {
+  background: #fcedec;
+}
+
+.size-select-grid .grid-tile .tile-value {
+  color: #000;
+  font-weight: 700;
+}
+
+.size-select-grid .grid-tile .tile-subvalue {
+  color: #ff5a5f;
+  font-weight: 700;
 }
 

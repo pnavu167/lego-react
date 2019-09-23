@@ -19,26 +19,27 @@
     }
 }
 
-.container {
-    @include small-tablet {
-    	max-width: none;
-    }
-}
 
 .about-container{
 	display: flex;
 	@include smaller-than-small-desktop {
 		flex-wrap: wrap;
 	}
-}
 
-.content, .video {
-	width: 50%;
+	@include small-tablet {
+    	max-width: none;
+    }
 
-	@include smaller-than-small-desktop {
-		width: 100%;
+    .content, .video {
+		width: 50%;
+
+		@include smaller-than-small-desktop {
+			width: 100%;
+		}
 	}
 }
+
+
 
 .content {
 	color: #fff;
