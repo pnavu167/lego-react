@@ -340,9 +340,6 @@
 				margin-right: 3px;
 				text-transform: uppercase;
 			}
-			.content {
-				color: $black;
-			}
 		}
 	}
 }
@@ -367,7 +364,6 @@
 				font-weight: bold;
 				text-transform: uppercase;
 				white-space: nowrap;
-				color: $black;
 				.value {
 					margin-left: 5px;
 				}
@@ -380,8 +376,80 @@
 }
 .statistical {
 	border-top: 1px solid $borderColor;
+	.lastest-sale-container {
+		&.chart {
+			height: 270px;
+		}
+	}
+	.view-all-sales {
+		margin: 25px 0 11px;
+		color: $green;
+	}
+	.gauges-wrapper {
+		text-align: center;
+    	margin-top: -25px;
+		.gauges-title {
+			border-bottom: 2px solid $borderColor;
+			line-height: 64px;
+			text-transform: uppercase;
+		    letter-spacing: 3px;
+		    font-size: 16px;
+		    font-weight: 600;
+		    img {
+		    	width: 18px;
+    			margin-top: -4px;
+    			margin-right: 8px;
+		    }
+		}
+		.gauges {
+			height: inherit;
+			.gauge-container {
+				border-bottom: 1px solid $borderColor;
+				&:first-child {
+					margin-top: 0;
+				}
+				
+				.gauge {
+					height: 30px;
+    				overflow: hidden;
+				}
+				.gauge-title {
+					font-family: BebasNeue;
+				    font-size: 26px;
+				    font-weight: 700;
+				    letter-spacing: 2px;
+				    .historical-detail {
+				    	font: 600 14px proxima-nova,sans-serif;
+					    text-transform: uppercase;
+					    color: #666;
+					    margin-bottom: 8px;
+				    }
+				}
+				.gauge-value {
+					font-size: 36px;
+				    color: $green;
+				    font-weight: 600;
+				    padding-bottom: 22px;
+				}
+			}
+		}
+	}
 }
-
+.table-condensed {
+	thead {
+		th {
+			padding: 5px;
+			border: none;
+			@include fontNormal;
+		}
+	}
+	tbody {
+		td {
+			padding: 5px;
+			@include fontSmall;
+		}
+	}
+}
 
 
 

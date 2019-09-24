@@ -29665,7 +29665,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -45618,7 +45618,7 @@ function (_Component) {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("section", {
         className: "statistical"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "container"
+        className: "container mobile-container"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "statistical-container"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -45628,72 +45628,73 @@ function (_Component) {
       }, "lastest sale")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-md-8"
+        className: "col-lg-8 col-12"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "product-histories"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "lastest-sale-container chart"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "col-md-4"
-      })))));
+        className: "view-all-sales"
+      }, "View All Sales"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "lastest-sale-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
+        className: "latest-sales table table-striped table-condensed "
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        className: "",
+        width: "15%"
+      }, "Size"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        className: "",
+        width: "25%"
+      }, "Sale Price"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        className: "",
+        width: "35%"
+      }, "Date"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+        className: "",
+        width: "25%"
+      }, "Time"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$293"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "11:57 PM EST")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$293"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "11:14 PM EST")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$284"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "10:52 PM EST")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$293"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "10:41 PM EST")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$293"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "10:14 PM EST")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$293"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "10:14 PM EST"))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "col-lg-4 d-none d-lg-block"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauges-wrapper"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauges-title"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("img", {
+        src: "/storage/images/home/gauge.svg"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", null, "12 month historical")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauges"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge-title"
+      }, "# of Sales"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge-value"
+      }, "141")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge-title"
+      }, "Price Premium", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "historical-detail"
+      }, "(Over Original Retail Price)")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge-value"
+      }, "33.2%")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge-container"
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge-title"
+      }, "Average Sale Price"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "gauge-value"
+      }, "$296")))))))));
     }
   }]);
 
   return ProductDetail;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (ProductDetail); // Highcharts.setOptions({
-//             // カスタムカラーを設定
-//             colors: ['#666666', '#dc3545', '#ffc107', '#1d8c69']
-//         });
-//         Highcharts.chart('chart-container', {
-//             chart: {
-//                 type: 'bar'
-//             },
-//             title: {
-//                 text: '{{$chartTitle}}'
-//             },
-//             credits: {
-//                 enabled: false
-//             },
-//             exporting: { 
-//                 enabled: false 
-//             },
-//             xAxis: {
-//                 categories: listMachine,
-//                 min: 0,
-//                 max: 5,
-//                 scrollbar: {
-//                     enabled: true
-//                 },
-//                 tickLength: 0
-//             },
-//             yAxis: {
-//                 min: 0,
-//                 title: {
-//                     text: '実績一覧'
-//                 },
-//                 max: 100
-//             },
-//             legend: {
-//                 reversed: true
-//             },
-//             plotOptions: {
-//                 series: {
-//                     stacking: 'normal'
-//                 }
-//             },
-//             series: [{
-//                 name: '電源OFF',
-//                 data: listData['STATUS_POWER_OFF']
-//             }, {
-//                 name: 'アラーム',
-//                 data: listData['STATUS_ALARM']
-//             }, {
-//                 name: '停止',
-//                 data: listData['STATUS_STOP']
-//             }, {
-//                 name: '自動運転',
-//                 data: listData['STATUS_DRIVING']
-//             }]
-//         }
-//     });
+/* harmony default export */ __webpack_exports__["default"] = (ProductDetail);
 
 /***/ }),
 
