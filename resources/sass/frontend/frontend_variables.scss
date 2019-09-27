@@ -89,6 +89,26 @@ $desktop-width: 1200px;
 		@content;  
 	} 
 }
+//>768
+@mixin use-for-pc { 
+	@media (min-width: #{$tablet-width}) {
+		@content;   
+	} 
+}
+
+//=649
+@mixin special_screen { 
+	@media (max-width: 649px) {
+		@content;   
+	} 
+}
+
+//=<1024
+@mixin laptop { 
+	@media (max-width: 1024px) {
+		@content;   
+	} 
+}
 
 @mixin fontExtraSmall {
 	font-size: 12px !important;

@@ -1,13 +1,4 @@
-@mixin use-for-pc { 
-	@media (min-width: #{$tablet-width}) {
-		@content;   
-	} 
-}
-@mixin special_screen { 
-	@media (max-width: 649px) {
-		@content;   
-	} 
-}
+
 .component-page {
 	padding-bottom: 90px;
 	.component-container {

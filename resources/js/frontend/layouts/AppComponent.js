@@ -18,6 +18,11 @@ import Press from '@/about/PressComponent'
 import Login from '@/account/LoginComponent'
 import Application from '@/app/ApplicationComponent'
 import Sell from '@/sell/SellComponent'
+import SearchSell from '@/sell/SearchComponent'
+import Help from '@/faq/HelpComponent'
+import ListAsk from '@/faq/ListAsk'
+import Answer from '@/faq/AnswerComponent'
+import ContractSupport from '@/faq/ContractSupport'
 
 
 render (
@@ -25,7 +30,7 @@ render (
 		<div className="wrapper">
 			<Switch>
 				<Route exact path='/' component={Home} />
-				//News
+				{/*News*/}
 				<Route exact path='/news' component={News} />
 				<Route exact path='/news/list' component={News_List} />
 				<Route exact path='/news/post_one' component={PostOne} />
@@ -49,7 +54,16 @@ render (
 
 				{/*Sell*/}
 				<Route exact path='/sell' component={Sell} />
+				<Route exact path='/search-sell' component={SearchSell} />
 				{/*End Sell*/}
+
+				{/*FAQ*/}
+				<Route exact path='/help' component={Help} />
+				<Route exact path='/help/list' component={ListAsk} />
+				<Route exact path='/help/list' component={ListAsk} />
+				<Route exact path='/help/answer' component={Answer} />
+				<Route exact path='/contract-support' component={ContractSupport} />
+				{/*End FAQ*/}
 			</Switch>
 		</div>
 	</BrowserRouter>, document.getElementById('root')
