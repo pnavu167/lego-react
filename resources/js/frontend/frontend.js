@@ -33,6 +33,19 @@ $('.home-slider').slick({
 	vertical: true,
 });
 
+// $('.dropdown-menu').click(function(e) {
+// 	e.stopPropagation();
+// })
+
+// $('body').on('click', function (e) {
+//     if (!$('.options .select-options .dropdown-toggle').is(e.target) 
+//         && $('.options .select-options .dropdown-toggle').has(e.target).length === 0 
+//         && $('.show').has(e.target).length === 0
+//     ) {
+//         $('.options .select-options .dropdown-toggle').removeClass('show');
+//     }
+// });
+
 $(document).ready(function() {
 	$('.popoverData').popover();
 

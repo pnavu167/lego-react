@@ -41434,7 +41434,18 @@ $('.home-slider').slick({
   arrows: false,
   variableHeight: true,
   vertical: true
-});
+}); // $('.dropdown-menu').click(function(e) {
+// 	e.stopPropagation();
+// })
+// $('body').on('click', function (e) {
+//     if (!$('.options .select-options .dropdown-toggle').is(e.target) 
+//         && $('.options .select-options .dropdown-toggle').has(e.target).length === 0 
+//         && $('.show').has(e.target).length === 0
+//     ) {
+//         $('.options .select-options .dropdown-toggle').removeClass('show');
+//     }
+// });
+
 $(document).ready(function () {
   $('.popoverData').popover();
   $(".vice").click(function () {
@@ -45280,19 +45291,19 @@ function _possibleConstructorReturn(self, call) {
   return _assertThisInitialized(self);
 }
 
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
 function _assertThisInitialized(self) {
   if (self === void 0) {
     throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
   }
 
   return self;
-}
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
 }
 
 function _inherits(subClass, superClass) {
@@ -45328,33 +45339,167 @@ var SelectOptions =
 function (_Component) {
   _inherits(SelectOptions, _Component);
 
-  function SelectOptions() {
+  function SelectOptions(props) {
+    var _this;
+
     _classCallCheck(this, SelectOptions);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(SelectOptions).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(SelectOptions).call(this, props));
+    _this.state = {
+      'type': 'select'
+    };
+    _this.wrapperRef = react__WEBPACK_IMPORTED_MODULE_1___default.a.createRef();
+    _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(SelectOptions, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      document.addEventListener('mousedown', this.handleClick, false);
+    }
+  }, {
+    key: "componentWillUnMount",
+    value: function componentWillUnMount() {
+      document.removeEventListener('mousedown', this.handleClick, false);
+    }
+  }, {
+    key: "handleClick",
+    value: function handleClick(e) {
+      if (this.wrapperRef.current.contains(e.target)) {
+        console.log('inside');
+      } else {
+        console.log('outside');
+      }
+    }
+  }, {
+    key: "changeType",
+    value: function changeType(e) {
+      console.log(e);
+      var type = e.target.type;
+      this.setState({
+        'type': type
+      });
+    }
+  }, {
+    key: "fetchContainer",
+    value: function fetchContainer() {
+      if (this.state.type == 'chart') {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "header"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+          className: "size-chart",
+          type: "select",
+          onClick: this.changeType.bind(this)
+        }, '< back'), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+          className: "title"
+        }, "Size chart")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+          className: "size-grid"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+          className: "size-box all active"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+          className: "size-box-container"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+          className: "title"
+        }, "US All"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+          className: "subtitle"
+        }, "$245"))), this.fetchSelectGrid()));
+      } else {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "header"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+          className: "title"
+        }, "Select A U.S. Men's Size"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+          className: "size-chart",
+          type: "chart",
+          onClick: this.changeType.bind(this)
+        }, "Size chart")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+          className: "size-grid"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+          className: "size-box all active"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+          className: "size-box-container"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+          className: "title"
+        }, "US All"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+          className: "subtitle"
+        }, "$245"))), this.fetchSelectGrid()));
+      }
+    }
+  }, {
+    key: "fetchSelectGrid",
+    value: function fetchSelectGrid() {
+      var list = [];
+
+      for (var i = 1; i <= 30; i++) {
+        var size = 'US ' + i;
+        var value = '$' + Math.floor(Math.random() * (300 - 0));
+        list.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SizeBox, {
+          key: i,
+          size: size,
+          value: value
+        }));
+      }
+
+      return list;
+    }
+  }, {
+    key: "fetchChartRow",
+    value: function fetchChartRow() {
+      var list = [];
+
+      for (var i = 1; i <= 30; i++) {
+        var size = 'US ' + i;
+        var value = '$' + Math.floor(Math.random() * (300 - 0));
+        list.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SizeBox, {
+          key: i,
+          size: size,
+          value: value
+        }));
+      }
+
+      return list;
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "options"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Size"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "select-options"
+        className: "select-options position-relative",
+        id: "dd"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
         type: "button",
-        className: "btn btn-default size-sm ",
+        className: "btn btn-default size-sm dropdown-toggle",
+        title: "All",
         "data-toggle": "dropdown",
-        "data-id": "region",
-        title: "All"
-      }, "All ", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        "data-target": "#selectSizeContainer",
+        "data-flip": "false",
+        "data-boundary": "dd"
+      }, "All \xA0", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
         className: "fa fa-chevron-down"
-      }))));
+      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+        className: "dropdown-menu select-size-container",
+        "aria-labelledby": "selectSizeContainer",
+        ref: this.wrapperRef
+      }, this.fetchContainer())));
     }
   }]);
 
   return SelectOptions;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
+
+function SizeBox(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "size-box"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "size-box-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "title"
+  }, props.size), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "subtitle"
+  }, props.value)));
+}
 
 /* harmony default export */ __webpack_exports__["default"] = (SelectOptions);
 
