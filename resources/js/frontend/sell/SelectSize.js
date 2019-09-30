@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom'
 import React, { Component } from 'react'
 import axios from 'axios'
 import Cell from '@/sell/CellComponent'
+import Bill from '@/sell/BillComponent'
 
 
 class SelectSize extends React.Component {
@@ -19,7 +20,6 @@ class SelectSize extends React.Component {
 			hideGrid: true
 		}));
 
-		console.log(123);
 	}
 
 	render() {
@@ -46,6 +46,8 @@ class SelectSize extends React.Component {
 						</div>
 					</div>
 				}
+
+				<Bill/>
 			</div>
 		);
 	}
