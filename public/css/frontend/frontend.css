@@ -118,6 +118,10 @@ ul {
   }
 }
 
+#top-bar .topbar.home-topbar .topbar-search {
+  visibility: hidden;
+}
+
 #top-bar .topbar .topbar-search {
   width: 50%;
   padding-right: 30px;
@@ -2017,12 +2021,21 @@ ul {
   width: 372px;
   padding: 2.5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  position: absolute;
+  top: 100%;
+  z-index: 5;
+  background-color: #ffffff !important;
+  display: none;
 }
 
 @media (max-width: 479px) {
   .product-detail-container .product-detail-header .market-summary .options .select-options .select-size-container {
     width: 280px;
   }
+}
+
+.product-detail-container .product-detail-header .market-summary .options .select-options .select-size-container.show {
+  display: block;
 }
 
 .product-detail-container .product-detail-header .market-summary .options .select-options .select-size-container .header {
@@ -2078,7 +2091,7 @@ ul {
 }
 
 .product-detail-container .product-detail-header .market-summary .options .select-options .select-size-container .size-grid .size-box.active .size-box-container {
-  background-color: #ebf4e7;
+  background-color: #ebf4e7 !important;
 }
 
 .product-detail-container .product-detail-header .market-summary .options .select-options .select-size-container .size-grid .size-box .size-box-container {
@@ -2102,6 +2115,43 @@ ul {
   padding-bottom: 6.5px;
   text-transform: uppercase;
   color: #509e2f !important;
+}
+
+.product-detail-container .product-detail-header .market-summary .options .select-options .select-size-container .size-chart-rows {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: stretch;
+  text-align: center;
+  box-shadow: rgba(206, 206, 206, 0.7) 0px 13px 20px 0px;
+  padding: 5px 0px;
+  background: #ffffff !important;
+}
+
+.product-detail-container .product-detail-header .market-summary .options .select-options .select-size-container .size-chart-rows .size-chart-content {
+  overflow: scroll;
+  height: 364px;
+}
+
+.product-detail-container .product-detail-header .market-summary .options .select-options .select-size-container .size-chart-rows .size-chart-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-detail-container .product-detail-header .market-summary .options .select-options .select-size-container .size-chart-rows .size-chart-row:nth-child(even) {
+  background-color: #fafafa !important;
+}
+
+.product-detail-container .product-detail-header .market-summary .options .select-options .select-size-container .size-chart-rows .size-chart-row.active {
+  background-color: #ebf4e7 !important;
+}
+
+.product-detail-container .product-detail-header .market-summary .options .select-options .select-size-container .size-chart-rows .size-chart-row .size-chart-row-item {
+  text-align: center;
+  width: 20%;
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  padding: 7px 0px 8px;
 }
 
 @media (max-width: 767px) {
@@ -2581,6 +2631,7 @@ ul {
 
 .product-market-summary-wrap .product-market-summary .product-market-summary-col {
   display: flex;
+  align-items: center;
 }
 
 .product-market-summary-wrap .product-market-summary .product-market-summary-col img {
@@ -2718,6 +2769,47 @@ ul {
   .table-condensed tbody td {
     font-size: 12px !important;
   }
+}
+
+.custom-modal {
+  top: 10%;
+}
+
+.custom-modal .modal-header .modal-title {
+  font: 700 26px BebasNeue;
+  border-radius: 0;
+  padding-top: 2px;
+  color: #ffffff !important;
+}
+
+.custom-modal .modal-header .close {
+  font-size: 30px;
+  text-shadow: none;
+  background-color: transparent;
+  color: #ffffff !important;
+  opacity: 1;
+}
+
+.custom-modal.all-asks-modal .modal-header {
+  background-color: #ff5a5f !important;
+}
+
+.custom-modal.all-bids-modal .modal-header {
+  background-color: #509e2f !important;
+}
+
+.custom-modal.sales-histories-modal .modal-header {
+  background-color: #000000 !important;
+}
+
+.custom-modal.sales-histories-modal .chart {
+  height: 275px;
+}
+
+.custom-modal .modal-body {
+  min-height: auto;
+  max-height: 400px;
+  overflow: scroll;
 }
 
 /* Mixin */

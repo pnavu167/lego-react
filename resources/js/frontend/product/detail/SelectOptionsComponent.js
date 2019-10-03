@@ -9,31 +9,66 @@ class SelectOptions extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            'type': 'select'
+            'type': 'grid',
+            'toggleSizeContainer': ''
         }
-        this.wrapperRef = React.createRef();
+        this.sizeContainerRef = React.createRef()
+        this.handleClickSizeBox = this.handleClickSizeBox.bind(this)
         this.handleClick = this.handleClick.bind(this)
+        this.handleClickButtonShow = this.handleClickButtonShow.bind(this)
+        this.handleChangeSize = this.handleChangeSize.bind(this)
     }
 
     componentDidMount() {
-        document.addEventListener('mousedown', this.handleClick, false);
+        document.addEventListener('mousedown', this.handleClick, false)
     }
 
     componentWillUnMount() {
-        document.removeEventListener('mousedown', this.handleClick, false);
+        document.removeEventListener('mousedown', this.handleClick, false)
     }
 
     handleClick(e) {
-        if (this.wrapperRef.current.contains(e.target)) {
-            console.log('inside')
-        } else {
-            console.log('outside')
+        let toggleSizeContainer = false;
+        if($('.select-size-container').hasClass('show')) {
+            if (this.sizeContainerRef.current.contains(e.target)) {
+            } else {
+                toggleSizeContainer = true
+            }
         }
-        
+        if(e.target.classList.contains('select-size-button')) {
+            this.handleClickButtonShow()
+        } else if(toggleSizeContainer) {
+            this.toggleSizeContainer()
+        }
+    }
+
+    handleClickSizeBox(e) {
+        this.handleChangeSize()
+        this.toggleSizeContainer()
+    }
+
+    handleClickButtonShow(e) {
+        this.toggleSizeContainer()
+    }
+
+    toggleSizeContainer() {
+        if(!$('.select-size-container').hasClass('show')) {
+            this.setState({
+                'toggleSizeContainer': 'show'
+            })
+        } else {
+            this.setState({
+                'toggleSizeContainer': '',
+                'type': 'grid'
+            })
+        }
+    }
+
+    handleChangeSize() {
+        console.log('changed size')
     }
 
     changeType(e) {
-        console.log(e)
         let type = e.target.type
         this.setState({
             'type': type
@@ -49,15 +84,18 @@ class SelectOptions extends Component {
                         <span className="title">Size chart</span>
                         
                     </div>
-                    <ul className="size-grid">
-                        <li className="size-box all active">
-                            <a className="size-box-container">
-                                <span className="title">US All</span>
-                                <span className="subtitle">$245</span>
-                            </a>
-                        </li>
-                        {this.fetchSelectGrid()}
-                    </ul>
+                    <div className="size-chart-rows">
+                        <div className="size-chart-row">
+                            <strong>US</strong>
+                            <strong>UK</strong>
+                            <strong>EU</strong>
+                            <strong>CM</strong>
+                            <strong>W </strong>
+                        </div>
+                        <div className="size-chart-content">
+                            {this.fetchChartRow()}
+                        </div>
+                    </div>
                 </div>
             )
         } else {
@@ -68,12 +106,6 @@ class SelectOptions extends Component {
                         <a className="size-chart" type="chart" onClick={this.changeType.bind(this)}>Size chart</a>
                     </div>
                     <ul className="size-grid">
-                        <li className="size-box all active">
-                            <a className="size-box-container">
-                                <span className="title">US All</span>
-                                <span className="subtitle">$245</span>
-                            </a>
-                        </li>
                         {this.fetchSelectGrid()}
                     </ul>
                 </div>
@@ -84,9 +116,22 @@ class SelectOptions extends Component {
     fetchSelectGrid() {
         var list = [];
         for(let i=1;i<=30;i++) {
-            let size = 'US ' + i;
-            let value = '$'+Math.floor(Math.random() * (300 - 0))   ;
-            list.push(<SizeBox key={i} size={size} value={value} />)
+            let size = 'US ' + i
+            let value = '$'+Math.floor(Math.random() * (300 - 0))
+            let className = ''
+            if(i==1) {
+                size = 'US All'
+                value = '$245'
+                className = 'all active'
+            }
+            list.push(
+                <li key={i} className={`size-box ${className}`}>
+                    <a className="size-box-container" onClick={this.handleClickSizeBox} ref={this.sizeBoxRef}>
+                        <span className="title">{size}</span>
+                        <span className="subtitle">{value}</span>
+                    </a>
+                </li>
+            )
         }
         return list;
     }
@@ -94,40 +139,39 @@ class SelectOptions extends Component {
     fetchChartRow() {
         var list = [];
         for(let i=1;i<=30;i++) {
-            let size = 'US ' + i;
-            let value = '$'+Math.floor(Math.random() * (300 - 0))   ;
-            list.push(<SizeBox key={i} size={size} value={value} />)
+            let size = i
+            let className = ''
+            if(i==1) {
+                className = 'active'
+            }
+            list.push(
+                <div key={i} className={`size-chart-row ${className}`}>
+                    <div className="size-chart-row-item">{i}</div>
+                    <div className="size-chart-row-item">{i - 0.5}</div>
+                    <div className="size-chart-row-item">{i * 8}</div>
+                    <div className="size-chart-row-item">{i * 5}</div>
+                    <div className="size-chart-row-item">{i + 1}</div>
+                </div>
+            )
         }
         return list;
     }
 
   	render() {
         return(
-            <div className="options"  >
+            <div className="options">
                 <label>Size</label>
                 <div className="select-options position-relative" id="dd">
-                    <button type="button" className="btn btn-default size-sm dropdown-toggle" title="All" data-toggle="dropdown" data-target="#selectSizeContainer" data-flip="false" data-boundary="dd">All
-                        &nbsp;
+                    <button type="button" className="btn btn-default size-sm select-size-button" title="All">All
                         <i className="fa fa-chevron-down"></i>
                     </button>
-                    <div className="dropdown-menu select-size-container" aria-labelledby="selectSizeContainer" ref={this.wrapperRef} >
+                    <div className={`select-size-container ${this.state.toggleSizeContainer}`} ref={this.sizeContainerRef} >
                         {this.fetchContainer()}
                     </div>
                 </div>
             </div>
         );
     }
-}
-
-function SizeBox(props) {
-    return (
-        <li className="size-box">
-            <a className="size-box-container">
-                <span className="title">{props.size}</span>
-                <span className="subtitle">{props.value}</span>
-            </a>
-        </li>
-    )
 }
 
 export default SelectOptions;

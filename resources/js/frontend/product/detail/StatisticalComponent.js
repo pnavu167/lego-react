@@ -19,7 +19,7 @@ class ProductDetail extends Component {
                         <div className="row">
                             <div className="col-lg-8 col-12">
                                 <div className="product-histories">
-                                    <div className="lastest-sale-container chart">
+                                    <div className="lastest-sale-container chart sales-histories-highchart">
                                     </div>
                                     <div className="view-all-sales">
                                         View All Sales

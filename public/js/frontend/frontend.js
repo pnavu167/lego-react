@@ -29665,7 +29665,7 @@ if (false) {} else {
 /*!***************************************************************!*\
   !*** ./node_modules/react-router-dom/esm/react-router-dom.js ***!
   \***************************************************************/
-/*! exports provided: BrowserRouter, HashRouter, Link, NavLink, MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext */
+/*! exports provided: MemoryRouter, Prompt, Redirect, Route, Router, StaticRouter, Switch, generatePath, matchPath, withRouter, __RouterContext, BrowserRouter, HashRouter, Link, NavLink */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -43571,18 +43571,81 @@ $('.home-slider').slick({
   arrows: false,
   variableHeight: true,
   vertical: true
-}); // $('.dropdown-menu').click(function(e) {
-// 	e.stopPropagation();
-// })
-// $('body').on('click', function (e) {
-//     if (!$('.options .select-options .dropdown-toggle').is(e.target) 
-//         && $('.options .select-options .dropdown-toggle').has(e.target).length === 0 
-//         && $('.show').has(e.target).length === 0
-//     ) {
-//         $('.options .select-options .dropdown-toggle').removeClass('show');
-//     }
-// });
-
+});
+data = [[1317888000000, 372.5101, 375, 372.2, 372.52], [1317888060000, 372.4, 373, 372.01, 372.16], [1317888120000, 372.16, 372.4, 371.39, 371.62], [1317888180000, 371.62, 372.16, 371.55, 371.75], [1317888240000, 371.75, 372.4, 371.57, 372], [1317888300000, 372, 372.3, 371.8, 372.24], [1317888360000, 372.22, 372.45, 372.22, 372.3], [1317888420000, 372.3, 373.25, 372.3, 373.15], [1317888480000, 373.01, 373.5, 373, 373.24], [1317888540000, 373.36, 373.88, 373.19, 373.88], [1317888600000, 373.8, 374.34, 373.75, 374.29], [1317888660000, 374.29, 374.43, 374, 374.01], [1317888720000, 374.05, 374.35, 373.76, 374.35], [1317888780000, 374.41, 375.24, 374.37, 374.9], [1317888840000, 374.83, 375.73, 374.81, 374.96], [1317888900000, 374.81, 375.4, 374.81, 375.25], [1317888960000, 375.2, 375.7, 375.14, 375.19], [1317889020000, 375.43, 375.43, 374.75, 374.76], [1317889080000, 374.94, 375.5, 374.81, 375.13], [1317889140000, 375.12, 375.48, 375, 375.04], [1317889200000, 375.24, 375.24, 375, 375.08], [1317889260000, 375.16, 375.16, 374.51, 374.51], [1317889320000, 374.51, 374.75, 374.2, 374.27], [1317889380000, 374.22, 374.55, 373.83, 374.55], [1317889440000, 374.69, 374.86, 374.01, 374.2], [1317889500000, 374.32, 374.65, 374.31, 374.51], [1317889560000, 374.65, 375.12, 374.51, 375.12], [1317889620000, 375.13, 375.25, 374.83, 375.22], [1317889680000, 375.16, 375.22, 375, 375], [1317889740000, 375, 375, 374.66, 374.8], [1317889800000, 374.88, 375, 374.5, 374.85], [1317889860000, 374.41, 374.67, 374.25, 374.67], [1317889920000, 374.5, 374.75, 374.27, 374.42], [1317889980000, 374.4, 374.93, 374.38, 374.85], [1317890040000, 374.86, 375.3, 374.8, 375.09], [1317890100000, 375, 375.18, 374.9, 375.02], [1317890160000, 375.02, 375.08, 374.86, 374.87], [1317890220000, 374.93, 375.75, 374.93, 375.75], [1317890280000, 375.75, 376.5, 375.75, 376.31], [1317890340000, 376.31, 377.2, 376.19, 377.04], [1317890400000, 377.2, 377.33, 376.45, 376.47], [1317890460000, 376.75, 376.99, 376.53, 376.54], [1317890520000, 376.54, 376.67, 376.08, 376.35], [1317890580000, 376.41, 376.94, 376.2, 376.5], [1317890640000, 376.46, 376.51, 376.06, 376.09], [1317890700000, 376.38, 376.84, 376.09, 376.78], [1317890760000, 376.55, 376.6, 376.41, 376.44]];
+$('.sales-histories-highchart').each(function () {
+  // create the chart
+  Highcharts.stockChart({
+    chart: {
+      renderTo: this
+    },
+    xAxis: {
+      gapGridLineWidth: 0
+    },
+    navigator: {
+      enabled: false
+    },
+    rangeSelector: {
+      buttons: [{
+        type: 'month',
+        count: 1,
+        text: '1M'
+      }, {
+        type: 'month',
+        count: 1,
+        text: '3M'
+      }, {
+        type: 'month',
+        count: 1,
+        text: '6M'
+      }, {
+        type: 'month',
+        count: 1,
+        text: 'YTD'
+      }, {
+        type: 'year',
+        count: 1,
+        text: '1Y'
+      }, {
+        type: 'all',
+        count: 1,
+        text: 'All'
+      }],
+      selected: 1,
+      inputEnabled: false
+    },
+    credits: {
+      enabled: false
+    },
+    exporting: {
+      enabled: false
+    },
+    scrollbar: {
+      enabled: false
+    },
+    series: [{
+      name: 'Amount',
+      type: 'area',
+      data: data,
+      gapSize: 5,
+      tooltip: {
+        valueDecimals: 2
+      },
+      color: '#509e2f',
+      lineWidth: 1,
+      fillColor: {
+        linearGradient: {
+          x1: 0,
+          y1: 0,
+          x2: 0,
+          y2: 1
+        },
+        stops: [[0, 'rgb(80,158,47)'], [1, 'rgb(80,158,47, 0)']]
+      },
+      threshold: null
+    }]
+  });
+});
 $(document).ready(function () {
   $('.popoverData').popover();
   $(".vice").click(function () {
@@ -46149,7 +46212,9 @@ function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "button-big"
-      }, this.buttonType(), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SizeContainerComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+      }, this.buttonType(), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SizeContainerComponent__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        type: this.props.type == 'bid' ? 'all-asks' : 'all-bids'
+      }));
     }
   }]);
 
@@ -46507,7 +46572,6 @@ function (_Component) {
     key: "changeImage",
     value: function changeImage(value) {
       var imageNumber = "0" + value;
-      console.log(value);
       var imageName = imageNumber.substring(imageNumber.length, imageNumber.length - 2);
       this.setState({
         value: value
@@ -46523,7 +46587,6 @@ function (_Component) {
         clicked: true,
         clickedPosition: e.screenX
       });
-      console.log(this.state.clicked);
     }
   }, {
     key: "handleMouseUp",
@@ -46531,7 +46594,6 @@ function (_Component) {
       this.setState({
         clicked: false
       });
-      console.log(this.state.clicked);
     }
   }, {
     key: "handleMouseMove",
@@ -46653,6 +46715,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _MarketSummayComponent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./MarketSummayComponent */ "./resources/js/frontend/product/detail/MarketSummayComponent.js");
 /* harmony import */ var _RelatedProductsComponent__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./RelatedProductsComponent */ "./resources/js/frontend/product/detail/RelatedProductsComponent.js");
 /* harmony import */ var _StatisticalComponent__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./StatisticalComponent */ "./resources/js/frontend/product/detail/StatisticalComponent.js");
+/* harmony import */ var _layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/layouts/FooterComponent */ "./resources/js/frontend/layouts/FooterComponent.js");
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
 function _typeof(obj) {
@@ -46749,6 +46812,7 @@ function _setPrototypeOf(o, p) {
 
 
 
+
 var ProductDetail =
 /*#__PURE__*/
 function (_Component) {
@@ -46770,7 +46834,7 @@ function (_Component) {
         className: "gray-gradient"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "container mobile-container border-bottom"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_BreadCrumbComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ContainerComponent__WEBPACK_IMPORTED_MODULE_5__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_MarketSummayComponent__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_RelatedProductsComponent__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_StatisticalComponent__WEBPACK_IMPORTED_MODULE_8__["default"], null));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_shared_BreadCrumbComponent__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ContainerComponent__WEBPACK_IMPORTED_MODULE_5__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_MarketSummayComponent__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_RelatedProductsComponent__WEBPACK_IMPORTED_MODULE_7__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_StatisticalComponent__WEBPACK_IMPORTED_MODULE_8__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_layouts_FooterComponent__WEBPACK_IMPORTED_MODULE_9__["default"], null));
     }
   }]);
 
@@ -47064,6 +47128,12 @@ function (_Component) {
   _createClass(LastSaleBlock, [{
     key: "render",
     value: function render() {
+      var sizeContainerType = 'sales-histories';
+
+      if (this.props.type == 'mobile') {
+        sizeContainerType = 'sales-histories-mobile';
+      }
+
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "last-sale-block ".concat(this.props.type)
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -47079,7 +47149,9 @@ function (_Component) {
         className: "dollar"
       }, "+$2,000"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
         className: "percentage"
-      }, "(+5%)"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SizeContainerComponent__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+      }, "(+5%)"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_SizeContainerComponent__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        type: sizeContainerType
+      }));
     }
   }]);
 
@@ -47517,10 +47589,14 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(SelectOptions).call(this, props));
     _this.state = {
-      'type': 'select'
+      'type': 'grid',
+      'toggleSizeContainer': ''
     };
-    _this.wrapperRef = react__WEBPACK_IMPORTED_MODULE_1___default.a.createRef();
+    _this.sizeContainerRef = react__WEBPACK_IMPORTED_MODULE_1___default.a.createRef();
+    _this.handleClickSizeBox = _this.handleClickSizeBox.bind(_assertThisInitialized(_this));
     _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_this));
+    _this.handleClickButtonShow = _this.handleClickButtonShow.bind(_assertThisInitialized(_this));
+    _this.handleChangeSize = _this.handleChangeSize.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -47537,16 +47613,53 @@ function (_Component) {
   }, {
     key: "handleClick",
     value: function handleClick(e) {
-      if (this.wrapperRef.current.contains(e.target)) {
-        console.log('inside');
-      } else {
-        console.log('outside');
+      var toggleSizeContainer = false;
+
+      if ($('.select-size-container').hasClass('show')) {
+        if (this.sizeContainerRef.current.contains(e.target)) {} else {
+          toggleSizeContainer = true;
+        }
       }
+
+      if (e.target.classList.contains('select-size-button')) {
+        this.handleClickButtonShow();
+      } else if (toggleSizeContainer) {
+        this.toggleSizeContainer();
+      }
+    }
+  }, {
+    key: "handleClickSizeBox",
+    value: function handleClickSizeBox(e) {
+      this.handleChangeSize();
+      this.toggleSizeContainer();
+    }
+  }, {
+    key: "handleClickButtonShow",
+    value: function handleClickButtonShow(e) {
+      this.toggleSizeContainer();
+    }
+  }, {
+    key: "toggleSizeContainer",
+    value: function toggleSizeContainer() {
+      if (!$('.select-size-container').hasClass('show')) {
+        this.setState({
+          'toggleSizeContainer': 'show'
+        });
+      } else {
+        this.setState({
+          'toggleSizeContainer': '',
+          'type': 'grid'
+        });
+      }
+    }
+  }, {
+    key: "handleChangeSize",
+    value: function handleChangeSize() {
+      console.log('changed size');
     }
   }, {
     key: "changeType",
     value: function changeType(e) {
-      console.log(e);
       var type = e.target.type;
       this.setState({
         'type': type
@@ -47564,17 +47677,13 @@ function (_Component) {
           onClick: this.changeType.bind(this)
         }, '< back'), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
           className: "title"
-        }, "Size chart")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-          className: "size-grid"
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-          className: "size-box all active"
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-          className: "size-box-container"
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-          className: "title"
-        }, "US All"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-          className: "subtitle"
-        }, "$245"))), this.fetchSelectGrid()));
+        }, "Size chart")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "size-chart-rows"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "size-chart-row"
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "US"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "UK"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "EU"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "CM"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("strong", null, "W ")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "size-chart-content"
+        }, this.fetchChartRow())));
       } else {
         return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           className: "header"
@@ -47586,15 +47695,7 @@ function (_Component) {
           onClick: this.changeType.bind(this)
         }, "Size chart")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
           className: "size-grid"
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-          className: "size-box all active"
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-          className: "size-box-container"
-        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-          className: "title"
-        }, "US All"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-          className: "subtitle"
-        }, "$245"))), this.fetchSelectGrid()));
+        }, this.fetchSelectGrid()));
       }
     }
   }, {
@@ -47605,11 +47706,26 @@ function (_Component) {
       for (var i = 1; i <= 30; i++) {
         var size = 'US ' + i;
         var value = '$' + Math.floor(Math.random() * (300 - 0));
-        list.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SizeBox, {
+        var className = '';
+
+        if (i == 1) {
+          size = 'US All';
+          value = '$245';
+          className = 'all active';
+        }
+
+        list.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
           key: i,
-          size: size,
-          value: value
-        }));
+          className: "size-box ".concat(className)
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+          className: "size-box-container",
+          onClick: this.handleClickSizeBox,
+          ref: this.sizeBoxRef
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+          className: "title"
+        }, size), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+          className: "subtitle"
+        }, value))));
       }
 
       return list;
@@ -47620,13 +47736,27 @@ function (_Component) {
       var list = [];
 
       for (var i = 1; i <= 30; i++) {
-        var size = 'US ' + i;
-        var value = '$' + Math.floor(Math.random() * (300 - 0));
-        list.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(SizeBox, {
+        var size = i;
+        var className = '';
+
+        if (i == 1) {
+          className = 'active';
+        }
+
+        list.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
           key: i,
-          size: size,
-          value: value
-        }));
+          className: "size-chart-row ".concat(className)
+        }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "size-chart-row-item"
+        }, i), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "size-chart-row-item"
+        }, i - 0.5), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "size-chart-row-item"
+        }, i * 8), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "size-chart-row-item"
+        }, i * 5), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+          className: "size-chart-row-item"
+        }, i + 1)));
       }
 
       return list;
@@ -47641,36 +47771,19 @@ function (_Component) {
         id: "dd"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
         type: "button",
-        className: "btn btn-default size-sm dropdown-toggle",
-        title: "All",
-        "data-toggle": "dropdown",
-        "data-target": "#selectSizeContainer",
-        "data-flip": "false",
-        "data-boundary": "dd"
-      }, "All \xA0", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+        className: "btn btn-default size-sm select-size-button",
+        title: "All"
+      }, "All", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
         className: "fa fa-chevron-down"
       })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "dropdown-menu select-size-container",
-        "aria-labelledby": "selectSizeContainer",
-        ref: this.wrapperRef
+        className: "select-size-container ".concat(this.state.toggleSizeContainer),
+        ref: this.sizeContainerRef
       }, this.fetchContainer())));
     }
   }]);
 
   return SelectOptions;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
-
-function SizeBox(props) {
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-    className: "size-box"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-    className: "size-box-container"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "title"
-  }, props.size), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-    className: "subtitle"
-  }, props.value)));
-}
 
 /* harmony default export */ __webpack_exports__["default"] = (SelectOptions);
 
@@ -47785,15 +47898,53 @@ var SizeContainer =
 function (_Component) {
   _inherits(SizeContainer, _Component);
 
-  function SizeContainer() {
+  function SizeContainer(props) {
     _classCallCheck(this, SizeContainer);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(SizeContainer).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(SizeContainer).call(this, props));
   }
 
   _createClass(SizeContainer, [{
+    key: "getModal",
+    value: function getModal(type) {
+      if (type == 'all-asks') {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ModalInfo, {
+          type: "all-asks"
+        });
+      } else if (type == 'all-bids') {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ModalInfo, {
+          type: "all-bids"
+        });
+      } else if (type == 'sales-histories') {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ModalSalesHistory, {
+          type: ""
+        });
+      } else if (type = 'sales-histories-mobile') {
+        return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ModalSalesHistory, {
+          type: "mobile"
+        });
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
+      var target = '';
+      var content = '';
+
+      if (this.props.type == 'all-asks') {
+        target = '#allAsksModal';
+        content = 'View All Asks';
+      } else if (this.props.type == 'all-bids') {
+        target = '#allBidsModal';
+        content = 'View All Bids';
+      } else if (this.props.type == 'sales-histories') {
+        target = '#salesHistoriesModal';
+        content = 'View All Sales';
+      } else if (this.props.type == 'sales-histories-mobile') {
+        target = '#salesHistoriesMobileModal';
+        content = 'View All Sales';
+      }
+
       return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "size-container"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
@@ -47801,8 +47952,11 @@ function (_Component) {
       }, "Size: 11"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "size-divider"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "view-all-option"
-      }, "View All Size"));
+        className: "view-all-option",
+        "data-backdrop": "false",
+        "data-target": target,
+        "data-toggle": "modal"
+      }, content), this.getModal(this.props.type));
     }
   }]);
 
@@ -47810,6 +47964,99 @@ function (_Component) {
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
 
 /* harmony default export */ __webpack_exports__["default"] = (SizeContainer);
+
+function ModalInfo(props) {
+  var rows = [];
+  var title = '';
+  var modalClass = '';
+  var modalId = '';
+
+  if (props.type == 'all-asks') {
+    title = 'All Asks';
+    modalClass = 'all-asks-modal';
+    modalId = 'allAsksModal';
+  } else if (props.type == 'all-bids') {
+    title = 'All Bids';
+    modalClass = 'all-bids-modal';
+    modalId = 'allBidsModal';
+  }
+
+  for (var i = 0; i <= 10; i++) {
+    rows.push(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", {
+      key: i
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, Math.floor(Math.random() * 15) + 5), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, Math.floor(Math.random() * 500) + 100), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, Math.floor(Math.random() * 10) + 1)));
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "modal ".concat(modalClass, " custom-modal"),
+    id: modalId
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "modal-dialog modal-lg modal-dialog-scrollable"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "modal-content"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "modal-header"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", {
+    className: "modal-title"
+  }, title), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    type: "button",
+    className: "close",
+    "data-dismiss": "modal"
+  }, "\xD7")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "modal-body"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
+    className: "table table-striped"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    width: "20%"
+  }, "SIZE"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    width: "40%"
+  }, "ASK PRICE"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    width: "40%"
+  }, "#AVAILABLE"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", null, rows))))));
+}
+
+function ModalSalesHistory(props) {
+  var modalId = 'salesHistoriesModal';
+
+  if (props.type == 'mobile') {
+    modalId = 'salesHistoriesMobileModal';
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "modal sales-histories-modal custom-modal",
+    id: modalId
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "modal-dialog modal-lg"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "modal-content"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "modal-header"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h4", {
+    className: "modal-title"
+  }, "Sales Histories"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    type: "button",
+    className: "close",
+    "data-dismiss": "modal"
+  }, "\xD7")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "modal-body"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "sales-histories-highchart chart"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("table", {
+    className: "table table-striped table-condensed "
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("thead", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    className: "",
+    width: "15%"
+  }, "Size"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    className: "",
+    width: "25%"
+  }, "Sale Price"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    className: "",
+    width: "35%"
+  }, "Date"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", {
+    className: "",
+    width: "25%"
+  }, "Time"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$293"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "11:57 PM EST")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$293"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "11:14 PM EST")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$284"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "10:52 PM EST")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$293"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "10:41 PM EST")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$293"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "10:14 PM EST")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "6"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "$293"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "Tuesday, September 24, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, "10:14 PM EST"))))))));
+}
 
 /***/ }),
 
@@ -47948,7 +48195,7 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "product-histories"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "lastest-sale-container chart"
+        className: "lastest-sale-container chart sales-histories-highchart"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "view-all-sales"
       }, "View All Sales"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {

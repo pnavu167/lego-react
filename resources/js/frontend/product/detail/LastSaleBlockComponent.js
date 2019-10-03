@@ -8,6 +8,10 @@ import SizeContainer from './SizeContainerComponent'
 class LastSaleBlock extends Component {
 
   	render() {
+        let sizeContainerType = 'sales-histories'
+        if(this.props.type == 'mobile') {
+            sizeContainerType = 'sales-histories-mobile'
+        }
         return(
             <div className={`last-sale-block ${this.props.type}`}>
                 <div className="last-sale">
@@ -21,7 +25,7 @@ class LastSaleBlock extends Component {
                         <span className="percentage">(+5%)</span>
                     </div>
                 </div>
-                <SizeContainer />
+                <SizeContainer type={sizeContainerType}/>
             </div>
         );
     }

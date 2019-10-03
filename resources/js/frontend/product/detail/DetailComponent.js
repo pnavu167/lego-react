@@ -9,6 +9,7 @@ import Container from './ContainerComponent'
 import MarketSummay from './MarketSummayComponent'
 import RelatedProducts from './RelatedProductsComponent'
 import Statistical from './StatisticalComponent'
+import Footer from '@/layouts/FooterComponent'
 
 class ProductDetail extends Component {
 
@@ -24,6 +25,7 @@ class ProductDetail extends Component {
                 <MarketSummay />
                 <RelatedProducts />
                 <Statistical />
+                <Footer />
             </div>
         );
     }

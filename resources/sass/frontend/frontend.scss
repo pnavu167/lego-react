@@ -91,6 +91,11 @@ ul {
 				height: 40px;
 			}
 		}
+		&.home-topbar {
+			.topbar-search {
+				visibility: hidden;
+			}
+		}
 		.topbar-search {
 			width: 50%;
 			padding-right: 30px;

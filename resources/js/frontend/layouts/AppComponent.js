@@ -24,7 +24,6 @@ import ListAsk from '@/faq/ListAsk'
 import Answer from '@/faq/AnswerComponent'
 import ContractSupport from '@/faq/ContractSupport'
 
-
 render (
 	<BrowserRouter>
 		<div className="wrapper">

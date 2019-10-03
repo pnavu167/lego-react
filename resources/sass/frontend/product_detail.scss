@@ -72,6 +72,14 @@
 		    			@include mobile {
 		    				width: 280px;
 		    			}
+		    			position: absolute;
+		    			top: 100%;
+		    			z-index: 5;
+		    			background-color: $white;
+		    			display: none;
+		    			&.show {
+							display: block;
+		    			}
 		    			.header {
 		    				display: flex;
 		    				justify-content: space-between;
@@ -116,7 +124,7 @@
 							    }
 							    &.active {
 							    	.size-box-container {
-							    		background-color: rgb(235, 244, 231);	
+							    		background-color: $greenActive;	
 							    	}
 							    }
 							    .size-box-container {
@@ -148,6 +156,38 @@
 										color: $green;
 								    }
 							    }
+						    }
+		    			}
+		    			.size-chart-rows {
+							display: flex;
+						    justify-content: space-around;
+						    flex-direction: column;
+						    -webkit-box-align: stretch;
+						    align-items: stretch;
+						    text-align: center;
+						    box-shadow: rgba(206, 206, 206, 0.7) 0px 13px 20px 0px;
+						    padding: 5px 0px;
+						    background: $white;
+						    .size-chart-content {
+						    	overflow: scroll;
+						    	height: 364px;
+						    }
+						    .size-chart-row {
+								display: flex;
+						    	justify-content: space-around;
+						    	&:nth-child(even) {
+									background-color: $cardColor;
+						    	}
+						    	&.active {
+									background-color: $greenActive;
+						    	}
+						    	.size-chart-row-item {
+						    		text-align: center;
+								    width: 20%;
+								    font-size: 14px;
+								    letter-spacing: 1.2px;
+								    padding: 7px 0px 8px;
+						    	}
 						    }
 		    			}
 		    		}
@@ -453,6 +493,7 @@
 		min-height: 100px;
 		.product-market-summary-col {
 			display: flex;
+			align-items: center;
 			img {
 				width: 18px;
 				margin-right: 3px;
@@ -547,9 +588,46 @@
 		}
 	}
 }
-
-
-
-
+.custom-modal {
+	top: 10%;
+	.modal-header {
+		.modal-title {
+			font: 700 26px BebasNeue;
+			border-radius: 0;
+			padding-top: 2px;
+			color: $white;
+		}
+		.close {
+			font-size: 30px;
+			text-shadow: none;
+			background-color: transparent;
+			color: $white;
+			opacity: 1;
+		}
+	}
+	&.all-asks-modal {
+		.modal-header {
+			background-color: $red;
+		}
+	}
+	&.all-bids-modal {
+		.modal-header {
+			background-color: $green;
+		}
+	}
+	&.sales-histories-modal {
+		.modal-header {
+			background-color: $black;
+		}
+		.chart {
+			height: 275px;
+		}
+	}
+	.modal-body {
+		min-height: auto;
+		max-height: 400px;
+		overflow: scroll;
+	}
+}
 
 
