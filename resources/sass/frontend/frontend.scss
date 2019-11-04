@@ -627,6 +627,10 @@ ul {
 
     	@include smaller-than-small-desktop {
     		flex-flow: wrap;
+    		
+    	}
+
+    	@include smaller-than-tablet {
     		justify-content: center;
     	}
 
@@ -858,6 +862,10 @@ ul {
 	@include smaller-than-tablet {
 		margin-top: 52px;
 	}
+}
+
+.mg-lr-twenty{
+	margin: 0 20px;
 }
 
 

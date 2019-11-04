@@ -10,7 +10,7 @@ class AnswerComponent extends React.Component {
 	render() {
 		return(
 			<div className="answer-container help-container list-ask-component">
-				<Header/>
+				<Header type = 'header-pc' search='true'/>
 				<div className = 'list-content'>
 					<AnswerContent/>
 					<div className = 'list-topic-container'>

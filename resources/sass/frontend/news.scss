@@ -69,11 +69,15 @@
     @include tablet {
 		display: none;
 	}
+
+	@include laptop {
+		padding: 0 20px;
+	}
 }
 .pg-blog{
 	display: flex;
     justify-content: space-between;
-    padding: 0 20px;
+    // padding: 0 20px;
     align-items: center;
     max-width: 1200px;
     margin: auto;
@@ -99,6 +103,7 @@
 
 	    	&:hover{
 	    		box-shadow: -1px 0px 0px 0px #e5e5e5, 1px 0px 0px 0px #e5e5e5;
+	    		cursor: pointer;
 	    		.type-news{
 	    			color: #41ad33;
     				text-decoration: none;
@@ -108,16 +113,25 @@
 	    }
 	    .first-category{
 	    	padding-left: 0;
+	    	position: relative;
 	    	a {
 	    		color: #000;
 	    	}
 	    	&:hover{
 	    		box-shadow: none;
+	    		cursor: pointer;
 	    		a {
 	    			color: #337ab7;
 	    		}
-    			
-    			
+    		}
+
+    		&:after {
+    			content: "";
+			    position: absolute;
+			    right: 0;
+			    border-right: 1px solid #e5e5e5;
+			    height: 20px;
+
     		}
 	    }
 	}
@@ -220,6 +234,8 @@
     .headline-slider{
     	font-size: 28px;
     	margin: 15px 0;
+    	font-family: BebasNeue;
+    	letter-spacing: 2px;
     }
 
     .slider-excerpt{
@@ -249,6 +265,7 @@
 
 .news-list {
 	width: 28%;
+
 	.list {
 		list-style: none;
     	padding:  0;
@@ -314,10 +331,10 @@
 	    max-width: 650px;
 	}
 
-	@include desktop {
+	@include use-for-sp {
 		width: 100%;
-		padding: 0 20px;
     }
+
 }
 
 .no-border{
@@ -342,7 +359,7 @@
 }
 
 .cat-post{
-	@include tablet {
+	@include smaller-than-desktop {
 		margin: 0 20px;
     }
 }
@@ -401,6 +418,12 @@
 		width: 100%;
     	display: flex;
     	margin-bottom: 15px;
+	}
+
+	.news-list {
+		@include mobile {
+			padding-left: 20px;
+		}
 	}
 }
 
@@ -762,6 +785,7 @@
 
 		@include tablet {
 			flex-wrap: wrap;
+
 		}
 	}
 
@@ -1318,6 +1342,7 @@
 		padding-right: 20px;
 		@include tablet {
 			display: block;
+			margin: 0 20px;
 		}
 	}
 }
@@ -1344,7 +1369,16 @@
 	}
 }
 
+#news-main-container {
+	.news-list {
+		ul {
 
+			@include tablet {
+				padding: 0 20px;
+			}
+		}
+	}
+}
 
 
 

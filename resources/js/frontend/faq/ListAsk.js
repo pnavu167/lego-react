@@ -10,7 +10,7 @@ class ListAsk extends React.Component {
 	render() {
 		return(
 			<div className="list-ask-component help-container">
-				<Header/>
+				<Header type = 'header-pc' search='true'/>
 				<div className = "title-topic">
 					<h1 className = "title-topic-header">
 						Luxury Products

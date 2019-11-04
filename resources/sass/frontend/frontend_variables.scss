@@ -96,6 +96,13 @@ $desktop-width: 1200px;
 	} 
 }
 
+//<768
+@mixin use-for-sp { 
+	@media (max-width: #{$tablet-width}) {
+		@content;   
+	} 
+}
+
 //=649
 @mixin special_screen { 
 	@media (max-width: 649px) {

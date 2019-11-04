@@ -40,7 +40,8 @@ class NewsSlider extends Component {
                     </div>
                 </div>
 
-                <div className="news-list">
+                <div className="news-list ">
+                    
                     <ul className="list">
                         <li>
                             <div className="recent-item">
@@ -97,9 +98,9 @@ class NewsSlider extends Component {
                                 </div>
                             </div>
                         </li>
-
-                       
                     </ul>
+                    
+                    
                 </div>
             </div>
             

@@ -9,7 +9,7 @@ class ContractSupport extends React.Component {
 	render() {
 		return(
 			<div className="help-container contract-support">
-				<Header/>
+				<Header type = 'header-pc' search='true'/>
 				<div className = 'force-community-head-line title-topic'>
 					<h1 className = 'title'>Still having trouble?</h1>
 					<p className = 'description'>

@@ -170,9 +170,9 @@ class PostTwo extends Component {
 
                     </div>
 
-                    <div className = "pg-lr">
-                        <CatPost title = "RELATED ARTICLES"/>
-                    </div>
+
+                    <CatPost title = "RELATED ARTICLES"/>
+                    
                 </div>
 
                 <SubscribeBanner />

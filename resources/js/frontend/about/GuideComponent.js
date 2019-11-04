@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom'
 import React, { Component } from 'react'
 import axios from 'axios'
+
 import Footer from '../layouts/FooterComponent'
 import Header from '@/layouts/HeaderComponent'
 import About from './AboutComponent'

@@ -9,7 +9,7 @@ class HelpComponent extends React.Component {
 	render() {
 		return(
 			<div className="help-container">
-				<Header/>
+				<Header type = 'header-pc pg-right-header'/>
 				<div className = "title-container">
 					<div className = "title-content">
 						<div className = "title-detail">

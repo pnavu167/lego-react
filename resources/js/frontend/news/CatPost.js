@@ -38,17 +38,19 @@ class CatPost extends Component {
   	render() {
         return(
             <div className="cat-post">
-                {this.setTitleName() &&
-                    <div className="type-post">
-                        <h2 >{this.setTitleName()}</h2>
-                        {this.setTitleName() != "RELATED ARTICLES" &&
-                            <a href="#" className="cat-post-section">View All</a>
-                        } 
-                        
-                    </div>
-                }
                 
-                <BlogRow postItem={this.addPostItem()} postRow={this.addPostRow()} number = {this.props.number}/>
+                    {this.setTitleName() &&
+                        <div className="type-post">
+                            <h2 >{this.setTitleName()}</h2>
+                            {this.setTitleName() != "RELATED ARTICLES" &&
+                                <a href="#" className="cat-post-section">View All</a>
+                            } 
+                            
+                        </div>
+                    }
+                    
+                    <BlogRow postItem={this.addPostItem()} postRow={this.addPostRow()} number = {this.props.number}/>
+                
             </div>
             
         );
