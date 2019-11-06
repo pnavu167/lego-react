@@ -23,6 +23,7 @@ import Help from '@/faq/HelpComponent'
 import ListAsk from '@/faq/ListAsk'
 import Answer from '@/faq/AnswerComponent'
 import ContractSupport from '@/faq/ContractSupport'
+import BrowsePortfolios from '@/portfolios/PortfoliosComponent'
 
 render (
 	<BrowserRouter>
@@ -63,6 +64,10 @@ render (
 				<Route exact path='/help/answer' component={Answer} />
 				<Route exact path='/contract-support' component={ContractSupport} />
 				{/*End FAQ*/}
+
+				{/*Portfolios*/}
+				<Route exact path='/portfolios' component={BrowsePortfolios} />
+				{/*End Portfolios*/}
 			</Switch>
 		</div>
 	</BrowserRouter>, document.getElementById('root')

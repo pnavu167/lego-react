@@ -180,6 +180,14 @@ $(document).ready(function() {
 		}
 	});
 
+    if (window.matchMedia('(min-width: 1170px)').matches) {
+        $('.theadSticky')
+        .sticky({
+            context: '#context',
+            offset: 90,
+        });
+    }
+
 
 
 
