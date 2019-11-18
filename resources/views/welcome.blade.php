@@ -45,7 +45,7 @@
     <script src="{{asset('plugins/slick/slick.min.js/')}}"></script>
     
     <!-- Highcharts -->
-    <script src="{{asset('plugins/highcharts/code/highcharts.js/')}}"></script>
+    <script src="{{asset('plugins/highstock/code/highstock.js/')}}"></script>
     <!-- Custom -->
     <script src="{{asset('js/frontend/frontend.js/')}}"></script>
 

@@ -23,7 +23,7 @@ class ButtonBig extends Component {
         return(
             <div className="button-big">
                 {this.buttonType()}
-                <SizeContainer />
+                <SizeContainer type={this.props.type=='bid'?'all-asks':'all-bids'}/>
             </div>
         );
     }

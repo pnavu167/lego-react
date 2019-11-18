@@ -25,7 +25,6 @@ class Content extends Component {
 
     changeImage(value) {
         var imageNumber = "0" + value;
-        console.log(value)
         var imageName = imageNumber.substring(imageNumber.length, imageNumber.length - 2)
         this.setState({value: value})
         this.setState({image: '/storage/images/product-detail/img'+imageName+'.jpg'})
@@ -35,13 +34,10 @@ class Content extends Component {
         this.setState({
             clicked: true,
             clickedPosition: e.screenX
-        })
-        console.log(this.state.clicked)
-    }
+        })    }
 
     handleMouseUp(e) {
         this.setState({clicked: false})
-        console.log(this.state.clicked)
     }
 
     handleMouseMove(e) {

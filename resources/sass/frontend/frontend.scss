@@ -80,7 +80,7 @@ ul {
 		display: flex;
 		align-items: center;
 		min-height: 90px;
-		z-index: 6;
+		z-index: 1001;
 		@include smaller-than-tablet {
 			display: none;
 		}
@@ -89,6 +89,11 @@ ul {
 			height: 50px;
 			@include tablet {
 				height: 40px;
+			}
+		}
+		&.home-topbar {
+			.topbar-search {
+				visibility: hidden;
 			}
 		}
 		.topbar-search {
@@ -877,3 +882,4 @@ ul {
 @import 'application';
 @import 'sell';
 @import 'help';
+@import 'portfolios';
