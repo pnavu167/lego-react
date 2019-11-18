@@ -7,8 +7,8 @@ import Header from '@/layouts/HeaderComponent'
 import Footer from '@/layouts/FooterComponent'
 import TitleContainer from '@/shared/TitleContainerComponent'
 import PortfoliosTable from '@/portfolios/PortfoliosTableComponent'
-import 'semantic-ui/dist/semantic.min.css'
-import 'semantic-ui/dist/semantic.min.js'
+// import 'semantic-ui/dist/semantic.min.css'
+// import 'semantic-ui/dist/semantic.min.js'
 
 class BrowsePortfolios extends Component {
     constructor(props) {
