@@ -188,6 +188,7 @@
 	    .topic-list {
 	    	display: flex;
     		flex-wrap: wrap;
+    		list-style-type: none;
 
     		li {
     			width: 33%;
@@ -204,15 +205,62 @@
 			    justify-content: center;
 			    align-items: center;
 			    .topic-link {
-			    	display: block;
+			    	width: 100%;
+				    height: 100%;
+				    position: relative;
+					.topic-img {		
+						background-position: center;
+					    background-size: cover;
+					    background-repeat: no-repeat;
+					    width: 100%;
+					    height: 100%;
+					    z-index: -1;
+					}
 
+					.welcome {
+						background-image: url("/storage/images/helps/stockx.png");
+					}
+
+					.account-features {
+						background-image: url("/storage/images/helps/person.png");
+					}
+
+					.luxury-products {
+						background-image: url("/storage/images/helps/product.png");
+					}
+
+					.money {
+						background-image: url("/storage/images/helps/wallet.png");
+					}
+
+					.product-guidelines {
+						background-image: url("/storage/images/helps/guidelines.png");
+					}
+
+					.shipping {
+						background-image: url("/storage/images/helps/shipping.png");
+					}
+					
 			    	.topic-label {
 			    		color: #fff;
 					    font-size: 16px;
 					    font-weight: 700;
+					    font-family: 'Lato';
+					    letter-spacing: 1px;
+
 					    @include mobile {
 					    	font-size: 13px;
 					    }
+			    	}
+			    	.topic-content {
+			    		position: absolute;
+					    left: 0;
+					    top: 0;
+					    width: 100%;
+					    height: 100%;
+					    display: flex;
+					    justify-content: center;
+					    align-items: center;
 			    	}
 			    }
 	    	}

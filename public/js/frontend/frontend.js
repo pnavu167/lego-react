@@ -40181,8 +40181,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _faq_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/faq/HeaderComponent */ "./resources/js/frontend/faq/HeaderComponent.js");
-/* harmony import */ var _faq_AnswerContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/faq/AnswerContent */ "./resources/js/frontend/faq/AnswerContent.js");
-/* harmony import */ var _faq_TrendingArticles__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/faq/TrendingArticles */ "./resources/js/frontend/faq/TrendingArticles.js");
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
 function _typeof(obj) {
@@ -40267,8 +40265,6 @@ function _setPrototypeOf(o, p) {
 
   return _setPrototypeOf(o, p);
 }
-
-
 
 
 
@@ -40296,11 +40292,11 @@ function (_React$Component) {
         search: "true"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "list-content"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_faq_AnswerContent__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(AnswerContent, null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "list-topic-container"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "list-topic"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_faq_TrendingArticles__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_faq_TrendingArticles__WEBPACK_IMPORTED_MODULE_5__["default"], null)))));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TrendingArticles, null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TrendingArticles, null)))));
     }
   }]);
 
@@ -40309,161 +40305,76 @@ function (_React$Component) {
 
 /* harmony default export */ __webpack_exports__["default"] = (AnswerComponent);
 
-/***/ }),
-
-/***/ "./resources/js/frontend/faq/AnswerContent.js":
-/*!****************************************************!*\
-  !*** ./resources/js/frontend/faq/AnswerContent.js ***!
-  \****************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _faq_HashTag__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/faq/HashTag */ "./resources/js/frontend/faq/HashTag.js");
-function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
-
-function _typeof(obj) {
-  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
-    _typeof = function _typeof(obj) {
-      return _typeof2(obj);
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
-    };
-  }
-
-  return _typeof(obj);
+function TrendingArticles(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "ask-related-articles"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Related Topics"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "ask-list"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "ask-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "ask-item-link"
+  }, "What comes with my Apple Watch bought on StockX?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "ask-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "ask-item-link"
+  }, "How do I sell my Apple Watch?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "ask-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "ask-item-link"
+  }, "What are the condition guidelines for Watches?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "ask-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "ask-item-link"
+  }, "How do I factory reset my Apple Watch?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "ask-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "ask-item-link"
+  }, "How do I take care of my watch?")))));
 }
 
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
+function AnswerContent(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "list-content-detail "
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "list-topic"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "topic-name",
+    href: "#"
+  }, "Luxury Products"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "answer-content"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "answer-content-title"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "What will my watch come with?"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "answer-content-date"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "far fa-clock"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "date"
+  }, "Aug 1, 2019"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "answer-content-main"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Watches purchased at StockX will come with a StockX Certificate of Authenticity, which verifies condition and authenticity of your watch. It also lists your watch's make, model, reference and serial numbers."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "If sellers provide box and papers, they will be passed along to the buyer. "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Watches with box & papers will include the original, manufacturer\u2019s watch box, along with manufacture documentation verifying authenticity showing the reference and unique serial number attributed to it, and/or warranty information. Any additional booklets and instruction manuals are not required but will be shipped to the buyer if the seller has included them. Please note, manufacturer warranties are generally non-transferable."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Watches sold with box and papers must include all of the above documentation to pass StockX verification."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "list-hash-tag"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HashTag, {
+    name: "Luxury Products"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HashTag, {
+    name: "WATCHES"
+  }))));
 }
 
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
+function HashTag(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "hash-tag"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "hash-tag-link"
+  }, props.name));
 }
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return _assertThisInitialized(self);
-}
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-
-
-
-
-
-var AnswerContent =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(AnswerContent, _React$Component);
-
-  function AnswerContent() {
-    _classCallCheck(this, AnswerContent);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(AnswerContent).apply(this, arguments));
-  }
-
-  _createClass(AnswerContent, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "list-content-detail "
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "list-topic"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        className: "topic-name",
-        href: "#"
-      }, "Luxury Products"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "answer-content"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "answer-content-title"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "What will my watch come with?"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "answer-content-date"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "far fa-clock"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "date"
-      }, "Aug 1, 2019"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "answer-content-main"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Watches purchased at StockX will come with a StockX Certificate of Authenticity, which verifies condition and authenticity of your watch. It also lists your watch's make, model, reference and serial numbers."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "If sellers provide box and papers, they will be passed along to the buyer. "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Watches with box & papers will include the original, manufacturer\u2019s watch box, along with manufacture documentation verifying authenticity showing the reference and unique serial number attributed to it, and/or warranty information. Any additional booklets and instruction manuals are not required but will be shipped to the buyer if the seller has included them. Please note, manufacturer warranties are generally non-transferable."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("p", null, "Watches sold with box and papers must include all of the above documentation to pass StockX verification."), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "list-hash-tag"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_faq_HashTag__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        name: "Luxury Products"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_faq_HashTag__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        name: "WATCHES"
-      }))));
-    }
-  }]);
-
-  return AnswerContent;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (AnswerContent);
 
 /***/ }),
 
@@ -40483,8 +40394,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _faq_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/faq/HeaderComponent */ "./resources/js/frontend/faq/HeaderComponent.js");
-/* harmony import */ var _faq_FormContractSupport__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/faq/FormContractSupport */ "./resources/js/frontend/faq/FormContractSupport.js");
-/* harmony import */ var _faq_ListTopic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/faq/ListTopic */ "./resources/js/frontend/faq/ListTopic.js");
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
 function _typeof(obj) {
@@ -40569,8 +40478,6 @@ function _setPrototypeOf(o, p) {
 
   return _setPrototypeOf(o, p);
 }
-
-
 
 
 
@@ -40606,9 +40513,9 @@ function (_React$Component) {
         className: "contract-support-container"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "list-topic contract-support-form"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_faq_FormContractSupport__WEBPACK_IMPORTED_MODULE_4__["default"], null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(FormContractSupport, null)), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "list-option-container"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_faq_ListTopic__WEBPACK_IMPORTED_MODULE_5__["default"], null))));
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListTopic, null))));
     }
   }]);
 
@@ -40617,309 +40524,87 @@ function (_React$Component) {
 
 /* harmony default export */ __webpack_exports__["default"] = (ContractSupport);
 
-/***/ }),
-
-/***/ "./resources/js/frontend/faq/FormContractSupport.js":
-/*!**********************************************************!*\
-  !*** ./resources/js/frontend/faq/FormContractSupport.js ***!
-  \**********************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
-
-function _typeof(obj) {
-  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
-    _typeof = function _typeof(obj) {
-      return _typeof2(obj);
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
-    };
-  }
-
-  return _typeof(obj);
+function FormContractSupport(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "contract-support-form-detail"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Create Case"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "form-group group-input"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "red"
+  }, "*"), "Email"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    type: "email",
+    className: "form-control input-form",
+    required: true,
+    "aria-describedby": "emailHelp",
+    placeholder: "you@example.com"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "form-group group-input"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Primary Order Number", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "fa fa-info-circle"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
+    type: "email",
+    className: "form-control input-form",
+    required: true
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "form-group group-input"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "red"
+  }, "*"), "Type"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
+    className: "form-control",
+    id: "exampleFormControlSelect1"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", null, "-- none selected --"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", null, "2"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", null, "3"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", null, "4"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", null, "5"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "form-group group-input"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "red"
+  }, "*"), "Description"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("textarea", {
+    className: "form-control",
+    id: "exampleFormControlTextarea1",
+    rows: "3"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "form-footer"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    title: "Next",
+    className: "btnNext",
+    type: "submit"
+  }, "Next"))));
 }
 
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
+function ListTopic(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "list-topic-container "
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic list-topic"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic-catalog"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LinkTopic, {
+    url: "#",
+    title: "Account Features"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LinkTopic, {
+    url: "#",
+    title: "Luxury Products"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LinkTopic, {
+    url: "#",
+    title: "Money"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LinkTopic, {
+    url: "#",
+    title: "Product Guidelines"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LinkTopic, {
+    url: "#",
+    title: "Shipping"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(LinkTopic, {
+    url: "#",
+    title: "Welcome To StockX"
+  })))));
 }
 
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
+function LinkTopic(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic-hierarchy-entry"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: props.url,
+    className: "topic-hierarchy-link"
+  }, props.title)));
 }
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return _assertThisInitialized(self);
-}
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-
-
-
-
-var FormContractSupport =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(FormContractSupport, _React$Component);
-
-  function FormContractSupport() {
-    _classCallCheck(this, FormContractSupport);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(FormContractSupport).apply(this, arguments));
-  }
-
-  _createClass(FormContractSupport, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "contract-support-form-detail"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Create Case"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "form-group group-input"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "red"
-      }, "*"), "Email"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-        type: "email",
-        className: "form-control input-form",
-        required: true,
-        "aria-describedby": "emailHelp",
-        placeholder: "you@example.com"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "form-group group-input"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, "Primary Order Number", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "fa fa-info-circle"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("input", {
-        type: "email",
-        className: "form-control input-form",
-        required: true
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "form-group group-input"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "red"
-      }, "*"), "Type"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("select", {
-        className: "form-control",
-        id: "exampleFormControlSelect1"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", null, "-- none selected --"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", null, "2"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", null, "3"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", null, "4"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("option", null, "5"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "form-group group-input"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "red"
-      }, "*"), "Description"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("textarea", {
-        className: "form-control",
-        id: "exampleFormControlTextarea1",
-        rows: "3"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "form-footer"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-        title: "Next",
-        className: "btnNext",
-        type: "submit"
-      }, "Next"))));
-    }
-  }]);
-
-  return FormContractSupport;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (FormContractSupport);
-
-/***/ }),
-
-/***/ "./resources/js/frontend/faq/HashTag.js":
-/*!**********************************************!*\
-  !*** ./resources/js/frontend/faq/HashTag.js ***!
-  \**********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
-
-function _typeof(obj) {
-  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
-    _typeof = function _typeof(obj) {
-      return _typeof2(obj);
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
-    };
-  }
-
-  return _typeof(obj);
-}
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return _assertThisInitialized(self);
-}
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-
-
-
-
-var HashTag =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(HashTag, _React$Component);
-
-  function HashTag(props) {
-    _classCallCheck(this, HashTag);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(HashTag).call(this, props));
-  }
-
-  _createClass(HashTag, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "hash-tag"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "hash-tag-link"
-      }, this.props.name));
-    }
-  }]);
-
-  return HashTag;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (HashTag);
 
 /***/ }),
 
@@ -41212,7 +40897,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _faq_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/faq/HeaderComponent */ "./resources/js/frontend/faq/HeaderComponent.js");
-/* harmony import */ var _faq_HelpContent__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/faq/HelpContent */ "./resources/js/frontend/faq/HelpContent.js");
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
 function _typeof(obj) {
@@ -41297,7 +40981,6 @@ function _setPrototypeOf(o, p) {
 
   return _setPrototypeOf(o, p);
 }
-
 
 
 
@@ -41347,7 +41030,7 @@ function (_React$Component) {
         id: "search"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("title", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
         d: "M22.9 20.9l-6.2-6.1c1.3-1.8 1.9-4 1.6-6.4-.6-3.9-3.8-7.1-7.8-7.4C5 .4.4 5 1 10.5c.3 4 3.5 7.3 7.4 7.8 2.4.3 4.6-.3 6.4-1.5l6.1 6.1c.3.3.7.3 1 0l.9-1c.3-.3.3-.7.1-1zM3.7 9.6c0-3.2 2.7-5.9 5.9-5.9 3.3 0 6 2.7 6 5.9 0 3.3-2.7 6-6 6-3.2 0-5.9-2.6-5.9-6z"
-      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_faq_HelpContent__WEBPACK_IMPORTED_MODULE_4__["default"], null));
+      }))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(HelpContent, null));
     }
   }]);
 
@@ -41356,285 +41039,142 @@ function (_React$Component) {
 
 /* harmony default export */ __webpack_exports__["default"] = (HelpComponent);
 
-/***/ }),
+function HelpContent(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "help-content-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic-grid"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+    className: "featured-topic-header"
+  }, "Featured Topics"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "topic-list"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TopicLink, {
+    url: "#",
+    title: "Welcome To StockX",
+    background: "topic-img welcome"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TopicLink, {
+    url: "#",
+    title: "Account Features",
+    background: "topic-img account-features"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TopicLink, {
+    url: "#",
+    title: "Luxury Products",
+    background: "topic-img luxury-products"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TopicLink, {
+    url: "#",
+    title: "Money",
+    background: "topic-img money"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TopicLink, {
+    url: "#",
+    title: "Product Guidelines",
+    background: "topic-img product-guidelines"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TopicLink, {
+    url: "#",
+    title: "Shipping",
+    background: "topic-img shipping"
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic-trending"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic-trending-container"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "change-language"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, " Preferred Language "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "form-control btn-group bootstrap-select show-menu-arrow addr-exclude signup-size-select"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    type: "button",
+    className: "btn dropdown-toggle btn-default",
+    "data-toggle": "dropdown",
+    title: "Size 3.5",
+    "aria-expanded": "false"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "filter-option pull-left"
+  }, "English (US)"), "\xA0", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "caret"
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "dropdown-menu open"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "language-list"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Language, {
+    active: "true",
+    title: "English (US)"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Language, {
+    active: "",
+    title: "German"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Language, {
+    active: "",
+    title: "French"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Language, {
+    active: "",
+    title: "Italian"
+  }))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "trending-articles"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
+    className: "trending-articles-title"
+  }, "Trending Articles"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "trending-list"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TrendingLink, {
+    url: "#",
+    title: "What is an Ask and how do I sell on StockX?"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TrendingLink, {
+    url: "#",
+    title: "What is a Bid and how do I buy on StockX?"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TrendingLink, {
+    url: "#",
+    title: "What are StockX selling fees?"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TrendingLink, {
+    url: "#",
+    title: "Shipping Instructions"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(TrendingLink, {
+    url: "#",
+    title: "Delete account"
+  }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "contact-support"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
+    className: "contact-support-btn"
+  }, "Contact Support")))));
+}
 
-/***/ "./resources/js/frontend/faq/HelpContent.js":
-/*!**************************************************!*\
-  !*** ./resources/js/frontend/faq/HelpContent.js ***!
-  \**************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+function TopicLink(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "topic-link",
+    href: props.url
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: props.background
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic-content"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic-label"
+  }, props.title)))));
+}
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
+function Language(props) {
+  var className = 'language-name ';
 
-function _typeof(obj) {
-  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
-    _typeof = function _typeof(obj) {
-      return _typeof2(obj);
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
-    };
+  if (props.active) {
+    className += ' active';
   }
 
-  return _typeof(obj);
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: className
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
+    className: "fas fa-check hide"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "text"
+  }, props.title)));
 }
 
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
+function TrendingLink(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "trending-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: props.url,
+    className: "trending-link"
+  }, props.title));
 }
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return _assertThisInitialized(self);
-}
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-
-
-
-
-var HelpContent =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(HelpContent, _React$Component);
-
-  function HelpContent() {
-    _classCallCheck(this, HelpContent);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(HelpContent).apply(this, arguments));
-  }
-
-  _createClass(HelpContent, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "help-content-container"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-grid"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-        className: "featured-topic-header"
-      }, "Featured Topics"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-        className: "topic-list"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        className: "topic-link",
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-img"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-label"
-      }, "Welcome To StockX")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        className: "topic-link",
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-img"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-label"
-      }, "Account Features")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        className: "topic-link",
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-img"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-label"
-      }, "Luxury Products")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        className: "topic-link",
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-img"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-label"
-      }, "Money")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        className: "topic-link",
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-img"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-label"
-      }, "Product Guidelines")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        className: "topic-link",
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-img"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-label"
-      }, "Shipping")))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-trending"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-trending-container"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "change-language"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", null, " Preferred Language "), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "form-control btn-group bootstrap-select show-menu-arrow addr-exclude signup-size-select"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-        type: "button",
-        className: "btn dropdown-toggle btn-default",
-        "data-toggle": "dropdown",
-        title: "Size 3.5",
-        "aria-expanded": "false"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "filter-option pull-left"
-      }, "English (US)"), "\xA0", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "caret"
-      })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "dropdown-menu open"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-        className: "language-list"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "language-name active"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "fas fa-check hide"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "text"
-      }, "English (US)"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "language-name"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "fas fa-check hide"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "text"
-      }, "German"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "language-name"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "fas fa-check hide"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "text"
-      }, "French"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "language-name"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("i", {
-        className: "fas fa-check hide"
-      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "text"
-      }, "Italian"))))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "trending-articles"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", {
-        className: "trending-articles-title"
-      }, "Trending Articles"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
-        className: "trending-list"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "trending-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "trending-link"
-      }, "What is an Ask and how do I sell on StockX?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "trending-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "trending-link"
-      }, "What is a Bid and how do I buy on StockX?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "trending-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "trending-link"
-      }, "What are StockX selling fees?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "trending-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "trending-link"
-      }, "Shipping Instructions")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "trending-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "trending-link"
-      }, "Delete account")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "contact-support"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
-        className: "contact-support-btn"
-      }, "Contact Support")))));
-    }
-  }]);
-
-  return HelpContent;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (HelpContent);
 
 /***/ }),
 
@@ -41654,8 +41194,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _faq_HeaderComponent__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/faq/HeaderComponent */ "./resources/js/frontend/faq/HeaderComponent.js");
-/* harmony import */ var _faq_ListTopic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/faq/ListTopic */ "./resources/js/frontend/faq/ListTopic.js");
-/* harmony import */ var _faq_RelatedTopic__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/faq/RelatedTopic */ "./resources/js/frontend/faq/RelatedTopic.js");
 function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
 
 function _typeof(obj) {
@@ -41740,8 +41278,6 @@ function _setPrototypeOf(o, p) {
 
   return _setPrototypeOf(o, p);
 }
-
-
 
 
 
@@ -41775,7 +41311,7 @@ function (_React$Component) {
         className: "list-container"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "list-content"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_faq_RelatedTopic__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(RelatedTopic, {
         classContainer: "related-topic list-topic hide-pc"
       }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "list-content-detail"
@@ -41783,139 +41319,43 @@ function (_React$Component) {
         className: "list-ask-container"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Articles"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "list-ask"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "list-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "summary"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "article-link"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
-        className: "article-head"
-      }, "What will my watch come with?"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "footer"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "view-count"
-      }, "583 Views"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "date"
-      }, "Aug 1, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "article-type"
-      }, "Knowledge"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "list-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "summary"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "article-link"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
-        className: "article-head"
-      }, "How to remove the activation lock on your Apple Watch"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "footer"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "view-count"
-      }, "583 Views"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "date"
-      }, "Aug 1, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "article-type"
-      }, "Knowledge"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "list-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "summary"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "article-link"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
-        className: "article-head"
-      }, "What will my watch come with?"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "footer"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "view-count"
-      }, "583 Views"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "date"
-      }, "Aug 1, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "article-type"
-      }, "Knowledge"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "list-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "summary"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "article-link"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
-        className: "article-head"
-      }, "What will my watch come with?"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "footer"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "view-count"
-      }, "583 Views"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "date"
-      }, "Aug 1, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "article-type"
-      }, "Knowledge"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "list-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "summary"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "article-link"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
-        className: "article-head"
-      }, "What will my watch come with?"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "footer"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "view-count"
-      }, "583 Views"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "date"
-      }, "Aug 1, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "article-type"
-      }, "Knowledge"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "list-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "summary"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "article-link"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
-        className: "article-head"
-      }, "What will my watch come with?"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "footer"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "view-count"
-      }, "583 Views"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "date"
-      }, "Aug 1, 2019"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "dot"
-      }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "article-type"
-      }, "Knowledge"))))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListItem, {
+        head: "What will my watch come with?",
+        view: "583",
+        date: "Aug 1, 2019",
+        type: "Knowledge"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListItem, {
+        head: "How to remove the activation lock on your Apple Watch",
+        view: "583",
+        date: "Aug 1, 2019",
+        type: "Knowledge"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListItem, {
+        head: "How to remove the activation lock on your Apple Watch",
+        view: "583",
+        date: "Aug 1, 2019",
+        type: "Knowledge"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListItem, {
+        head: "How to remove the activation lock on your Apple Watch",
+        view: "583",
+        date: "Aug 1, 2019",
+        type: "Knowledge"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListItem, {
+        head: "How to remove the activation lock on your Apple Watch",
+        view: "583",
+        date: "Aug 1, 2019",
+        type: "Knowledge"
+      }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListItem, {
+        head: "How to remove the activation lock on your Apple Watch",
+        view: "583",
+        date: "Aug 1, 2019",
+        type: "Knowledge"
+      }))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "contact-support"
       }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("button", {
         className: "contact-support-btn"
       }, "Contact Support")))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
         className: "list-option-container"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_faq_ListTopic__WEBPACK_IMPORTED_MODULE_4__["default"], null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_faq_RelatedTopic__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(ListTopic, null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(RelatedTopic, {
         classContainer: "related-topic list-topic hide-sp"
       })))));
     }
@@ -41926,509 +41366,121 @@ function (_React$Component) {
 
 /* harmony default export */ __webpack_exports__["default"] = (ListAsk);
 
-/***/ }),
-
-/***/ "./resources/js/frontend/faq/ListTopic.js":
-/*!************************************************!*\
-  !*** ./resources/js/frontend/faq/ListTopic.js ***!
-  \************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _faq_RelatedTopic__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/faq/RelatedTopic */ "./resources/js/frontend/faq/RelatedTopic.js");
-function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
-
-function _typeof(obj) {
-  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
-    _typeof = function _typeof(obj) {
-      return _typeof2(obj);
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
-    };
-  }
-
-  return _typeof(obj);
+function ListItem(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "list-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "summary"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "article-link"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h3", {
+    className: "article-head"
+  }, props.head))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "footer"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "view-count"
+  }, props.view, " Views"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "dot"
+  }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "date"
+  }, props.date), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "dot"
+  }, "\u2022"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "article-type"
+  }, props.type)));
 }
 
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
+function ListTopic(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "list-topic-container "
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic list-topic"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic-catalog"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Topic, {
+    url: "#",
+    title: "Account Features"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Topic, {
+    url: "#",
+    title: "Luxury Products"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Topic, {
+    url: "#",
+    title: "Money"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Topic, {
+    url: "#",
+    title: "Product Guidelines"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Topic, {
+    url: "#",
+    title: "Shipping"
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Topic, {
+    url: "#",
+    title: "Welcome To StockX"
+  })))));
 }
 
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
+function Topic(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "topic-hierarchy-entry"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: props.url,
+    className: "topic-hierarchy-link"
+  }, props.title)));
 }
 
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
+function RelatedTopic(props) {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: props.classContainer
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "force-topic-header"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Related Topics"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "icon-fluctuations"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 0 24 24",
+    id: "trending"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
+    d: "M23.1 14.1a.5.5 0 0 1-.9.4L19.7 12 14 16.9a1.6 1.6 0 0 1-2.3 0L8.3 13l-6.2 5.4a.5.5 0 0 1-.7 0l-.3-.3a.5.5 0 0 1 0-.8l6-8.2a1.6 1.6 0 0 1 2.3 0l3.5 3.4 3.5-4-2.3-2.1a.6.6 0 0 1 .4-.9H22a1.1 1.1 0 0 1 1.1 1.1z"
+  })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+    className: "force-topic-list"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "topic-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "topic-item-link"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "topic-item-link-name"
+  }, "WATCHES"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "topic-item-link-number"
+  }, "0"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "topic-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "topic-item-link"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "topic-item-link-name"
+  }, "HANDBAGS"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "topic-item-link-number"
+  }, "0"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "topic-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "topic-item-link"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "topic-item-link-name"
+  }, "Product Guidelines"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "topic-item-link-number"
+  }, "0"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "topic-item"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    href: "#",
+    className: "topic-item-link"
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "topic-item-link-name"
+  }, "CONDITION GUIDELINES"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    className: "topic-item-link-number"
+  }, "0"))))));
 }
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return _assertThisInitialized(self);
-}
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-
-
-
-
-
-var ListTopic =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(ListTopic, _React$Component);
-
-  function ListTopic() {
-    _classCallCheck(this, ListTopic);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(ListTopic).apply(this, arguments));
-  }
-
-  _createClass(ListTopic, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "list-topic-container "
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic list-topic"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-catalog"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-hierarchy-entry"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "topic-hierarchy-link"
-      }, "Account Features"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-hierarchy-entry"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "topic-hierarchy-link"
-      }, "Luxury Products"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-hierarchy-entry"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "topic-hierarchy-link"
-      }, "Money"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-hierarchy-entry"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "topic-hierarchy-link"
-      }, "Product Guidelines"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-hierarchy-entry"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "topic-hierarchy-link"
-      }, "Shipping"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "topic-hierarchy-entry"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "topic-hierarchy-link"
-      }, "Welcome To StockX")))))));
-    }
-  }]);
-
-  return ListTopic;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (ListTopic);
-
-/***/ }),
-
-/***/ "./resources/js/frontend/faq/RelatedTopic.js":
-/*!***************************************************!*\
-  !*** ./resources/js/frontend/faq/RelatedTopic.js ***!
-  \***************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
-
-function _typeof(obj) {
-  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
-    _typeof = function _typeof(obj) {
-      return _typeof2(obj);
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
-    };
-  }
-
-  return _typeof(obj);
-}
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return _assertThisInitialized(self);
-}
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-
-
-
-
-var RelatedTopic =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(RelatedTopic, _React$Component);
-
-  function RelatedTopic(props) {
-    _classCallCheck(this, RelatedTopic);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(RelatedTopic).call(this, props));
-  }
-
-  _createClass(RelatedTopic, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: this.props.classContainer
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "force-topic-header"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Related Topics"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "icon-fluctuations"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("svg", {
-        xmlns: "http://www.w3.org/2000/svg",
-        viewBox: "0 0 24 24",
-        id: "trending"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("path", {
-        d: "M23.1 14.1a.5.5 0 0 1-.9.4L19.7 12 14 16.9a1.6 1.6 0 0 1-2.3 0L8.3 13l-6.2 5.4a.5.5 0 0 1-.7 0l-.3-.3a.5.5 0 0 1 0-.8l6-8.2a1.6 1.6 0 0 1 2.3 0l3.5 3.4 3.5-4-2.3-2.1a.6.6 0 0 1 .4-.9H22a1.1 1.1 0 0 1 1.1 1.1z"
-      })))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "force-topic-list"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "topic-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "topic-item-link"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "topic-item-link-name"
-      }, "WATCHES"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "topic-item-link-number"
-      }, "0"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "topic-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "topic-item-link"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "topic-item-link-name"
-      }, "HANDBAGS"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "topic-item-link-number"
-      }, "0"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "topic-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "topic-item-link"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "topic-item-link-name"
-      }, "Product Guidelines"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "topic-item-link-number"
-      }, "0"))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "topic-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "topic-item-link"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "topic-item-link-name"
-      }, "CONDITION GUIDELINES"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
-        className: "topic-item-link-number"
-      }, "0"))))));
-    }
-  }]);
-
-  return RelatedTopic;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (RelatedTopic);
-
-/***/ }),
-
-/***/ "./resources/js/frontend/faq/TrendingArticles.js":
-/*!*******************************************************!*\
-  !*** ./resources/js/frontend/faq/TrendingArticles.js ***!
-  \*******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-function _typeof2(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof2 = function _typeof2(obj) { return typeof obj; }; } else { _typeof2 = function _typeof2(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof2(obj); }
-
-function _typeof(obj) {
-  if (typeof Symbol === "function" && _typeof2(Symbol.iterator) === "symbol") {
-    _typeof = function _typeof(obj) {
-      return _typeof2(obj);
-    };
-  } else {
-    _typeof = function _typeof(obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : _typeof2(obj);
-    };
-  }
-
-  return _typeof(obj);
-}
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-function _possibleConstructorReturn(self, call) {
-  if (call && (_typeof(call) === "object" || typeof call === "function")) {
-    return call;
-  }
-
-  return _assertThisInitialized(self);
-}
-
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-
-  return self;
-}
-
-function _getPrototypeOf(o) {
-  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-    return o.__proto__ || Object.getPrototypeOf(o);
-  };
-  return _getPrototypeOf(o);
-}
-
-function _inherits(subClass, superClass) {
-  if (typeof superClass !== "function" && superClass !== null) {
-    throw new TypeError("Super expression must either be null or a function");
-  }
-
-  subClass.prototype = Object.create(superClass && superClass.prototype, {
-    constructor: {
-      value: subClass,
-      writable: true,
-      configurable: true
-    }
-  });
-  if (superClass) _setPrototypeOf(subClass, superClass);
-}
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-
-  return _setPrototypeOf(o, p);
-}
-
-
-
-
-
-var TrendingArticles =
-/*#__PURE__*/
-function (_React$Component) {
-  _inherits(TrendingArticles, _React$Component);
-
-  function TrendingArticles() {
-    _classCallCheck(this, TrendingArticles);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(TrendingArticles).apply(this, arguments));
-  }
-
-  _createClass(TrendingArticles, [{
-    key: "render",
-    value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "ask-related-articles"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", null, "Related Topics"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
-        className: "ask-list"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "ask-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "ask-item-link"
-      }, "What comes with my Apple Watch bought on StockX?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "ask-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "ask-item-link"
-      }, "How do I sell my Apple Watch?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "ask-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "ask-item-link"
-      }, "What are the condition guidelines for Watches?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "ask-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "ask-item-link"
-      }, "How do I factory reset my Apple Watch?")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
-        className: "ask-item"
-      }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
-        href: "#",
-        className: "ask-item-link"
-      }, "How do I take care of my watch?")))));
-    }
-  }]);
-
-  return TrendingArticles;
-}(react__WEBPACK_IMPORTED_MODULE_1___default.a.Component);
-
-/* harmony default export */ __webpack_exports__["default"] = (TrendingArticles);
 
 /***/ }),
 

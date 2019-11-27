@@ -5,6 +5,11 @@
   src: local("BebasNeue Regular"), local("BebasNeue-Regular"), url("/plugins/bebas_neue/fonts/BebasNeue-Regular.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: Lato;
+  src: local("Lato Regular"), local("Lato-Regular"), url("/plugins/lato/fonts/lato-v16-latin-regular.woff2") format("woff2");
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
