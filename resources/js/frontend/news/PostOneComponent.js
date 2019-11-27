@@ -81,7 +81,7 @@ class PostOne extends Component {
                                 <AuthorComponent/>
                             </div>
                         </div>
-                        <CatPost title = "RELATED ARTICLES"/>
+                        <CatPost title = "RELATED ARTICLES" postRow = '' postItem = ''/>
                         
                     </div>
 

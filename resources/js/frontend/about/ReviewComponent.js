@@ -71,15 +71,23 @@ function ReviewBlock() {
 		<div className = 'review-block'>
 			<div className = 'review-image'>
 				<div className ='divider'></div>
-				<img src="/storage/images/review/sole.png" />
+				<AuthorPicture url = "/storage/images/review/sole.png"/>
 				<div className ='divider'></div>
 			</div>
-			<div className = 'review-content'>
-				StockX App Offers Easiest and Fastest Way to Buy/Sell Sneakers
-			</div>
-			<div className = 'review-byline'>
-				-Sole Collector
-			</div>
+			<ContentReview content='StockX App Offers Easiest and Fastest Way to Buy/Sell Sneakers'/>
+			<AuthorName name = '-Sole Collector'/>
 		</div>
 	)
+}
+
+function AuthorPicture(props) {
+	return <img src = {props.url}/>;
+}
+
+function AuthorName(props) {
+	return <div className = 'review-byline'>{props.name}</div>;
+}
+
+function ContentReview(props) {
+	return 	<div className = 'review-content'>{props.content}</div>;
 }

@@ -15,35 +15,32 @@ class PostHeader extends Component {
             <div className="header-post full-width">
                 <div className="news-list">
                     <div className="header-post-top">
-                        <div className="blog-post"> 
-                            <a href="#">Editorial</a>
-                        </div> 
-                        <h1 className="post-title">StockX Needle Movers: August Streetwear New Arrivals</h1>
+                        <BlogPost url = '#' title = 'Editorial'/>
+                        <PostTitle contents = 'StockX Needle Movers: August Streetwear New Arrivals'/>
                     </div>
                     
                     <div className="header-post-bottom">
                         <div className="intro-content">
-                            <div className="block-meta">
-                                By 
-                                <a href="#"> Kevin Kosanovich </a>
-                                , 10 hours ago
-                            </div>
-
-                            <div className="blog-excerpt">Needle Movers is a monthly segment highlighting the latest streetwear collaborations and brands recently added to StockX. Check out the collections below - just click the photos to shop.</div>
+                            <BlockMeta url = '#' author = ' Kevin Kosanovich ' hours = '10'/>
+                            <BlogExcerpt content = 'Needle Movers is a monthly segment highlighting the latest streetwear collaborations and brands recently added to StockX. Check out the collections below - just click the photos to shop.'/>
                         </div>
                         
                         <div className="social-share">
-                            <a className="social-share-link facebook icon-fa"  href="#">
-                                <i className="fa fa-facebook"></i>
-                            </a>
-
-                            <a className="social-share-link twitter icon-fa"  href="#">
-                                <i className="fa fa-twitter"></i>
-                            </a>
-
-                            <a className="social-share-link pinterest icon-fa" href="#">
-                                <i className="fa fa-pinterest-p"></i>
-                            </a>
+                            <SocialShare 
+                                className="social-share-link facebook icon-fa"  
+                                url = '#' 
+                                icon = 'fa fa-facebook'
+                            />
+                            <SocialShare 
+                                className="social-share-link twitter icon-fa"  
+                                url = '#' 
+                                icon = 'fa fa-twitter'
+                            />
+                            <SocialShare 
+                                className="social-share-link pinterest icon-fa"  
+                                url = '#' 
+                                icon = 'fa fa-pinterest-p'
+                            />
 
                             <a className="social-share-link subscribe-link icon-fa" href="#">
 
@@ -64,3 +61,41 @@ class PostHeader extends Component {
 }
 
 export default PostHeader;
+
+function BlogPost(props) {
+    return (
+        <div className="blog-post"> 
+            <a href={props.url}>{props.title}</a>
+        </div> 
+    );
+}
+
+function PostTitle(props) {
+    return (
+        <h1 className="post-title">{props.contents}</h1>
+    );
+}
+
+function BlockMeta(props) {
+    return(
+        <div className="block-meta">
+            By 
+            <a href={props.url}> {props.author} </a>
+            , {props.hours} hours ago
+        </div>
+    );   
+}
+
+function BlogExcerpt(props) {
+    return (
+        <div className="blog-excerpt">{props.content}</div>
+    );
+}
+
+function SocialShare(props) {
+    return(
+        <a className = {props.className}  href = {props.url}>
+            <i className = {props.icon}></i>
+        </a>
+    );
+}

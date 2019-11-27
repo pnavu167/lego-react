@@ -5,51 +5,36 @@ import axios from 'axios';
 //import component
 // import LitleContent from './LitleContentComponent';
 // import BigContent from './BigContentComponent';
-import BlogRow from './BlogRow';
+// import BlogRow from './BlogRow';
 
 class CatPost extends Component {
 
     constructor(props) {
         super(props)
     }
-
-    setTitleName() {
-        return this.props.title;
-    }
-
-    addPostItem() {
-        
-        if(this.props.postItem){
-            return this.props.postItem;
-        }
-
-        return "";
-    }
-
-    addPostRow() {
-        
-        if(this.props.postRow){
-            return "blog-post-row " + this.props.postRow;
-        }
-
-        return "blog-post-row";
-    }
-
+    
   	render() {
+        let  postItem = this.props.postItem;
+        let  postRow = "blog-post-row " + this.props.postRow;
+        let  title = this.props.title;
         return(
             <div className="cat-post">
                 
-                    {this.setTitleName() &&
-                        <div className="type-post">
-                            <h2 >{this.setTitleName()}</h2>
-                            {this.setTitleName() != "RELATED ARTICLES" &&
-                                <a href="#" className="cat-post-section">View All</a>
-                            } 
-                            
-                        </div>
-                    }
-                    
-                    <BlogRow postItem={this.addPostItem()} postRow={this.addPostRow()} number = {this.props.number}/>
+                {title &&
+                    <div className="type-post">
+                        <h2 >{title}</h2>
+                        {title != "RELATED ARTICLES" &&
+                            <a href="#" className="cat-post-section">View All</a>
+                        } 
+                        
+                    </div>
+                }
+                
+                <BlogRow 
+                    postItem = {postItem} 
+                    postRow = {postRow} 
+                    number = {this.props.number}
+                />
                 
             </div>
             
@@ -58,3 +43,63 @@ class CatPost extends Component {
 }
 
 export default CatPost;
+
+function BlogRow(props) {
+    const indents = [];
+    const className = "blog-post-row "+ props.postRow;
+    var number = (props.number)?props.number:3;
+
+    for (let i = 0; i < number; i++) {
+        indents.push(<BlogBlock postItem = {props.postItem} key = {i}/>);
+    }
+
+    return(
+        <div className={className}>{indents}</div>
+    );
+}
+
+function BlogBlock(props) {
+    const className = 'blog-post-block' + props.postItem;
+    return(
+        <div className= {className}>
+
+            <BlockLinkImg url = '#' img = '/storage/images/news/Fall-sneakers-blog.jpg'
+            alt = 'Fall Essentials: Sneakers'/>
+
+            <div className="news-list full-width">
+                <div className="blog-post"> 
+                    <ProductTypeLink url = '#' name = 'Sneakers'/>
+                </div> 
+                <BlockTitleLink url = '#' name = 'Fall Essentials: Sneakers'/>
+                <BlockMeta url = '#' author = ' Kevin Kosanovich ' hours = '10'/>
+            </div>
+        </div>
+    );
+}
+
+function BlockLinkImg(props) {
+    return (
+        <a href={props.url} className="blog-img">
+            <img src={props.img} alt={props.alt}
+            className="full-width"/>
+        </a>
+    );
+}
+
+function ProductTypeLink(props) {
+    return <a href={props.url}>{props.name}</a>;
+}
+
+function BlockTitleLink(props) {
+    return <a href={props.url} className="block-title">{props.name}</a>;
+}
+
+function BlockMeta(props) {
+    return(
+        <div className="block-meta">
+            By 
+            <a href={props.url}> {props.author} </a>
+            , {props.hours} hours ago
+        </div>
+    );   
+}

@@ -41,7 +41,6 @@ class NewsSlider extends Component {
                 </div>
 
                 <div className="news-list ">
-                    
                     <ul className="list">
                         <li>
                             <div className="recent-item">
@@ -98,9 +97,7 @@ class NewsSlider extends Component {
                                 </div>
                             </div>
                         </li>
-                    </ul>
-                    
-                    
+                    </ul>                
                 </div>
             </div>
             
@@ -109,3 +106,26 @@ class NewsSlider extends Component {
 }
 
 export default NewsSlider;
+
+function RecentItem(props) {
+    return (
+        <li className = {props.className}>
+            <div className="recent-item">
+                <div className="blog-post"> 
+                    <ProductTypeLink url = '#' name = 'Editorial' className = ''/>
+                </div> 
+                <Link url = '#' className = 'block-title'  name = 'Off The Top | DeAndre Hopkins'/>
+                <div className="block-meta">
+                    By 
+                    <a href="#"> Kevin Kosanovich </a>
+                    , 10 hours ago
+                </div>
+            </div>
+        </li>
+    );
+}
+
+function Link(props) {
+    return <a href={props.url} className = {props.className}>{props.name}</a>;
+}
+
