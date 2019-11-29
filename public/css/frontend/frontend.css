@@ -5047,6 +5047,12 @@ a:hover {
   font-weight: bold;
 }
 
+@media (max-width: 479px) {
+  .list-ask-component .list-ask .list-item .article-head {
+    font-size: 1rem;
+  }
+}
+
 .list-ask-component .list-ask .list-item .footer {
   background: #fff;
   color: rgba(0, 0, 0, 0.6);
